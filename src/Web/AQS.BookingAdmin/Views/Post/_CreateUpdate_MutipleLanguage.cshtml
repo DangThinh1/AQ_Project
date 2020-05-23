@@ -1,0 +1,112 @@
+﻿@model AQS.BookingAdmin.Models.Posts.PostCreateViewModel
+<input type="hidden" asp-for="PostDetail.Id" />
+<input type="hidden" asp-for="ThumbImgName"/>
+<div class="form-group row">
+    <label class="col-sm-2 col-form-label text-right required">
+        Title
+        @Html.Help("Title post by language")
+    </label>
+    <div class="col-sm-10">
+        <input type="text" asp-for="PostDetail.Title" class="form-control" placeholder="Title" required>
+    </div>
+</div>
+<div class="form-group row">
+    <label class="col-sm-2 col-form-label text-right required">
+        Thumbnail Image
+        @Html.Help("The thumbnail image of the post")
+    </label>
+    <div class="col-sm-10">
+       
+            <input type="hidden" asp-for="PostDetail.FileStreamFid" />
+
+            @if (Model.PostDetail.FileStreamFid > 0)
+            {
+
+                <a title="Click to view full image" data-toggle="lightbox" href="@await Component.InvokeAsync("GetImageUrl", new { fileId = Model.PostDetail.FileStreamFid, ratio = AQBooking.Admin.Core.Enums.ThumbRatioEnum.full})">
+                    <img class="border" style="cursor:pointer" src="@await Component.InvokeAsync("GetImageUrl", new { fileId = Model.PostDetail.FileStreamFid, ratio = AQBooking.Admin.Core.Enums.ThumbRatioEnum.quarter })" width="150" id="imgThumb" />
+                </a>
+            }
+            else
+            {
+                <a title="Click to view full image" data-toggle="lightbox" href="~/images/default-image.png">
+                    <img class="border" style="cursor:pointer" src="~/images/default-image.png" width="150" id="imgThumb" />
+                </a>
+
+            }
+            <input type="file" id="flUploadImage" style="display:none" />
+            <a href="javascript:void(0)" class="btn btn-success btn-sm" id="btnUploadImg">
+                Upload image
+
+            </a>
+            <span class="text-sm text-danger">*Only accept image file JPG,PNG,JPEG and file size limited 5Mb. Click "Save" button  after upload</span>
+
+       
+
+    </div>
+</div>
+<div class="form-group row">
+    <label class="col-sm-2 col-form-label text-right required">
+        Short Description
+        @Html.Help("Short description")
+    </label>
+    <div class="col-sm-10">
+        <textarea type="text" asp-for="PostDetail.ShortDescription" class="form-control" placeholder="Short Description (500 max length)" maxlength="500" required></textarea>
+    </div>
+</div>
+<div class="form-group row">
+    <label class="col-sm-2 col-form-label text-right required">
+        Description
+        @Html.Help("Full description include format and image link")
+    </label>
+    <div class="col-sm-10">
+        <textarea id="txtDescription" asp-for="PostDetail.Body"></textarea>
+    </div>
+</div>
+<div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label text-right">
+        Meta Keyword
+        @Html.Help("This field for SEO")
+    </label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" asp-for="PostDetail.KeyWord" placeholder="Meta Keyword">
+    </div>
+</div>
+<div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label text-right">
+        Meta Description
+        @Html.Help("This field for SEO")
+    </label>
+    <div class="col-sm-10">
+        <textarea type="text" class="form-control" asp-for="PostDetail.MetaDescription" placeholder="Meta Description"></textarea>
+
+    </div>
+</div>
+@if (Model.PostDetail.Id > 0)
+{
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label text-right">
+            Friendly Url
+            @Html.Help("This field for SEO")
+        </label>
+        <div class="col-sm-10">
+            <input disabled type="text" class="form-control" placeholder="The url fiendly SEO, auto generate when empty" asp-for="PostDetail.FriendlyUrl" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label text-right">
+            Post Language Status
+            @Html.Help("This post language status")
+        </label>
+        <div class="col-sm-10">
+            @if (Model.PostDetail.IsActivated)
+            {
+                <span class="badge badge-success p-1">Actived</span>
+            }
+            else
+            {
+              <button class="btn btn-sm btn-danger p-1" type="button">Draft</button>
+
+            }
+        </div>
+    </div>
+}

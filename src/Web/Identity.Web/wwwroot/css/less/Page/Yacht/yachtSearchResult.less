@@ -1,0 +1,641 @@
+﻿@import "../../variables";
+
+.aq-yacht.search-result {
+    .component-result {
+        flex-wrap: wrap;
+        .filter-left {
+            margin-right: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+            background-color: #f2f2f2;
+            .body-filter {
+                .attention {
+                    margin-bottom: 1rem;
+                    border-left: 3px solid #00a1e9;
+                    background-color: #f2fbff;
+                }
+                .form-group {
+                    margin-bottom: 1.5rem;
+                }
+
+                .form-radio {
+                    display: block;
+                    justify-content: unset;
+                    padding: 0;
+
+                    .radio {
+                        display: inline-block;
+                        padding: .5vw 1.5vw;
+
+                        label {
+                            font-weight: 100;
+                            font-size: 1rem;
+                            margin: 0;
+                            font-family: 'Segoeui';
+                        }
+
+                        &:first-child {
+                            padding-left: 0;
+                        }
+
+                        &:last-child {
+                            padding-right: 0;
+                        }
+                    }
+                }
+
+                .form-control {
+                    border: none;
+                    background-color: #FFF;
+                }
+
+
+
+                
+            }
+
+           
+        }
+
+        .result-right {
+            .title-filter {
+                position: relative;
+                border: 0;
+                padding-bottom: 13px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: -15px;
+                    right: -15px;
+                    height: 1px;
+                    background-color: #ccc;
+                }
+            }
+
+            .result-item {
+                border: 1px solid @gray;
+                border-radius: .5rem;
+                padding: 1rem;
+                display: flex;
+                position: relative;
+
+                .img-info {
+                    position: relative;
+                    flex: 0 0 30%;
+                    align-self: self-start;
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        padding-bottom: 100%;
+                    }
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    .text-left-img, .favorite, .text-right-img {
+                        padding: 0.5rem 1rem;
+                        background-color: @aq-orange;
+                        color: @white;
+                    }
+
+                    .text-left-img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                    }
+
+                    .text-right-img {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        z-index: 1;
+                        background-color: @aq-red;
+                    }
+
+                    .favorite {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 1;
+
+                        &.active {
+                            color: @aq-red;
+                        }
+                    }
+                }
+
+                .content-info {
+                    padding-right: 8rem;
+                    padding-left: 1rem;
+                    flex:0 0 70%;
+
+
+                    .info-left {
+                        h3 {
+                            font-family: 'SegoeuiSemibold';
+                            margin-bottom: 1rem;
+                            word-wrap: break-word;
+                            max-height: 4rem;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            text-overflow: ellipsis;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            line-height: 2rem;
+                        }
+
+                        .description {
+                            font-family: 'SegoeuiItalic';
+                            margin-bottom: 10px;
+                            font-size: 85%;
+                            word-wrap: break-word;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            text-overflow: ellipsis;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4;
+
+                            .read-more {
+                                color: @aq-light-blue !important;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+
+                            [data-readmore-toggle] {
+                                color: @aq-light-blue;
+                            }
+                        }
+
+                        .list-detail {
+                            display: flex;
+                            justify-content: space-between;
+                            padding-bottom: 25px;
+
+                            .item-detail {
+                                padding: .5rem 0;
+                                display: flex;
+                                white-space: nowrap;
+
+                                .aes, .fa {
+                                    color: @aq-light-blue;
+                                    font-size: x-large;
+                                    margin-right: 3px;
+                                }
+                            }
+                        }
+
+                        .tag-point {
+                            font-family: @font-segoeui;
+                            font-size: 1rem;
+                            color: #ffffff;
+                            display: flex;
+                            align-items: center;
+                            white-space: nowrap;
+                            padding: .25rem 0.8rem;
+                            background-color: #1d2088;
+                            display: flex;
+                            justify-content: space-between;
+                            border-top-right-radius: .5rem;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 8rem;
+                            b {
+                                font-size: 1.25rem;
+                                font-family: @font-bold;
+                                font-weight: 100;
+                            }
+                        }
+                    }
+
+                    .common-info {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        // transform: translate(0,100%);
+
+                        .content-desc {
+                            color: @white;
+                            text-align: center;
+                            align-items: center;
+                            white-space: nowrap;
+                            padding: .25rem 0;
+                            width: 8.5rem;
+
+                            b {
+                                font-size: 1.15rem;
+                                font-family: 'SegoeuiBold';
+                                font-weight: 100;
+                            }
+
+                            &.price {
+                                background-color: #fea014;
+                                border-radius: 0 7px 0 0;
+                            }
+                        }
+                    }
+
+                    .info-contact {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        display: flex;
+
+                        .contact-desc {
+                            display: flex;
+
+                            a {
+                                color: @white !important;
+                                padding: .5rem 1rem;
+
+                                b {
+                                    font-size: 0.9rem;
+                                    font-family: 'SegoeuiBold';
+                                    font-weight: 100;
+                                }
+                            }
+
+                            &:last-child {
+                                border-bottom-right-radius: .5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.aq-yacht.search-result {
+    .filter-left {
+        .CaptionCont {
+            background-color: #FFF;
+            padding: 9px 28px 9px 14px;
+            border-radius: 5px;
+        }
+
+        .irs--flat {
+            .irs-line {
+                background-color: #d8d8d8;
+            }
+        }
+
+        .select2-container {
+            width: 100% !important;
+        }
+
+        .select2-container--default {
+            .select2-selection--single {
+                border: none;
+                background-color: #FFF;
+                height: 48px;
+                padding: .675rem .75rem;
+                color: @aq-text;
+                width: 100%;
+                border-radius: 5px;
+
+                &:focus {
+                    outline: none;
+                }
+
+                .select2-selection__arrow {
+                    top: 50%;
+                    transform: translate(0,-50%);
+                    color: #000;
+                }
+
+                .select2-selection__placeholder {
+                    color: @aq-text;
+                }
+            }
+        }
+    }
+}
+
+.search-result-desc {
+    position: relative;
+    z-index: 2;
+    .body-desc {
+        border: 1px solid #cccccc;
+        border-radius: 0.75rem;
+        background-color: #FFFFFF;
+    }
+    .title {
+        border-bottom: 1px solid #cccccc;
+        height: 4rem;
+        margin: 0;
+        font-size: 1.25vw;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 1rem;
+        }
+    }
+    .description {
+        text-align: justify;
+        padding: 1rem;
+    }
+}
+
+.aq-header-filter-result {
+    display: flex;
+    justify-content: space-between;
+
+    .sort-filter {
+        display: flex;
+        border-bottom: 1px solid #DCDCDC;
+        .form-control {
+            font-family: @font-semibold;
+            border:0;
+            padding-left: 0;
+            margin-right: 2rem;
+            width: inherit;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .btn-filter {
+        font-family: @font-semibold;
+        .rem-px(font-size, 18);
+        color: #000000;
+        position: relative;
+        padding:10px 33px 10px 65px;
+        background-color: #F2F2F2;
+        border-radius: 0;
+
+        &::after {
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid #000000;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translate(0,-50%);
+        }
+
+        .aes-filter {
+            .rem-px(font-size, 16);
+            line-height: 3;
+            background-color: #0B8FC9;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+        }
+    }
+}
+
+.modal-filter {
+    .modal-dialog {
+        max-width: 1170px;
+    }
+
+    .filter-left {
+        flex: 0 0 100%;
+        max-width: calc(100%);
+        margin-right: 0;
+
+        .body-filter {
+            .rem-px(padding-top, 80);
+        }
+
+        .col-md-4:first-child {
+            .rem-px(margin-top, -56)
+        }
+    }
+
+    .attention {
+        margin-bottom: 1rem;
+    }
+
+    .irs {
+        margin-bottom: 25px;
+    }
+
+    .select2-container {
+        width: 100% !important;
+    }
+
+
+
+    .btn-close {
+        cursor: pointer;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        background-color: #4b5261;
+        padding: 0;
+        border: 0;
+        z-index: 2;
+        &::before, &::after {
+            content: ' ';
+            position: absolute;
+            height: 17px;
+            top: 7px;
+            left: 14px;
+            width: 2px;
+            background-color: #fff;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .aq-yacht.search-result {
+        .body-search-result {
+            padding-left: 15px;
+            padding-right: 15px;
+
+            .breadcrumbs {
+                top: 55px;    
+            }
+
+            .component-result {
+                .count-find  {
+                    padding-top: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .aq-yacht.search-result {
+        .component-result {
+            .result-right {
+                .result-item {
+                    flex-direction: column-reverse;
+                    padding-bottom: 9rem;
+
+                    .img-info {
+                        position: relative;
+                        flex: 0 0 100%;
+                        width: 100%;
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            // padding-bottom: 47.6%;
+                            padding-bottom: 0;
+                        }
+
+                        .text-left-img {
+                            left: auto;
+                            right: 0;
+                            min-width: 6.5rem;
+                        }
+
+                        .text-left-img + .text-right-img {
+                            top: 40px;
+                            min-width: 6.5rem;
+                        }
+
+                        img {
+                            position: static;
+                        }
+                    }
+
+                    .content-info {
+                        padding: 0;
+                        .info-left {
+                            h3 {
+                                position: relative;
+                                z-index: 2;
+                                overflow: visible;
+                            }
+                            .description {
+                                display: none;
+                            }
+
+                            .tag-point {
+                                top: 100%;
+                                right: auto;
+                                z-index: 3;
+                                margin-top: 15px;
+                                border-radius: 0;
+                                flex-wrap: wrap;
+                                width: auto;
+                                flex-direction: column;
+                                b {
+                                    font-family: @font-semibold;
+                                    font-size: 22px;
+                                }
+                            }
+
+                            .list-detail {
+                                justify-content: flex-start;
+                                .item-detail {
+                                    margin-right: 15px;
+                                    .text {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+
+                        .common-info {
+                            position: static;
+                            transform: translate(0,0);
+
+                            .content-desc {
+                                &.price {
+                                    background-color: transparent;
+                                    color: #6A707D ;
+                                    padding: 0;
+                                    b {
+                                        font-size: 2rem;
+                                        color: #fea014
+                                    }
+                                }
+                            }
+                        }
+
+                        .info-contact {
+                            .contact-desc {
+
+                                font-style: italic;
+                                text-decoration: underline;
+                                background-color: transparent !important;
+                                a {
+                                    color: #00A1E9 !important;
+                                    b {
+                                        font-family: @font-segoeui;
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+
+                            .contact-desc.bg-blue {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .footer-info {
+                        position: absolute;
+                        bottom: 1rem;
+                        left: 1rem;
+                        right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .aq-header-filter-result {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 425px) {
+    .aq-yacht.search-result {
+        .body-search-result {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    .aq-header-filter-result {
+        .sort-filter {
+            // width: 100%;
+            justify-content: space-between;
+            .form-control {
+                flex: 0 0 auto;
+                width: auto;
+                max-width: none;
+                margin-right: 0;
+            }
+        }
+        // .btn-filter {
+        //     width: 100%;
+        // }
+    }
+}

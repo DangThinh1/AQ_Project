@@ -1,0 +1,59 @@
+﻿@using AQBooking.Admin.Core.Models.PostCategories;
+@model PostCategoriesCreateModel
+
+<div class="modal-dialog ">
+    <div class="modal-content" id="loadContentModal">
+        <form id="frmAddUpdatePostCate">
+            @Html.HiddenFor(x => x.Id)
+            @Html.HiddenFor(x => x.PostCateDetailId)
+            <div class="modal-header">
+                <h4 class="modal-title"> @(Model.Id == 0 ? "Create new post category" : "Update post category")</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="alert alert-default-warning" role="alert" style="text-align:center">
+                Please add all languages for new post category!
+            </div>
+            <div class="modal-body">
+                <div class="">
+                    <div class="form-group">
+                        <label for="ParentFid" class="required">Parent category</label>
+                        @Html.DropDownList("ParentFid", ViewBag.lstParent, "Please select", new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label for="DefaultName" class="required">Default Name</label>
+                        @Html.TextBoxFor(x => x.DefaultName, new { @class = "form-control", @required = "required" })
+                    </div>
+                    <div class="form-group">
+                        <label class="required">Languages</label>
+                        @Html.DropDownList("LanguageFid", ViewBag.lstLang, "Please select", new { @class = "form-control", @required = "required" })
+                    </div>
+                    <div class="form-group">
+                        <label for="Name" class="required">Name</label>
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control", @required = "required", @maxlength = "255" })
+                    </div>
+                    <div class="form-group">
+                        <label class="">Order by</label>
+                        <select required class="form-control" id="@Model.OrderBy">
+                            <option>Top</option>
+                            <option>Bottom</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            @Html.CheckBoxFor(x => x.IsActivated, new { @class = "custom-control-input", @required = "required" })
+                            <label class="custom-control-label" for="IsActivated">Active</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" id="btnSavePostCate">Save changes</button>
+            </div>
+        </form>
+    </div>
+    <!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->

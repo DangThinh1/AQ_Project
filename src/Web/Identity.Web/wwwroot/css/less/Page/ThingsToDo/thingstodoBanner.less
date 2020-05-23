@@ -1,0 +1,139 @@
+﻿@import "../../variables";
+
+.aq-thingstodo {
+    .thingstodo-banner {
+        position: relative;
+        margin-bottom: 4vw;
+
+        .bg-banner {
+            min-height: 400px;
+            background-position: center !important;
+            background-size: cover !important;
+            position: relative;
+
+            .text-title {
+                color: @white;
+                text-transform: uppercase;
+                font-size: 3vw;
+                letter-spacing: .15vw;
+                font-family: 'SegoeuiBold';
+                position: absolute;
+                top: 1.5vw;
+                left: 5vw;
+                z-index: 2;
+            }
+        }
+
+        .banner-filter {
+            width: 100%;
+            position: absolute;
+            bottom: -3vw;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            border-radius: .25rem;
+            z-index: 9;
+
+            form {
+                border-radius: .5rem;
+                -webkit-box-shadow: 0px 0px 5px 0px rgba(41,41,41,0.75);
+                -moz-box-shadow: 0px 0px 5px 0px rgba(41,41,41,0.75);
+                box-shadow: 0px 0px 5px 0px rgba(41,41,41,0.75);
+                background-color: @white;
+                height: 6vw;
+                padding: 1.5vw;
+
+                .frm-wrap {
+                    word-spacing: -5px;
+                    margin-left: -.5rem;
+                    margin-right: -.5rem;
+
+                    .wrap-col {
+                        word-spacing: 0px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding-left: .5rem;
+                        padding-right: .5rem;
+                    }
+
+                    .col-info {
+                        width: 21.25%;
+                    }
+
+                    .col-date {
+                        width: 16.25%;
+                    }
+
+                    .col-action {
+                        width: 12.5%;
+                    }
+                }
+
+                .input-group, .customize-select-trigger {
+                    height: 3vw;
+                }
+
+                .input-group.bg-orange {
+                    .customize-select-trigger {
+                        background-color: @aq-orange;
+                        border-color: @aq-orange;
+                        color: @white;
+                    }
+                }
+
+                .form-control {
+                    border-radius: 0;
+                }
+
+                .customize-select-trigger {
+                    display: flex;
+                    align-items: center;
+                    border-radius: 0;
+                }
+            }
+
+            .item-filter {
+                .input-group-prepend {
+                    .input-group-text {
+                        background-color: transparent;
+                        border: none;
+                        height: 4vw !important;
+                        padding: 1vw 2vw;
+                        color: @aq-text;
+                        font-size: 1.25rem;
+                    }
+                }
+
+                .form-control, .customize-select {
+                    border: none;
+                    background-color: inherit;
+                    padding: 1vw 2vw;
+                    height: 4vw !important;
+                    margin-right: 2vw;
+                    color: @aq-text;
+                }
+
+                .customize-select {
+                    .customize-select-trigger {
+                        height: 2.5vw;
+                        line-height: 2.5vw;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        border: none;
+                        background-color: transparent;
+                    }
+                }
+            }
+
+            .btn-submit {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                line-height: 3vw;
+                padding: 0;
+                font-size: 1.25rem;
+                font-weight: 400;
+                border-radius: 0;
+            }
+        }
+    }
+}

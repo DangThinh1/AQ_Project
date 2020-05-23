@@ -1,0 +1,54 @@
+<!-- START Sidebar (left)-->
+<div class="aside-inner">
+    <nav class="sidebar" data-sidebar-anyclick-close="">
+        <!-- START sidebar nav-->
+        <ul class="sidebar-nav">
+            <!-- START user info-->
+            <li class="has-user-block">
+                <div id="user-block" class="collapse">
+                    <div class="item user-block">
+                        <!-- User picture-->
+                        <div class="user-block-picture">
+                            <div class="user-block-status">
+                                <img src="~/images/user/02.jpg" alt="Avatar" width="60" height="60" class="img-thumbnail rounded-circle" />
+                                <div class="circle bg-success circle-lg"></div>
+                            </div>
+                        </div>
+                        <!-- Name and Job-->
+                        <div class="user-block-info">
+                            <span class="user-block-name">Hello, Mike</span>
+                            <span class="user-block-role">Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- END user info-->
+            <!-- Iterates over all sidebar items-->
+            <li class="nav-heading">
+                <span>Main Navigation</span>
+            </li>
+            <li class="">
+                <a href="@Url.Action("Index", "Home")" title="Dashboard">
+                    <em class="fa-2x mr-2 fas fa-clipboard-list"></em>
+                    <span>Dashboard</span>
+                </a>
+                <a href="@Url.Action("Index", "ImageManagement")" title="Image Management">
+                    <em class="fa-2x mr-2 far fa-file-image"></em>
+                    <span>Image Files</span>
+                </a>
+                <a href="@Url.Action("Index", "BrochureManagement")" title="Brochure">
+                    <em class="fa-2x mr-2 fas fa-file-pdf"></em>
+                    <span>Brochure Files</span>
+                </a>
+                <a href="@Url.Action("Index", "FileDeletedManagement")" title="File Deleted">
+                    <em class="fa-2x mr-2 fas fa-trash-alt"></em>
+                    <span>File Deleted</span>
+                </a>
+            </li>
+        </ul>
+        <!-- END sidebar nav-->
+    </nav>
+</div>
+<!-- END Sidebar (left)-->
+
+

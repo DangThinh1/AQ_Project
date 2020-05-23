@@ -1,0 +1,682 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YachtMerchant.Api</name>
+    </assembly>
+    <members>
+        <member name="M:YachtMerchant.Api.Controllers.MerchantsController.GetUniquedId(System.Int32)">
+            <summary>
+            Get UniqueId of Merchant from Id of Merchant
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.MerchantsController.GetProfile(System.Int32)">
+            <summary>
+            Get Basic Infomation ( Id, UniqueId ) of Merchant By Id 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.MerchantsController.GetListMerchant">
+            <summary>
+            Get Basic Infomation ( Id, UniqueId ) of Merchant By Id 
+            </summary>
+            <param name="id"></param>
+            <returns>list merchant use for select list</returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.MerchantsController.GetListMerchantOfYachtAccountManager(System.String)">
+            <summary>
+            Get all merchant manager by user have role Yacht Account Manager ( YAM )
+            </summary>
+            <param name="yamId"></param>
+            <returns> list merchant use for select list</returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.MerchantsController.GetMerchantOfUserRoleYachtMerchant(System.String)">
+            <summary>
+            Get merchant of user have role Yacht Merchant ( YM )
+            </summary>
+            <param name="userId"></param>
+            <returns> one merchant </returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.MerchantsController.GetListYachtOfMerchant(System.Int32)">
+            <summary>
+            Get all Yacht manager by user have role Yacht Merchant (YM)
+            </summary>
+            <param name="merchantId"></param>
+            <returns>list yacht use for select list</returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.MerchantsController.GetListYachtActiveForOperationOfMerchant(System.Int32)">
+            <summary>
+            Get all Yacht manager by user have role Yacht Merchant (YM)
+            </summary>
+            <param name="merchantId"></param>
+            <returns>list yacht use for select list</returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.MerchantsController.GetMerchantByYachtId(System.Int32)">
+            <summary>
+            Get Merchant Id by YachtId
+            </summary>
+            <param name="yachtId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtAttributeValueController.CreateRangeAsync(YachtMerchant.Core.Models.YachtAttributeValues.YachtAttributeValuesCreateModel)">
+            <summary>
+            Create attribute with range 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtAttributeValueController.GetYachtAttributeValuesByYachtId(System.Int32)">
+            <summary>
+            Get all attribute Of Yacht  By YachtId 
+            </summary>
+            <param name="yachtId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtAttributeValueController.GetYachtAttributeValuesByCategoryId(System.Int32,System.Int32)">
+            <summary>
+            Get all attribute of Yacht  By Category Id
+            </summary>
+            <param name="yachtId"></param>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtAttributeValueController.GetListUpdateAttributeValueAsync(System.Int32,System.Int32)">
+            <summary>
+            Get Yacht attributes based on category to update
+            </summary>
+            <param name="yachtId">ID of Yacht in int format</param>
+            <param name="categoryId">ID of attribute category in int format</param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtAttributeValueController.InsertYachtAttributeValueAsync(YachtMerchant.Core.Models.YachtAttributeValues.YachtAttributeValuesCreateModels)">
+            <summary>
+            Insert attribute for Yacht
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtAttributeValueController.UpdateYachtAttributeValuesRangeAsync(YachtMerchant.Core.Models.YachtAttributeValues.YachtAttributeValuesUpdateRangeModel)">
+            <summary>
+            Update attribute of Yacht with range
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringPaymentLogsController.GetYachtCharteringPaymentLogs(System.Int64)">
+            <summary>
+            Get log payment of chartering
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringProcessingFeesController.GetYachtCharteringProcessingFees(System.Int64)">
+            <summary>
+            Get infomation of Procesing Fee for Chartering
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringProcessingFeesController.CreateYachtCharteringProcessingFeesAsync(YachtMerchant.Core.Models.YachtCharteringProcessingFees.YachtCharteringProcessingFeesCreateModel)">
+            <summary>
+            Create new Procesing Fee of Chartering 
+            </summary>
+            <param name="requestModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringProcessingFeesController.CreateYachtCharteringProcessingFeesAndChangeStatusReservationAsync(YachtMerchant.Core.Models.YachtCharteringProcessingFees.YachtCharteringProcessingFeeWithChangeStatusReservationCreateModel)">
+            <summary>
+            Create new Procesing Fee of Chartering  and Change Status Reservation
+            </summary>
+            <param name="requestModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringProcessingFeesController.UpdateYachtCharteringProcessingFeesAsync(YachtMerchant.Core.Models.YachtCharteringProcessingFees.YachtCharteringProcessingFeesUpdateModel)">
+            <summary>
+            Update Processing Fee of  Chartering 
+            </summary>
+            <param name="requestModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringSchedulesController.CheckExistUserSetInSchedules(YachtMerchant.Core.Models.YachtCharteringSchedules.CheckDuplicateUserSchedulesModel)">
+            <summary>
+            Check exist user set in schedules for reservation
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringSchedulesController.CheckExistRoleSetInSchedules(YachtMerchant.Core.Models.YachtCharteringSchedules.CheckDuplicateRoleSchedulesModel)">
+            <summary>
+            Check exist role set in schedules for reservation
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringSchedulesController.CheckExistUserRoleInSchedules(YachtMerchant.Core.Models.YachtCharteringSchedules.CheckDuplicateSchedulesModel)">
+            <summary>
+            Check exist schedule set user and role for reservation
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringSchedulesController.GetInfomationOfYachtCharteringSchedules(System.Int64)">
+            <summary>
+            Get detail of schedule by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringSchedulesController.GetAllYachtCharteringSchedules(System.Int64)">
+            <summary>
+            Get list schedules has set for chartering By CharteringId
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringSchedulesController.GetAllSchedulesSetOnCharteringByCharteringId(System.Int64)">
+            <summary>
+            Get all schedule has set for chartering By CharteringId
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringSchedulesController.CreateYachtCharteringSchedulesAsync(YachtMerchant.Core.Models.YachtCharteringSchedules.YachtCharteringSchedulesCreateModel)">
+            <summary>
+            Create new schedules for Chartering
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringSchedulesController.UpdateYachtCharteringSchedulesAsync(YachtMerchant.Core.Models.YachtCharteringSchedules.YachtCharteringSchedulesUpdateModel)">
+            <summary>
+            Update schedules for Chartering
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringSchedulesController.YachtCharteringSchedulesAsync(System.Int64)">
+            <summary>
+            Delete schedules set for Chartering by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.GetTotalReservationOfMerchantByMerchantId(YachtMerchant.Core.Models.YachtCharterings.GetTotalReservationOfMerchantModel)">
+            <summary>
+            Get caculate total reservation of Merchant By MerchantId 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.GetTotalAmountReservationOfMerchantByMerchantId(YachtMerchant.Core.Models.YachtCharterings.GetTotalAmountReservationOfMerchantWithItemTypeModel)">
+            <summary>
+            Get  total amount reseravation for Merchant with  ReservationItemType
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.GetInfomationYachtCharteringById(System.Int64)">
+            <summary>
+            Get infomation of Yacht Chartering by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.CreateYachtCharteringFromOriginSourceAsync(YachtMerchant.Core.Models.YachtCharterings.YachtCharteringsCreateModel)">
+            <summary>
+            Create new Yacht Chartering from Origin source AQBooking
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.CreateYachtCharteringFromOtherSourceAsync(YachtMerchant.Core.Models.YachtCharterings.CreateCharteringFromOtherSourceModel)">
+            <summary>
+            Create new Yacht Chartering from Other source (outsite aqbooking)
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.UpdateStatusAsync(YachtMerchant.Core.Models.YachtCharterings.YachtCharteringsConfirmStatusModel)">
+            <summary>
+            Change status of Yacht Chartering reservation
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.DeleteAsync(System.Int64)">
+            <summary>
+            Delete Yacht Chartering reservation by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.SearchAllYachtCharteringReservationsForMerchant(YachtMerchant.Core.Models.YachtCharterings.YachtCharteringsOfMerchantSearchPagingModel)">
+            <summary>
+            Search all Yacht Chartering reservation of Merchant by type with paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.SearchAllYachtCharteringReservationsForYacht(YachtMerchant.Core.Models.YachtCharterings.YachtCharteringsOfYachtSearchPagingModel)">
+            <summary>
+            Search all Yacht Chartering reservation of Yacht by type with paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.SearchAllYachtCharteringReservationsPaging(YachtMerchant.Core.Models.YachtCharterings.YachtCharteringsSearchPagingModel)">
+            <summary>
+            Search all Yacht Chartering reservation by type with paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.GetYachtCharteringReservationDetail(System.Int64)">
+            <summary>
+            Get detail Yacht Chartering reservation No Paging
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.GetYachtCharteringReservationDetail(YachtMerchant.Core.Models.YachtCharterings.YachtCharteringsDetailSearchPagingModel)">
+            <summary>
+            Get detail Yacht Chartering reservation with paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.GetAllYachtCharteringReservationByTypeNoPaging(YachtMerchant.Core.Models.YachtCharterings.YachtCharteringsSearchModel)">
+            <summary>
+            Get all Yacht Chartering reservation by type no paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.GetAllYachtCharteringReservationOfMerchantByTypeNoPaging(YachtMerchant.Core.Models.YachtCharterings.YachtCharteringsOfMerchantSearchModel)">
+            <summary>
+            Get all Yacht Chartering reservation of Merchant by type no paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.GetAllYachtCharteringReservationOfYachtByTypeNoPaging(YachtMerchant.Core.Models.YachtCharterings.YachtCharteringsOfYachtSearchModel)">
+            <summary>
+            Get all Yacht Chartering reservation of Yacht by type no paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.ShowDashboardReservationInfo(System.Int32)">
+            <summary>
+            Show infomation in dashboard about Reservation Info in date in Yacht
+            </summary>
+            <param name="yachtId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.ShowDashboardRequestProcessReservations(System.Int32)">
+            <summary>
+            Show infomation in dashboard about Request process reservation in Yacht
+            </summary>
+            <param name="yachtId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtCharteringsController.ShowDashboardRecentPaymentReservations(System.Int32)">
+            <summary>
+            Show infomation in dashboard about recent payment reservation in Yacht
+            </summary>
+            <param name="yachtId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtController.GetBasicProfile(System.Int32)">
+            <summary>
+            Get Yacht basic profile with Yacht Id
+            </summary>
+            <param name="yachtId">yachtId</param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtFileStreamController.SearchYachtFileStream(YachtMerchant.Core.Models.YachtFileStreams.YachtFileStreamSearchModel)">
+            <summary>
+            API Search yacht file stream
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtFileStreamController.GetYachtFileStreamById(System.Int32)">
+            <summary>
+            API Get yacht file stream by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtFileStreamController.CreateYachtFileStream(YachtMerchant.Core.Models.YachtFileStreams.YachtFileStreamCreateModel)">
+            <summary>
+            API Create new yacht filestreams
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtFileStreamController.UpdateYachtFileStream(YachtMerchant.Core.Models.YachtFileStreams.YachtFileStreamUpdateModel)">
+            <summary>
+            API Update yacht filestreams
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtFileStreamController.DeleteYachtFileStream(System.Int32)">
+            <summary>
+            API Delete yacht filestreams
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtMerchantCharterFeeOptionsController.GetAllYachtMerchantCharterFeeOptionsByMerchantId(System.Int32)">
+            <summary>
+            Get all charter fee options of merchant by MerchantId
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtMerchantUsersController.GetInfomationOfMerchantUserById(System.Int32)">
+            <summary>
+            Get infomation of user for merchant control by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtMerchantUsersController.GetAllUserOfMerchantByMerchantId(System.Int32)">
+            <summary>
+            Get all user of merchant control by MerchantId
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtMerchantUsersController.GetDropdowwnListUserOfMerchantByMerchantId(System.Int32)">
+            <summary>
+            Get Dropdownlist user of merchant control by MerchantId
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtMerchantUsersController.GetAllUserOfMerchantByRole(YachtMerchant.Core.Models.YachtMerchantUsers.YachtMerchantUsersRequestGetAllUserWithRolesOfMerchantModel)">
+            <summary>
+            Get all user of Merchant control by Role
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtMerchantUsersController.CreateYachtMerchantUserAsync(YachtMerchant.Core.Models.YachtMerchantUsers.YachtMerchantUsersCreateModel)">
+            <summary>
+            Create new user of control by Merchant
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtMerchantUsersController.UpdateYachtMerchantUserAsync(YachtMerchant.Core.Models.YachtMerchantUsers.YachtMerchantUsersUpdateModel)">
+            <summary>
+            Update infomation of user control by Merchant
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtMerchantUsersController.DeleteYachtMerchantUsersAsync(System.Int32)">
+            <summary>
+            Delete user control by Merchant
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtNonBusinessDayController.CreateAsync(YachtMerchant.Core.Models.YachtNonBusinessDay.YachtNonBusinessDayCreateModel)">
+            <summary>
+            Create Non Bussiness Day 
+            </summary>
+            <param name="model">YachtNonBusinessDayCreateModel object to create</param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtNonBusinessDayController.CreateRangeAsync(YachtMerchant.Core.Models.YachtNonBusinessDay.YachtNonBusinessDayCreateRangeModel)">
+            <summary>
+            Create range of Non Business Day 
+            </summary>
+            <param name="createModel">YachtNonBusinessDayCreateRangeModel object to create</param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtNonBusinessDayController.GetNonBusinessDaysByYachtID(System.Int32)">
+            <summary>
+            Get Yacht non business day information by Yacht Id
+            </summary>
+            <param name="id">Yacht id in int format</param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtNonBusinessDayController.DeleteNonBusinessDayByIdAsync(System.Int32)">
+            <summary>
+            Delete Yacht non business day information by id
+            </summary>
+            <param name="id">Non business day id in int format</param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourCharterPaymentLogsController.GetYachtCharteringPaymentLogs(System.Int64)">
+            <summary>
+            Get log payment of charter
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourCharterProcessingFeesController.GetYachtTourCharterProcessingFees(System.Int64)">
+            <summary>
+            Get infomation of Procesing Fee for Charter
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourCharterProcessingFeesController.CreateYachtTourCharterProcessingFeesAsync(YachtMerchant.Core.Models.YachtTourCharterProcessingFees.YachtTourCharterProcessingFeesCreateModel)">
+            <summary>
+            Create new Procesing Fee of Charter 
+            </summary>
+            <param name="requestModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourCharterProcessingFeesController.CreateYachtTourCharterProcessingFeesAndChangeStatusReservationAsync(YachtMerchant.Core.Models.YachtTourCharterProcessingFees.YachtTourCharterProcessingFeeWithChangeStatusReservationCreateModel)">
+            <summary>
+            Create new Procesing Fee of Charter and Change Status Reservation
+            </summary>
+            <param name="requestModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourCharterProcessingFeesController.UpdateYachtTourCharterProcessingFeesAsync(YachtMerchant.Core.Models.YachtTourCharterProcessingFees.YachtTourCharterProcessingFeesUpdateModel)">
+            <summary>
+            Update Processing Fee of  Chartering 
+            </summary>
+            <param name="requestModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourCharterSchedulesController.CheckExistUserSetInSchedules(YachtMerchant.Core.Models.YachtTourCharterSchedules.CheckDuplicateUserSchedulesModel)">
+            <summary>
+            Check exist user set in schedules for reservation
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourCharterSchedulesController.CheckExistRoleSetInSchedules(YachtMerchant.Core.Models.YachtTourCharterSchedules.CheckDuplicateRoleSchedulesModel)">
+            <summary>
+            Check exist role set in schedules for reservation
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourCharterSchedulesController.CheckExistUserRoleInSchedules(YachtMerchant.Core.Models.YachtTourCharterSchedules.CheckDuplicateSchedulesModel)">
+            <summary>
+            Check exist schedule set user and role for reservation
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourCharterSchedulesController.GetYachtTourCharterSchedulesById(System.Int64)">
+            <summary>
+            Get detail of schedule by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourCharterSchedulesController.GetYachtTourCharterSchedulesByCharterId(System.Int64)">
+            <summary>
+            Get list schedules has set for c9harter By CharterId
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourCharterSchedulesController.GetAllScheduleSetOnCharterSchedulesByCharterId(System.Int64)">
+            <summary>
+            Get all schedule has set for chartering By CharteringId
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourCharterSchedulesController.CreateYachtTourCharterSchedulesAsync(YachtMerchant.Core.Models.YachtTourCharterSchedules.YachtTourCharterSchedulesCreateModel)">
+            <summary>
+            Create new schedules for Chater
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourCharterSchedulesController.UpdateYachtTourCharterSchedulesAsync(YachtMerchant.Core.Models.YachtTourCharterSchedules.YachtTourCharterSchedulesUpdateModel)">
+            <summary>
+            Update schedules for Charter
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourCharterSchedulesController.YachtTourCharterSchedulesAsync(System.Int64)">
+            <summary>
+            Delete schedules set for Charter by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.GetTotalReservationOfMerchantByMerchantId(YachtMerchant.Core.Models.YachtTourCharters.GetTotalReservationOfMerchantModel)">
+            <summary>
+            Get caculate total reservation of Merchant By MerchantId 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.GetTotalAmountReservationOfMerchantByMerchantId(YachtMerchant.Core.Models.YachtTourCharters.GetTotalAmountReservationOfMerchantWithItemTypeModel)">
+            <summary>
+            Get  total amount reseravation for Merchant with  ReservationItemType
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.GetInfomationYachtTourCharterById(System.Int64)">
+            <summary>
+            Get infomation of Yacht Tour Charter by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.CreateTourCharterFromOriginSourceAsync(YachtMerchant.Core.Models.YachtTourCharters.YachtTourCharterCreateModel)">
+            <summary>
+            Create new Yacht Tour Charter from Origin source AQBooking
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.CreateYachtTourCharterFromOtherSourceAsync(YachtMerchant.Core.Models.YachtTourCharters.CreateTourCharterFromOtherSourceModel)">
+            <summary>
+            Create new Yacht Tour Charter from Other source (outsite aqbooking)
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.UpdateStatusAsync(YachtMerchant.Core.Models.YachtTourCharters.YachtTourCharterConfirmStatusModel)">
+            <summary>
+            Change status of Yacht Tour Charter reservation
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.DeleteAsync(System.Int32)">
+            <summary>
+            Delete Yacht Tour Charter reservation by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.SearchAllCharterPaging(YachtMerchant.Core.Models.YachtTourCharters.YachtTourCharterSearchPagingModel)">
+            <summary>
+            Search all Yacht Tour Charter reservation by type with paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.SearchAllYachtTourCharterReservationsForMerchant(YachtMerchant.Core.Models.YachtTourCharters.YachtTourCharterOfMerchantSearchPagingModel)">
+            <summary>
+            Search all Yacht Tour Charter reservation of Merchant by type with paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.SearchAllYachtTourChasrterReservationsForTour(YachtMerchant.Core.Models.YachtTourCharters.YachtTourCharterOfTourSearchPagingModel)">
+            <summary>
+            Search all Yacht Tour Charter reservation of Tour by type with paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.GetYachtTourCharterReservationDetail(System.Int64)">
+            <summary>
+            Get detail Yacht Tour Charter reservation No Paging
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.GetYachtTourCharterReservationDetaiPaging(YachtMerchant.Core.Models.YachtTourCharters.YachtTourCharterDetailSearchPagingModel)">
+            <summary>
+            Get detail Yacht Tour Charter reservation with paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.GetAllYachtTourCharterReservationByTypeNoPaging(YachtMerchant.Core.Models.YachtTourCharters.YachtTourCharterSearchModel)">
+            <summary>
+            Get all Yacht Tour Charter reservation by type no paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.GetAllYachtTourCharterReservationOfMerchantByTypeNoPaging(YachtMerchant.Core.Models.YachtTourCharters.YachtTourCharterOfMerchantSearchModel)">
+            <summary>
+            Get all Yacht Tour Charter reservation of [Merchant] by type no paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.GetAllYachtTourCharterReservationOfTourByTypeNoPaging(YachtMerchant.Core.Models.YachtTourCharters.YachtTourCharterOfTourSearchModel)">
+            <summary>
+            Get all Yacht Tour Charter reservation of [Tour] by type no paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.ShowDashboardReservationInfo(System.Int32)">
+            <summary>
+            Show infomation in dashboard about Reservation Info in date in Yacht
+            </summary>
+            <param name="yachtId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.ShowDashboardRequestProcessReservations(System.Int32)">
+            <summary>
+            Show infomation in dashboard about Request process reservation in Yacht
+            </summary>
+            <param name="yachtId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.YachtTourChartersController.ShowDashboardRecentPaymentReservations(System.Int32)">
+            <summary>
+            Show infomation in dashboard about recent payment reservation in Yacht
+            </summary>
+            <param name="yachtId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

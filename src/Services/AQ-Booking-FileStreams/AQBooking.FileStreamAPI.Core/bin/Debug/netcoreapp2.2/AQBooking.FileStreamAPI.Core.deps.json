@@ -1,0 +1,118 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "AQBooking.FileStreamAPI.Core/1.0.0": {
+        "dependencies": {
+          "APIHelpers": "1.1.4",
+          "AutoMapper": "8.0.0",
+          "Autofac.Extensions.DependencyInjection": "4.4.0",
+          "System.IO.FileSystem.AccessControl": "4.5.0"
+        },
+        "runtime": {
+          "AQBooking.FileStreamAPI.Core.dll": {}
+        }
+      },
+      "APIHelpers/1.1.4": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "runtime": {
+          "lib/netcoreapp2.2/APIHelpers.dll": {
+            "assemblyVersion": "1.1.4.0",
+            "fileVersion": "1.1.4.0"
+          }
+        }
+      },
+      "Autofac/4.9.1": {
+        "runtime": {
+          "lib/netstandard2.0/Autofac.dll": {
+            "assemblyVersion": "4.9.1.0",
+            "fileVersion": "4.9.1.0"
+          }
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/4.4.0": {
+        "dependencies": {
+          "Autofac": "4.9.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "4.4.0.0",
+            "fileVersion": "4.4.0.0"
+          }
+        }
+      },
+      "AutoMapper/8.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.2.23222"
+          }
+        }
+      },
+      "System.IO.FileSystem.AccessControl/4.5.0": {}
+    }
+  },
+  "libraries": {
+    "AQBooking.FileStreamAPI.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "APIHelpers/1.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lH8BQwNZWgva61eCQWBvtXI6Q8UFjyGw9TmYCBp6XU8yQkD+gybEE1pQMmGzstX5hcYh0gmN6p1mJVbohTiU1Q==",
+      "path": "apihelpers/1.1.4",
+      "hashPath": "apihelpers.1.1.4.nupkg.sha512"
+    },
+    "Autofac/4.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L92DMQxpy4Xw3IypXxL8Z4NHt+qIkB1e0NB2OJ9u105Xp5sVsZSJ04YtYyubmM3KG8aC+WpyBhN14XcjPx5gLg==",
+      "path": "autofac/4.9.1",
+      "hashPath": "autofac.4.9.1.nupkg.sha512"
+    },
+    "Autofac.Extensions.DependencyInjection/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tkNVcEVTG+asY338sZQNbWQIoCrb13I6qOxBrVX7aStu7SGskDDyGT0TrqiJdfEB48GbCd04ZcNz86TdD4cIHg==",
+      "path": "autofac.extensions.dependencyinjection/4.4.0",
+      "hashPath": "autofac.extensions.dependencyinjection.4.4.0.nupkg.sha512"
+    },
+    "AutoMapper/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-px8ZMtIq84dxciB29V+ZYOtsRLZP4JlflDDMW13LyeRdwsnIInzlcSHSxpWmVD6U3bbOl2FeLlgomnVtm0jvXw==",
+      "path": "automapper/8.0.0",
+      "hashPath": "automapper.8.0.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "path": "newtonsoft.json/12.0.2",
+      "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
+    },
+    "System.IO.FileSystem.AccessControl/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TYe6xstoqT5MlTly0OtPU6u9zWuNScLVMEx6sTCjjx+Hqdp0wCXoG6fnzMpTPMQACXQzi9pd2N5Tloow+5jQdQ==",
+      "path": "system.io.filesystem.accesscontrol/4.5.0",
+      "hashPath": "system.io.filesystem.accesscontrol.4.5.0.nupkg.sha512"
+    }
+  }
+}

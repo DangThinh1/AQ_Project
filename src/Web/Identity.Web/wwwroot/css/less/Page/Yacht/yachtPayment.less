@@ -1,0 +1,579 @@
+﻿@import "../../variables";
+
+.aq-info-payment {
+    padding: 2rem 0;
+    background-color: @aq-light-grey;
+
+    .info-item {
+        padding: 0 3vw;
+        display: inline-grid;
+
+        span {
+            color: @grey;
+            text-transform: uppercase;
+            font-size: small;
+            display: block;
+            margin-bottom: .25rem;
+        }
+
+        b {
+            font-size: 1.5rem;
+            display: block;
+            font-family: @font-bold;
+        }
+
+        .start {
+            min-height: 2.25rem;
+            display: flex;
+            align-items: center;
+        }
+
+        i {
+            margin: 0 .125rem;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+.package-includes {
+    .title-component {
+        margin: 1.5rem 0;
+        text-align: left;
+    }
+
+    .title-includes {
+        font-size: 1.5rem;
+        font-family: @font-semibold;
+        margin: .75rem 0;
+    }
+
+    .form-control {
+        border: none;
+        background-color: @aq-light-gray;
+        height: auto !important;
+        padding: 0.75rem 0.75rem;
+    }
+
+    .package-add-more {
+        padding: 1.5vw 0;
+    }
+
+    .add-more-item {
+        .title-more {
+            border-bottom: 2px groove @grey;
+            margin-bottom: 1rem;
+            padding: .5rem 0;
+            font-family: @font-semibold;
+        }
+    }
+
+    .btn {
+        padding: 0.775rem 1.5rem;
+    }
+}
+
+.payment-card {
+    border: 1px solid @light-gray;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+
+    .title-price {
+        background-color: @aq-blue;
+        padding: 1.25rem;
+        font-family: @font-semibold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            font-size: 1.5rem;
+            color: @white;
+        }
+
+        b {
+            font-size: 1.675rem;
+            color: @aq-orange;
+        }
+    }
+
+    .body-price {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .list-card {
+        border-bottom: 1px solid @light-gray;
+        padding-bottom: .75rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            font-family: @font-semibold;
+
+            strong {
+                font-family: @font-bold;
+                color: @grey;
+                margin-left: 1rem;
+            }
+        }
+
+        b {
+            font-family: @font-bold;
+        }
+    }
+
+    .change-payment-info {
+        padding-top: 1rem;
+        font-family: @font-semibold;
+
+        .title-change {
+            color: @aq-light-blue;
+        }
+
+        .input-group-text {
+            border: none;
+            background-color: @aq-light-gray;
+            color: @aq-light-blue;
+        }
+
+        .btn {
+            width: 100%;
+            display: block;
+            margin-bottom: 1rem;
+            padding: 0.775rem 0.75rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .confirm-booking {
+        .confirm-booking__alert {
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            border-radius: 4px;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            
+            h3 {
+                font-size: 1.1rem;
+                color: #721c24;
+            }
+            p {
+                font-size: 14px;
+                a {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
+
+.aq-form--dishpay {
+    text-align: left;
+
+    h3 {
+        margin-bottom: 30px;
+        font-family: 'SegoeuiBold';
+        font-size: 32px;
+    }
+
+    .form-group {
+        text-align: left;
+
+        > label {
+            font-size: 16px;
+
+            &.alert {
+                font-size: 14px;
+                padding: 0;
+                margin: 0;
+                background-color: transparent;
+                box-shadow: none;
+                border: none;
+                font-weight: 400;
+                font-style: italic;
+                color: #e53935;
+            }
+        }
+
+        input {
+            height: 60px;
+        }
+    }
+
+    .submit {
+        display: flex;
+        justify-content: flex-end;
+
+        .btn {
+            color: #fff;
+            text-align: center;
+            font-size: 1.25rem;
+            background-color: #00a1e9;
+            border-radius: 5px;
+            min-width: 150px;
+            height: 3rem;
+            padding: .5rem 1.5rem;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.27);
+            margin-top: 1rem;
+        }
+        .btn-cancel {
+            background-color: #be0707;
+            margin-right: 10px;
+        }
+        .btn-proceed {
+            background-color: #009400;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .form-group {
+            > label:not(.alert) {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.aq-dish {
+    .table {
+        margin-bottom: 50px;
+
+        thead {
+            tr {
+                th {
+                    font-size: 18px;
+                    border-color: #cecdcd;
+                    border-bottom: none;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    font-size: 20px;
+                    border-color: #cecdcd;
+                }
+            }
+        }
+    }
+
+    .aq-table--payment-package {
+        thead {
+            tr {
+                th {
+                    text-align: center;
+                    font-weight: 400;
+
+                    &:first-child {
+                        text-align: left;
+                    }
+
+                    &:last-child {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    text-align: center;
+                    padding: 20px;
+                    font-family: 'SegoeuiBold';
+
+                    &:first-child {
+                        text-align: left
+                    }
+
+                    &:last-child {
+                        text-align: right;
+                        color: #fea014;
+                    }
+                }
+            }
+        }
+    }
+
+    .aq-table--payment-summary {
+        thead {
+            tr {
+                th {
+                    padding: 20px;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    vertical-align: middle;
+                    padding: 20px;
+                    font-family: 'SegoeuiBold';
+                }
+
+                &.prepaid {
+
+                    td {
+                        &:last-child {
+                            font-size: 32px;
+                            color: #fea014;
+                            text-align: center;
+                        }
+
+                        &:first-child {
+                            text-align: right;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        .table {
+            thead {
+                tr {
+                    th {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.aq-pay-success {
+    padding: 4rem 0;
+
+    .title-component {
+        font-family: 'SegoeuiBold';
+        text-transform: capitalize;
+        text-align: center;
+        color: #00a1e9;
+        font-size: 36px;
+        margin-bottom: 25px;
+        .start {
+            font-size: 16px;
+        }
+    }
+
+    .noti-pay-success {
+        font-size: 28px;
+    }
+
+    .stt-order {
+        font-size: 20px;
+        color: @aq-green;
+    }
+
+    .pay-success-time {
+        margin-bottom: 25px;
+    }
+
+    .pay-success-info {
+        
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        
+
+        .input-group {
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .label {
+            display: inline-block;
+            padding-right: 5px;
+            min-width: 70px;
+            font-weight: bold;
+        }
+
+        .content {
+            font-size: 18px;
+        }
+    }
+
+    .title-info {
+        font-size: 24px;
+        padding-bottom: 5px;
+        font-family: @font-semibold;
+        border-bottom: 1px solid #dfdddd;
+        padding: 10px;
+    }
+
+    .content-info {
+        padding: 10px;
+    }
+
+    .list-booking {
+        padding: 0;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+        border-left: 1px solid #dfdddd;
+
+        .main-info {
+            padding: 0;
+        }
+
+        .content-booking {
+            border: 0;
+        }
+
+        .item-booking {
+            padding: 10px;
+
+            &::before {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        .checks {
+            .item {
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .info-pay {
+            right: 0;
+
+            .prepaid-title {
+                font-size: 28px;
+            }
+    
+            .pedding-title {
+                font-size: 24px;
+            }
+
+            > span {
+                padding-bottom: 15px;
+            }
+        }
+
+        .checked {
+            color: @aq-green;
+        }
+
+       
+    }
+
+    .pay-success-detail {
+        display: flex;
+        border: 1px solid #dfdddd;
+        border-radius: 5px;
+
+    }
+
+    @media screen and (max-width: 1199px) {
+        .list-booking {
+            .main-info {
+                .type-room {
+                    width: auto;
+                    padding-left: 15px;
+                }
+            }
+
+            .more-info {
+                padding-top: 15px;
+                padding-left: 0;
+                // display: flex;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .list-booking {
+            .checks {
+                margin-bottom: 2rem;
+            }
+
+            .info-pay {
+                max-width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .pay-success-info {
+            flex: 0 0 50%;
+            max-width: 100%;
+        }
+
+        .list-booking {
+            flex: 0 0 50%;
+            max-width: 100%;
+
+            .more-info {
+                padding-bottom: 0;
+            }
+
+            .main-info {
+                .type-room {
+                    width: 100%;
+                    padding-left: 0;
+                }
+            }
+
+            .info-pay>span {
+                padding-bottom: 20px;
+            }
+
+
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .pay-success-detail {
+            flex-wrap: wrap;
+        }
+
+        .pay-success-info {
+            flex: 0 0 100%;
+            padding-bottom: 15px;
+        }
+
+        .list-booking{
+            flex: 0 0 100%;
+            border: 0;
+
+            .title-info {
+                border-left: 0;
+                border-top: 1px solid #dfdddd;
+            }
+        }
+    }
+}

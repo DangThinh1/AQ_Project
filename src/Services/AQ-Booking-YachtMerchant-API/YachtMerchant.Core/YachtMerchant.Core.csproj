@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Authors>AQ Teams</Authors>
+    <Company>AQ Booking</Company>
+    <Product>AQ Booking</Product>
+    <Copyright>AQ Booking Ltd</Copyright>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Description>Yacht core release for use in Yacht Merchant Portal</Description>
+    <Version>1.8.6</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Helpers\Logger\**" />
+    <Compile Remove="Models\City\**" />
+    <Compile Remove="Models\CommonLanguagues\**" />
+    <Compile Remove="Models\CommonResources\**" />
+    <Compile Remove="Models\CommonValues\**" />
+    <Compile Remove="Models\Currency\**" />
+    <Compile Remove="Models\YachtTourAttribute\**" />
+    <EmbeddedResource Remove="Helpers\Logger\**" />
+    <EmbeddedResource Remove="Models\City\**" />
+    <EmbeddedResource Remove="Models\CommonLanguagues\**" />
+    <EmbeddedResource Remove="Models\CommonResources\**" />
+    <EmbeddedResource Remove="Models\CommonValues\**" />
+    <EmbeddedResource Remove="Models\Currency\**" />
+    <EmbeddedResource Remove="Models\YachtTourAttribute\**" />
+    <None Remove="Helpers\Logger\**" />
+    <None Remove="Models\City\**" />
+    <None Remove="Models\CommonLanguagues\**" />
+    <None Remove="Models\CommonResources\**" />
+    <None Remove="Models\CommonValues\**" />
+    <None Remove="Models\Currency\**" />
+    <None Remove="Models\YachtTourAttribute\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\YachtTours\YachtTourAttributeTourCreateModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AQBooking.Core" Version="1.0.27" />
+    <PackageReference Include="AQConfigurations.Core" Version="1.1.46" />
+    <PackageReference Include="AQIdentity.Core" Version="1.1.5" />
+    <PackageReference Include="ExtendedUtility" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Razor">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.razor\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.entityframeworkcore\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>  
+  <Target Name="PostBuildDev" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
+    <Exec Command="$(ProjectDir)CMD\nuget.exe push $(ProjectDir)bin\$(Configuration)\$(PackageId).$(PackageVersion).nupkg eefbdffc-4939-41d3-a53d-a5a9cafa705e -Source http://103.97.125.19/AQNuget/nuget" />
+  </Target>  
+  <!--<Target Name="PostBuildRelease" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
+    <Exec Command="$(ProjectDir)CMD\nuget.exe push $(ProjectDir)bin\$(Configuration)\*.nupkg eefbdffc-4939-41d3-a53d-a5a9cafa705e -Source http://103.97.125.19/AQNuget/nuget" />
+  </Target>-->
+</Project>

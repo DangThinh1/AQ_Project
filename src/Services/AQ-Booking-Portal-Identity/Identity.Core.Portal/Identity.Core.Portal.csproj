@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Description>Use for handel SSO</Description>
+    <Version>1.0.30</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AQEncrypts" Version="1.0.0" />
+    <PackageReference Include="AQIdentity.Core" Version="1.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.0.601" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AQEncrypts">
+      <HintPath>..\..\..\..\..\DLL\AQEncrypts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.Cookies">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.authentication.cookies\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Identity">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.identity\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Identity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Target Name="PostBuildDev" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
+    <Exec Command="$(ProjectDir)CMD\nuget.exe push $(ProjectDir)bin\$(Configuration)\$(PackageId).$(PackageVersion).nupkg eefbdffc-4939-41d3-a53d-a5a9cafa705e -Source http://103.97.125.19/AQNuget/nuget" />
+  </Target>  
+  <!--<Target Name="PostBuildRelease" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
+    <Exec Command="$(ProjectDir)CMD\nuget.exe push $(ProjectDir)bin\$(Configuration)\*.nupkg eefbdffc-4939-41d3-a53d-a5a9cafa705e -Source http://103.97.125.19/AQNuget/nuget" />
+  </Target>-->
+</Project>

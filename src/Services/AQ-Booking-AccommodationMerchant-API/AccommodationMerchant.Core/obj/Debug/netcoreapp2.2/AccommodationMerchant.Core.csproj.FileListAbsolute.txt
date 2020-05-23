@@ -1,0 +1,9 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-AccommodationMerchant-API\AccommodationMerchant.Core\bin\Debug\netcoreapp2.2\AccommodationMerchant.Core.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-AccommodationMerchant-API\AccommodationMerchant.Core\bin\Debug\netcoreapp2.2\AccommodationMerchant.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-AccommodationMerchant-API\AccommodationMerchant.Core\bin\Debug\netcoreapp2.2\AccommodationMerchant.Core.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-AccommodationMerchant-API\AccommodationMerchant.Core\obj\Debug\netcoreapp2.2\AccommodationMerchant.Core.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-AccommodationMerchant-API\AccommodationMerchant.Core\obj\Debug\netcoreapp2.2\AccommodationMerchant.Core.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-AccommodationMerchant-API\AccommodationMerchant.Core\obj\Debug\netcoreapp2.2\AccommodationMerchant.Core.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-AccommodationMerchant-API\AccommodationMerchant.Core\obj\Debug\netcoreapp2.2\AccommodationMerchant.Core.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-AccommodationMerchant-API\AccommodationMerchant.Core\obj\Debug\netcoreapp2.2\AccommodationMerchant.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-AccommodationMerchant-API\AccommodationMerchant.Core\obj\Debug\netcoreapp2.2\AccommodationMerchant.Core.pdb

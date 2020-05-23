@@ -1,0 +1,76 @@
+﻿
+
+@using AQBooking.Admin.Core.Models.PostCategories;
+@model List<PostCategoriesViewModel>
+
+@{
+    int i = 0;
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">@ViewBag.recordTotal record(s)</h3>
+        <div class="float-right">
+            <button class="btn btn-info" id="btnCreateNew">Create new</button>
+        </div>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width: 10px">#</th>
+                    <th>Name</th>
+                    <th>Languages</th>
+                    <th>Active</th>
+                    <th style="width: 100px">
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    i++;
+                    <tr>
+                        <td>@i</td>
+                        <td>@item.DefaultName</td>
+                        <td>
+                            @if (item.CustomProperties["Languages"] != null)
+                            {
+                                @foreach (var language in (item.CustomProperties["Languages"] as IEnumerable<SelectListItem>))
+                                {
+                                    <button title="Click to edit language @language.Text" class="btn btn-success btn-sm btn-edit-category" data-langFId="@language.Value" data-id="@item.Id">
+                                        @language.Text
+                                        @*@if (language.Selected)
+                                            {
+                                                <i class="fa fa-check-circle"></i>
+                                            }*@
+                                    </button>
+                                }
+                            }
+                        </td>
+                        <td>
+                            <span class='@(item.IsActivated != false ? "badge bg-blue" : "badge bg-danger")'>@item.IsActivated</span>
+                        </td>
+                        <td>
+                            <button type="button" data-id="@item.Id" data-langFId="1" class="btn btn-default btn-sm btn-edit-category"><i class="fas fa-pen"></i></button>
+                            <button type="button" data-id="@item.Id" class="btn btn-danger btn-sm btn-delete-category"><i class="fas fa-times"></i></button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <!-- /.card-body -->
+    @*<div class="card-footer clearfix">
+            <ul class="pagination pagination-sm m-0 float-right">
+                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+            </ul>
+        </div>*@
+</div>
+<!-- /.card -->
+@*<input type="hidden" id="hdTotalPage" value="@Model.TotalPages" />*@

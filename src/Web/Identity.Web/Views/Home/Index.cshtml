@@ -1,0 +1,17 @@
+﻿@using Identity.Core.Helpers
+@{
+    ViewData["Title"] = "Home Page";
+}
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="text-center">
+        <h1 class="display-4">Welcome: @ViewBag.UserName</h1>
+    </div>
+}
+else
+{
+    <div class="text-center">
+        <h1 class="display-4">Unauthorized</h1>
+    </div>
+}
+

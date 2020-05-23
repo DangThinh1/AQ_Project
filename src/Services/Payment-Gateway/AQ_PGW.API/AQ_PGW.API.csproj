@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\ValuesController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.IIS" Version="2.2.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="PayPal" Version="2.0.0-rc2" />
+    <PackageReference Include="Stripe.net" Version="25.3.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AQ_PGW.Common\AQ_PGW.Common.csproj" />
+    <ProjectReference Include="..\AQ_PGW.Core\AQ_PGW.Core.csproj" />
+    <ProjectReference Include="..\AQ_PGW.Infrastructure\AQ_PGW.Infrastructure.csproj" />
+    <ProjectReference Include="..\AQ_PGW.Paypal\PayPalCore\PayPalCore.csproj" />
+    <ProjectReference Include="..\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\PaypalExpressCheckout.BusinessLogic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
+
+</Project>

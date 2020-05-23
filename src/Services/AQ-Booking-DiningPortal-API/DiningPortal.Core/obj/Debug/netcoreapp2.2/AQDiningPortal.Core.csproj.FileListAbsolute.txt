@@ -1,0 +1,9 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Core\bin\Debug\netcoreapp2.2\AQDiningPortal.Core.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Core\bin\Debug\netcoreapp2.2\AQDiningPortal.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Core\bin\Debug\netcoreapp2.2\AQDiningPortal.Core.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Core\obj\Debug\netcoreapp2.2\AQDiningPortal.Core.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Core\obj\Debug\netcoreapp2.2\AQDiningPortal.Core.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Core\obj\Debug\netcoreapp2.2\AQDiningPortal.Core.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Core\obj\Debug\netcoreapp2.2\AQDiningPortal.Core.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Core\obj\Debug\netcoreapp2.2\AQDiningPortal.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Core\obj\Debug\netcoreapp2.2\AQDiningPortal.Core.pdb

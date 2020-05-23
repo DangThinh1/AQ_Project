@@ -1,0 +1,118 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    padding: 15px;
+}
+
+#top-header {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    background: #ccc;
+}
+
+    #top-header .hearder-left .input-form {
+        display: flex;
+    }
+
+/*.input-form label {
+    font-size: 1.2rem;
+}*/
+
+.input-form button {
+    padding: 0.5rem 2rem;
+    margin: 2px;
+}
+
+.input-form input {
+    padding: 0.5rem 2rem;
+    margin: 2px;
+}
+
+.header-right ul {
+    display: flex;
+    list-style: none;
+    margin-top: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+#top-header ul li {
+    padding: 0.5rem 1.75rem;
+    margin: 0 0.25rem;
+    /*font-size: 1.2rem;*/
+}
+
+    #top-header ul li {
+        color: #fff;
+        background: #333;
+        cursor: pointer;
+    }
+
+.time-zone {
+    /*font-size: 1.2rem;*/
+    padding: 0.5rem 0;
+    margin-bottom: -30px;
+}
+
+.main-header {
+    display: flex;
+}
+
+.main-header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.main-header ul li {
+     display: inline;
+     padding: 0.5rem 2rem;
+     margin: 0 1px;
+     background: #ccc;
+     text-align: center;
+     cursor: pointer;
+}
+
+.main-header ul li {
+    color: #fff;
+    background: #e2e1db;
+    cursor: pointer;
+}
+
+
+.main ul {
+    display: flex;
+    list-style: none;
+    margin-top: 5px;
+    align-items: center;
+    text-align: center;
+}
+.main ul li {
+    display: inline;
+    padding: 10px;
+    margin: 0 1px;
+    background: #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+.body-table {
+    position: relative;
+    top: -3rem;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f3f3f3
+}
+
+    .body-table a {
+        /*font-size: 1.2rem;*/
+        color: blue;
+    }

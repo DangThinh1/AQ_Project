@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Description>AQ Identity Core Share Library use in Admin portal</Description>
+    <PackageId>AQIdentity.Core</PackageId>
+    <Version>1.1.6.1</Version>
+    <Authors>AQ Teams</Authors>
+    <Company>AQ Booking</Company>
+    <Product>AQIdentity.Core</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Enums\AccountRoleEnum.cs" />
+    <Compile Remove="Enums\AuthProviderEnum.cs" />
+    <Compile Remove="Enums\DomainTypeEnum.cs" />
+    <Compile Remove="Enums\EmailValidationEnum.cs" />
+    <Compile Remove="Enums\UserRoleEnum.cs" />
+    <Compile Remove="Models\AccessTokenModel.cs" />
+    <Compile Remove="Models\AuthModel.cs" />
+    <Compile Remove="Models\AuthResponseModel.cs" />
+    <Compile Remove="Models\ChangePasswordModel.cs" />
+    <Compile Remove="Models\ResponeModel.cs" />
+    <Compile Remove="Models\UserCardInfoViewModel.cs" />
+    <Compile Remove="Models\UserCardUpdateModel.cs" />
+    <Compile Remove="Models\UserLocationUpdateModel.cs" />
+    <Compile Remove="Models\UserLocationViewModel.cs" />
+    <Compile Remove="Models\UserProfileUpdateModel.cs" />
+    <Compile Remove="Models\UserSearchModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="APIHelpers" Version="1.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Extensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Authentication.Cookies">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.authentication.cookies\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.DataProtection.Extensions">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.dataprotection.extensions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.DataProtection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.identitymodel.tokens\5.3.0\lib\netstandard2.0\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Target Name="PostBuildDev" AfterTargets="Pack" Condition="'$(Configuration)' == 'Debug'">
+    <Exec Command="$(ProjectDir)CMD\nuget.exe push $(ProjectDir)bin\$(Configuration)\$(PackageId).$(PackageVersion).nupkg eefbdffc-4939-41d3-a53d-a5a9cafa705e -Source http://103.97.125.19/AQNuget/nuget" />
+  </Target>
+</Project>

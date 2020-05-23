@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <title>@ViewData["Title"] | AQBooking.com</title>
+
+    <!-- Favicons -->
+    <link href="@Url.Content("~/favicon.ico")" rel="icon" />
+
+    <!-- Fonts -->
+    <link href="~/lib/font-awesome/font-awesome.min.css" rel="stylesheet" />
+    <!-- <link href="~/lib/font-aes/aes-font.css" rel="stylesheet" /> -->
+    <!-- Libraries CSS -->
+    <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/animate/animate.css" rel="stylesheet" />
+    <link href="~/lib/clockpicker/bootstrap-clockpicker.css" rel="stylesheet" />
+    <link href="~/lib/select2/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="~/lib/daterangepicker/daterangepicker.min.css" />
+
+    <!-- Vendor CSS -->
+    <!-- <link href="~/vendor/Owlcarousel/owl.carousel.min.css" rel="stylesheet" /> -->
+    <link href="~/vendor/FlagStrap/flags.css" rel="stylesheet" />
+    <link href="~/vendor/intl-tel-input/intlTelInput.css" rel="stylesheet" />
+    <link href="~/vendor/IonRangeSlider/ion.rangeSlider.css" rel="stylesheet" />
+    <link href="~/vendor/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <link href="~/vendor/slick/slick.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    @RenderSection("styles", false)
+    <link href="~/css/style.css" rel="stylesheet" />
+
+    <script src="~/lib/jquery/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+    <div class="loading-page">
+        <div class="loading">
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+    <div class="aq-body">
+        @RenderBody()
+        <a href="#" class="scrollToTop"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+    </div>
+    @*<div class="aq-footer" style="background: url(@Url.Content("~/Images/bg-footer.jpg")) no-repeat center">
+            <partial name="_Footer.cshtml" />
+            <div class="copright">
+                Copyright &copy; 2019 AQbooking<sup>TM</sup>. All rights reserved
+            </div>
+        </div>*@
+
+    @RenderSection("modal", false)
+
+    <!-- Jquery -->
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/jquery/popper.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+
+    <!-- Libraries JS -->
+    <script src="~/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="~/lib/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="~/lib/sumoselect/jquery.sumoselect.min.js"></script>
+    <script src="~/lib/select2/select2.min.js"></script>
+    <script src="~/lib/select-custom-style/custom-select-style.min.js"></script>
+
+    <script src="~/lib/clockpicker/bootstrap-clockpicker.js"></script>
+    <script src="~/lib/sweetalert/sweetalert.min.js"></script>
+    <!-- <script src="~/lib/notify/bootstrap-notify.min.js"></script> -->
+
+    <script type="text/javascript" src="~/lib/moment/moment.min.js"></script>
+    <script type="text/javascript" src="~/lib/daterangepicker/daterangepicker.min.js"></script>
+
+    <!-- Vendor JS -->
+    <!-- <script src="~/vendor/Owlcarousel/owl.carousel.js"></script> -->
+    <script src="~/vendor/FlagStrap/jquery.flagstrap.js"></script>
+    <script src="~/vendor/intl-tel-input/intlTelInput.js"></script>
+    <script src="~/vendor/IonRangeSlider/ion.rangeSlider.js"></script>
+    <script src="~/vendor/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/vendor/slick/slick.min.js"></script>
+
+    <script src="~/lib/input-spinner/bootstrap-number-input.js"></script>
+    <script src="~/lib/input-spinner/bootstrap-input-spinner.js"></script>
+    <!-- Main JS -->
+    <script src="~/js/public.comon.js"></script>
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".datepicker").datepicker({
+                format: 'dd M yyyy'
+            });
+
+            $('input[name="daterange"]').daterangepicker({
+                autoUpdateInput: false,
+                autoApply: true,
+                // startDate: moment().startOf('hour'),
+                // endDate: moment().startOf('hour').add(32, 'hour'),
+            }, function (start, end, label) {
+                console.log((end - start) / 86400000);
+            });
+
+            $('input[name="daterange"]').on('apply.daterangepicker', function (ev, picker) {
+                $(this).val(picker.startDate.format('D MMMM') + ' - ' + picker.endDate.format('D MMMM YYYY'));
+            });
+
+            $('input[name="singleDatePicker"]').daterangepicker({
+                autoApply: true,
+                singleDatePicker: true,
+                startDate: moment().startOf('hour'),
+                locale: {
+                    format: 'D MMMM YYYY'
+                }
+            });
+
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+
+            var getLinkPage = $('#navbarSupportedContent .nav-subitem a[href^="/' + location.pathname.split("/")[1] + '"]').first();
+            getLinkPage.parents(".nav-item").addClass('active');
+
+            $('.aq-main-nav-mb .nav-link[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+
+            if (!$(".aq-body .index-page").hasClass("index-page")) {
+                $("[data-show-search]").on("click", function () {
+                    $("[data-search-filter]").fadeIn();
+                });
+
+                $("[data-search-filter]").on("click", function () {
+                    $(this).fadeOut();
+                });
+
+
+                $("[data-search-filter] .list-filter").on("click", function (event) {
+                    event.stopPropagation();
+                });
+            }
+
+            $(".mobilecode").intlTelInput({
+                initialCountry: "hk"
+            });
+
+        });
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.scrollToTop').fadeIn();
+            } else {
+                $('.scrollToTop').fadeOut();
+            }
+        });
+        $('.scrollToTop').click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 500);
+            return false;
+        });
+
+        var topMenu = $(".header-info"),
+            topMenuHeight = topMenu.outerHeight();
+
+        $('[data-slick-mobile]').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            mobileFirst: true,
+            arrows: false,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: "unslick"
+                }
+            ]
+        });
+
+
+        $(window).on('resize', function () {
+            $('[data-slick-mobile]').slick('resize');
+        });
+
+    </script>
+    <script src="~/js/dining.common.js"></script>
+    <div id="calendar-two" class="calendar-two"></div>
+</body>
+</html>

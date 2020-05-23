@@ -1,0 +1,188 @@
+﻿@using AQBooking.FileStream.Core.Models.FileRequest
+@model FileSearchModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section ContentHeader {
+    File Deleted Management
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card mb-3 border-primary">
+            <div class="card-header text-white bg-primary">SEARCH</div>
+            <div class="card-body">
+                <div class="form-row">
+                    <form id="frmSearchImage" class="row">
+                        <div class="col-lg-4 mb-3">
+                            <div class="form-group">
+                                <label>File ID</label>
+                                @Html.TextBoxFor(x => x.FileId, new { @class = "form-control", @placeholder = "File ID" })
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3">
+                            <div class="form-group">
+                                <label>Original Name</label>
+                                @Html.TextBoxFor(x => x.OriginalName, new { @class = "form-control", @placeholder = "Original Name" })
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3">
+                            <div class="form-group">
+                                <label>File Extension</label>
+                                @Html.TextBoxFor(x => x.FileExtension, new { @class = "form-control", @placeholder = "File Extension" })
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn btn-labeled btn-success mb-2" type="button" id="btnSearch"><span class="btn-label"><i class="mr-2 fas fa-search"></i></span>Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="card mb-3 border-secondary">
+            <div class="card-header bg-transparent">RESULTS</div>
+            <div class="card-body">
+                <div class="row mb-2 aq-filter-bar">
+                    <div class="col-md-2">
+                        <div class="row">
+                            <div class="col-md-12">
+                                Total Records
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group row">
+                            <label class="col-md-2 col-form-label">
+                                View
+                            </label>
+                            <div class="col-md-4">
+                                <select class="form-control" id="ddlPageSize">
+                                    <option value="5">5</option>
+                                    <option value="10" selected>10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </div>
+                            <label class="col-md-6 col-form-label">
+                                Perpage
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label">
+                                Sort By
+                            </label>
+                            <div class="col-md-8">
+                                <select class="form-control" id="ddlSortBy">
+                                    <option value="FileId">File Id</option>
+                                    <option value="OriginalName">Original Name</option>
+                                    <option value="FileExtension">File Extension</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label">
+                                Sort Type
+                            </label>
+                            <div class="col-md-8">
+                                <select class="form-control" id="ddlSortType">
+                                    <option value="DESC">Descending</option>
+                                    <option value="ASC">Ascending</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="divSearchResult">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            searchFileDeleted();
+        })
+
+        $("#btnSearch").on("click", function () {
+            searchFileDeleted();
+        })
+
+        $(document).on("change", "#ddlPageSize, #ddlSortBy, #ddlSortType", () => {
+            searchFileDeleted();
+        });
+
+        function searchFileDeleted() {
+            var model = {
+                FileId: $("#FileId").val(),
+                OriginalName: $("#OriginalName").val(),
+                FileExtension: $("#FileExtension").val(),
+                PageSize: $("#ddlPageSize").val(),
+                SortColumn: $("#ddlSortBy").val(),
+                SortType: $("#ddlSortType").val()
+            }
+
+            var url = "@Url.Action("Index", "FileDeletedManagement")";
+            $.post(url, { searchModel: model }, function (res) {
+                if (res) {
+                    $("#divSearchResult").html(res);
+                }
+            })
+        }
+
+        function searchFileDeletedReload() {
+            var model = $('button[style*="font-weight: bold"]').data("model");
+            var url = "@Url.Action("Index", "FileDeletedManagement")";
+            $.post(url, { searchModel: model }, function (res) {
+                if (res) {
+                    $("#divSearchResult").html(res);
+                }
+            })
+        }
+
+        $(document).on("click", "button[id^='remove_']", function (e) {
+            e.preventDefault();
+            var r = confirm("Warning: This file will be permanently lost!!!")
+            if (r === true) {
+                var elmId = $(this).attr("id");
+                var fileId = elmId.split("_")[1];
+                $.post("@Url.Action("RemoveFile", "Home")", { id: fileId }, function (res) {
+                    if (res.isSucceed) {
+                        alert(res.message);
+                        searchFileDeletedReload();
+                    }
+                })
+            }
+        })
+
+        $(document).on("click", "button[id^='restore_']", function (e) {
+            e.preventDefault();
+            var r = confirm("Do you want to restore?")
+            if (r === true) {
+                var elmId = $(this).attr("id");
+                var fileId = elmId.split("_")[1];
+                $.post("@Url.Action("RestoreFile", "Home")", { id: fileId }, function (res) {
+                    if (res) {
+                        alert("File restore successfully");
+                        searchFileDeletedReload();
+                    }
+                })
+            }
+        })
+    </script>
+    <script src="~/js/common.js"></script>
+}
+

@@ -1,0 +1,692 @@
+﻿@import "../../variables";
+
+.aq-yacht.yacht-detail {
+    .body-detail {
+        padding-top: 1.5vw;
+    }
+
+    .title-detail-m,
+    .aq-link-m {
+        display: none;
+    }
+
+    .detail-info {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+
+        .img-detail {
+            position: relative;
+            overflow: hidden;
+            flex: 0 0 41.666667%;
+            max-width: 100%;
+
+            .main-img {
+                width: 100%;
+                border-radius: .5rem;
+            }
+
+            .assess {
+                background-color: @aq-blue;
+                color: @white;
+                border-top-left-radius: 25%;
+                border-bottom-right-radius: 25%;
+                width: 5vw;
+                height: 4vw;
+                position: absolute;
+                bottom: -1vw;
+                left: 13.5%;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    font-size: 2.25vw;
+                    font-family: 'SegoeuiItalic';
+                    font-weight: bold;
+                }
+            }
+
+            .title {
+                color: @white;
+                font-family: 'SegoeuiSemibold';
+                font-size: 2rem;
+                position: absolute;
+                bottom: 1rem;
+                line-height: 2rem;
+                left: 25%;
+                z-index: 2;
+            }
+
+            .small-img {
+                position: absolute;
+                bottom: 1rem;
+                right: 1rem;
+                z-index: 2;
+
+                img {
+                    width: 5vw;
+                    margin-left: .5rem;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .description-detail {
+            flex: 0 0 58.333333%;
+            max-width: 100%;
+            padding-left: 15px;
+            .title {
+                margin-bottom: 1.25rem;
+                margin-top: -.5rem;
+                font-size: 1.75rem;
+                font-family: 'SegoeuiBold';
+                padding-right: 1rem;
+            }
+
+            .info {
+                padding: 1.2rem 0;
+                display: inline-block;
+                width: 100%;
+                .item {
+                    width: 100px;
+                    height: 100px;
+                    background-color: #f2f2f2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    border-radius: .5rem;
+                    float: left;
+                    margin-right: 1.4rem;
+                    p {
+                        text-align: center;
+                        color: #424444;
+                        font-size: small;
+                        margin-bottom: 0;
+                    }
+                    b {
+                        opacity: 1;
+                        color: #011233;
+                        font-family: 'SegoeuiBold';
+                        font-size: 1.75rem;
+                        line-height: 3.5rem;
+                    }
+                }
+            }
+
+            .actions {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1.5rem;
+            }
+
+            .btn {
+                color: @white;
+                padding: .5rem 1rem;
+                font-size: 1.25rem;
+                border-radius: 5px;
+                flex-basis: 0;
+                flex-grow: 1;
+                max-width: 100%;
+                margin: 0 5px;
+            }
+
+            .btn-brochure {
+                color: #00A1E9;
+                border: 2px dashed #00A1E9;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &:hover {
+                    background-color: #00A1E9;
+                    color: #FFF;
+                }
+                .aes  {
+                    margin-right: 1rem;
+                }
+            }
+
+           .btn-save {
+               font-weight: 700;
+               border-color: #FEA014;
+               background-color: #FEA014;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+           }
+
+            .btn-mail {
+                background-color: @aq-green;
+                border-color: @aq-green;
+                &:hover {
+                    background-color: #078007;
+                }
+            }
+
+            .btn-fb {
+                background-color: @aq-blue;
+                border-color: @aq-blue;
+                &:hover {
+                    background-color: #151875;
+                }
+            }
+
+            .list-services {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.5rem;
+                justify-content: space-between;
+                .item-icon {
+                    font-family: 'SegoeuiSemibold';
+                    font-size: .875rem;
+                    max-width: 100%;
+                    margin: 0 5px;
+                    display: flex;
+                    align-items: center;
+                }
+                .aes {
+                    font-size: 1.35rem;
+                    color: #00A1E9;
+                    margin-right: .5rem;
+                }
+                .aes-bedrooms {
+                    font-size: 1rem;
+                }
+            }
+
+            .sale-price, .price {
+                font-family: 'SegoeuiSemibold';
+                font-size: 1.55rem;
+                text-align: center;
+            }
+
+            .sale-price {
+                color: @aq-green;
+            }
+
+            .price {
+                color: @gray;
+                text-decoration: line-through;
+                margin-bottom: 1rem;
+            }
+
+            .btn-light-blue {
+                font-family: 'SegoeuiBold';
+                font-size: x-large;
+                padding: 1.25rem;
+            }
+
+            .ctrl {
+                margin-bottom: 1vw;
+            }
+
+            .btn-saleof {
+                background-color: @aq-red;
+                border-radius: 0;
+            }
+
+            .btn-hurry {
+                border-radius: 0;
+                border: 1px solid #FEA014;
+                color: @aq-red;
+                background-color: #FFF8EF;
+            }
+
+            .list-icon {
+                .item-icon {
+                    margin-bottom: 1rem;
+                    display: flex;
+                    align-items: center;
+
+                    .aes, .fa {
+                        font-size: 1.25rem;
+                        color: @aq-light-blue;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+
+            .desc {
+                color: #5D6066;
+                font-size: .875rem;
+                padding-right: 1rem;
+                p {
+                    text-align: justify;
+                    margin-bottom: 0;
+                }
+
+                .read-more {
+                    color: @aq-light-blue;
+
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    .component-price-contact {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        h3 {
+            font-family: 'SegoeuiSemibold';
+            margin: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-contact {
+            .row {
+                margin-left: -.5rem;
+                margin-right: -.5rem;
+            }
+            [class^="col-"] {
+                padding-left: 0.5rem;
+                padding-right: .5rem;
+            }
+             .checkbox {
+                 display: inline-block;
+                 margin-right: 1rem;
+                span {
+                    vertical-align: sub;
+                }
+            }
+
+            .form-control {
+                border: none;
+                background-color: @aq-light-gray;
+                height: auto !important;
+                padding: 0.775rem 0.75rem;
+            }
+
+            .btn {
+                padding: .5rem 2rem;
+                font-family: 'SegoeuiSemibold';
+            }
+
+            .form-contact-bottom {
+                text-align: right;
+                align-items: center;
+            }
+        }
+    }
+
+    .component-list-detail {
+        padding-top: 1.5vw;
+
+        .nav {
+            border-bottom: 1px solid @gray;
+            margin-bottom: 4rem;
+            display: flex;
+            justify-content: center;
+            font-family: 'SegoeuiSemibold';
+            font-size: 1.25rem;
+
+            .nav-link {
+                padding: 1rem 2rem;
+                position: relative;
+                &.active {
+                    color: @aq-light-blue;
+                }
+
+                &.active:before {
+                    content: "";
+                    width: 100%;
+                    height: 4px;
+                    background-color: @aq-light-blue;
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                }
+            }
+        }
+
+        .tab-content {
+            padding-bottom: 3rem;
+
+            .table-deail {
+                padding: 1.25rem 0 0;
+
+                table {
+                    margin: 0;
+
+                    td {
+                        border-left: none;
+                        border-right: none;
+                        padding: 1rem;
+                    }
+
+                    b {
+                        font-family: 'SegoeuiSemibold';
+                    }
+
+                    p {
+                        text-align: justify;
+                    }
+                }
+            }
+
+            .view-more {
+                text-align: center;
+                border: 1px solid #dee2e6;
+                border-top: 0;
+                padding: .219rem 0;
+
+                .btn-viewmore {
+                    background-image: linear-gradient(to right, @aq-light-blue, @aq-blue);
+                    color: @white;
+                    border: none;
+                    min-width: 125px;
+                    font-family: 'SegoeuiRegular';
+                    padding: .75rem 3rem;
+                    position: relative;
+                    transform: translate(0,50%);
+
+                    .aes, .fa {
+                        margin-right: .5rem;
+                    }
+                }
+            }
+
+            .reviews-form{
+                padding-bottom: 0;
+            }
+        }
+
+        .table-responsive > .table-bordered {
+            border: 1px solid #dee2e6;
+        }
+    }
+}
+
+.price-info-ren {
+    background-color: #f7f7f7;
+    padding: 1rem 0 1rem;
+    .nav {
+        padding-top: 1rem;
+    }
+    .block-info-book {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+        .col-book {
+            font-family: 'SegoeuiSemibold';
+            text-align: center;
+            font-size: 1rem;
+            color: @white;
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+            position: relative;
+            z-index: 2;
+            background-color: #252893;
+            box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.25);
+            &:nth-child(odd) {
+                background-color: #1D2088;
+                box-shadow: none;
+                z-index: 1;
+                .header-book {
+                    background-color: #141776;
+                }
+            }
+        }
+        .header-book {
+            padding: 23px 0;
+            font-size: 1.25rem;
+        }
+        .price-book {
+            font-size: 1.5rem;
+            color: @aq-orange;
+            padding: 2rem 0 3rem;
+        }
+        .btn {
+            color: @white;
+            background-color: #00A1E9;
+            display: block;
+            margin: 0 auto 1rem;
+            width: 80%;
+        }
+    }
+
+    .book-policy {
+        display: flex;
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+    }
+
+    .col-policy {
+        flex-basis: 50%;
+        flex-grow: 1;
+        max-width: 100%;
+        padding: 1rem 2rem;
+        border: 1px solid #B9B9B9;  
+        border-radius: 12px;
+        margin: 1rem .5rem;
+        background-color: #FFF;
+
+        .title-policy {
+            font-family: 'SegoeuiSemibold';
+            position: relative;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-right: 3rem;
+            &.not {
+                .aes-correct {
+                    color: #F30404;
+                }
+            }
+        }
+        .aes-correct {
+            color: #45CB02;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .aq-yacht.yacht-detail {
+        .breadcrumbs {
+            margin-top: .5rem;
+        }
+        .detail-info {
+            flex-wrap: wrap;
+            margin: 0 -15px 24px;
+            position: relative;
+
+            .slider-nav {
+                display: none;
+            }
+
+            .title-detail-m {
+                display: block;
+                font-size: 22px;
+                font-family: @font-semibold;
+                padding: 1rem;
+                padding-bottom: 0;
+                width: 100%;
+            }
+
+            .aq-link-m {
+                display: inline-block;
+               margin-left: 1rem;
+               margin-bottom: 1rem;
+            }
+
+            .img-detail {
+                flex: 0 0 100%;
+            }
+
+            .description-detail {
+                flex: 0 0 100%;
+                display: flex;
+                flex-flow: row wrap;
+
+                .title,
+                .desc  {
+                    display: none;
+                }
+
+                .aq-link {
+                    display: none;
+                }
+
+                .list-services {
+                    order: -1;
+                    width: 100%;
+                    justify-content: flex-start;
+                    margin-top: 1rem;
+                    margin-bottom: 0;
+
+                    .item-icon {
+                        margin-right: 10px;
+                        .aes {
+                            font-size: 1rem;
+                        }
+                        .text {
+                            display: none;
+                        }
+                    }
+                }
+
+                .actions {
+                    flex-flow: row wrap;
+                    justify-content: flex-start;
+                }
+
+                .btn {
+                    flex-basis: auto;
+                    flex-grow: unset;
+                    margin-bottom :10px;
+                }
+            }
+        }
+
+        .slider-for {
+            .slick-arrow {
+                font-size: 0;
+                opacity: 1;
+                z-index: 2;
+                top: 50%;
+                left: 0;
+                background:rgba(0,0,0,0.65);
+                border: 0;
+                border-radius: 3px;
+                padding: 0;
+                width: 50px;
+                height: 70px;
+                visibility: visible;
+                transform: translate(0,-50%);
+
+                &::after {
+                    content: "";
+                    border: solid #fff;
+                    border-width: 0 5px 5px 0;
+                    display: inline-block;
+                    padding: 6px;
+                    transform: rotate(135deg);
+                    border-radius: 3px;
+                }
+            }
+
+            .slick-next {
+                left: auto;
+                right: 0;
+                &::after {
+                    transform: rotate(-45deg);
+                }
+            }
+
+            .slick-slide {
+                img {
+                    border-radius: 0;
+                }
+            }
+        }
+
+        .component-list-detail {
+            .nav {
+                border: 0;
+                overflow-y: auto;
+
+                .nav-item {
+                    white-space: nowrap;
+                    display: inline-block;
+                    // float: left;
+                }
+            }
+            
+            .tab-content {
+                .table-deail {
+                    table {
+                        td {
+                            padding: 10px 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .price-info-ren {
+        .book-policy {
+            flex-wrap: wrap;
+            .col-policy {
+                flex-basis: 100%;
+            }
+        }
+
+        .block-info-book {
+            flex-wrap: wrap;
+            max-height: 600px;
+            overflow-y: auto;
+
+            .col-book {
+                flex-basis: 50%;
+                box-shadow: none;
+                border-bottom: 1px solid #1c22b3;
+
+                // &:nth-child(odd) {
+                //     box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.25);
+                // }
+
+                .header-book {
+                    padding: 10px 0;
+                    background-color: #141776;
+                }
+
+                .price-book {
+                    padding: 1rem 0 1rem;
+                }
+            }
+
+            .btn {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .price-info-ren {
+        .block-info-book {
+            .col-book {
+                flex-basis: 100%;
+            }
+        }
+    }
+}

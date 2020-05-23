@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AQ_PGW.WebUI</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+    </environment>
+    <link href="~/lib/bootstrap/table/css/bootstrap-table.min.css" rel="stylesheet" />
+    <link href="~/pugin/styleHistory.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/example3.css" rel="stylesheet" />
+    <!-- FONT AWESOME-->
+    <link href="~/vendor/fortawesome/fontawesome-free/css/brands.css" rel="stylesheet" />
+    <link href="~/vendor/fortawesome/fontawesome-free/css/regular.css" rel="stylesheet" />
+    <link href="~/vendor/fortawesome/fontawesome-free/css/solid.css" rel="stylesheet" />
+    <link href="~/vendor/fortawesome/fontawesome-free/css/fontawesome.css" rel="stylesheet" /><!-- SIMPLE LINE ICONS-->
+    <link href="~/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" /><!-- ANIMATE.CSS-->
+    <link href="~/vendor/animate.css/animate.css" rel="stylesheet" /><!-- WHIRL (spinners)-->
+
+    <link href="~/vendor/whirl/dist/whirl.css" rel="stylesheet" /><!-- =============== PAGE VENDOR STYLES ===============-->
+    <!-- WEATHER ICONS-->
+    <link rel="stylesheet" href="vendor/weather-icons/css/weather-icons.css" /><!-- =============== BOOTSTRAP STYLES ===============-->
+    <link href="~/vendor/app.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" />
+
+
+    <link href="~/dist/ladda-themeless.css" rel="stylesheet" />
+    <link href="~/css/prism.css" rel="stylesheet" />
+</head>
+
+<body class="layout-h">
+    <div class="wrapper">
+        <!-- top navbar-->
+        <header class="topnavbar-wrapper">
+            <!-- START Top Navbar-->
+            <nav class="navbar topnavbar navbar-expand-lg navbar-light">
+                <!-- START navbar header-->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/">
+                        <div class="brand-logo"><img class="img-fluid" src="~/img/logo.png" alt="App Logo"></div>
+                        <div class="brand-logo-collapsed"><img class="img-fluid" src="~/img/logo-single.png" alt="App Logo"></div>
+                    </a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnavbar"><span class="navbar-toggler-icon"></span></button>
+                </div><!-- END navbar header-->
+                <!-- START Nav wrapper-->
+                <div class="navbar-collapse collapse" id="topnavbar">
+                    <!-- START Left navbar-->
+                    <ul class="nav navbar-nav mr-auto flex-column flex-lg-row">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        @*<li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li>*@
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="History" asp-action="Index">Transaction history</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Stripe" asp-action="Create">Payment</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#dashboard" data-toggle="dropdown">Card</a>
+                            <div class="dropdown-menu animated fadeIn">
+                                <a class="dropdown-item" asp-area="" asp-controller="Card" asp-action="Index">View Card</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Card" asp-action="CreateCard">Create Card</a>
+                            </div>
+                        </li>
+
+                    </ul><!-- END Left navbar-->
+                    <!-- START Right Navbar-->
+                    <ul class="navbar-nav flex-row">
+                        <!-- START lock screen-->
+                        <li class="nav-item"><a class="nav-link" href="#" title="Lock screen"><em class="icon-lock"></em></a></li><!-- END lock screen-->
+                        <!-- Search icon-->
+                        <li class="nav-item"><a class="nav-link" href="#" data-search-open=""><em class="icon-magnifier"></em></a></li><!-- Fullscreen (only desktops)-->
+                        <li class="nav-item d-none d-md-block"><a class="nav-link" href="#" data-toggle-fullscreen=""><em class="fa fa-expand"></em></a></li><!-- START Alert menu-->
+                        <li class="nav-item dropdown dropdown-list">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" data-toggle="dropdown"><em class="icon-bell"></em><span class="badge badge-danger">11</span></a><!-- START Dropdown menu-->
+                            <div class="dropdown-menu dropdown-menu-right animated flipInX">
+                                <div class="dropdown-item">
+                                    <!-- START list group-->
+                                    <div class="list-group">
+                                        <!-- list item-->
+                                        <div class="list-group-item list-group-item-action">
+                                            <div class="media">
+                                                <div class="align-self-start mr-2"><em class="fab fa-twitter fa-2x text-info"></em></div>
+                                                <div class="media-body">
+                                                    <p class="m-0">New followers</p>
+                                                    <p class="m-0 text-muted text-sm">1 new follower</p>
+                                                </div>
+                                            </div>
+                                        </div><!-- list item-->
+                                        <div class="list-group-item list-group-item-action">
+                                            <div class="media">
+                                                <div class="align-self-start mr-2"><em class="fa fa-envelope fa-2x text-warning"></em></div>
+                                                <div class="media-body">
+                                                    <p class="m-0">New e-mails</p>
+                                                    <p class="m-0 text-muted text-sm">You have 10 new emails</p>
+                                                </div>
+                                            </div>
+                                        </div><!-- list item-->
+                                        <div class="list-group-item list-group-item-action">
+                                            <div class="media">
+                                                <div class="align-self-start mr-2"><em class="fa fa-tasks fa-2x text-success"></em></div>
+                                                <div class="media-body">
+                                                    <p class="m-0">Pending Tasks</p>
+                                                    <p class="m-0 text-muted text-sm">11 pending task</p>
+                                                </div>
+                                            </div>
+                                        </div><!-- last list item-->
+                                        <div class="list-group-item list-group-item-action"><span class="d-flex align-items-center"><span class="text-sm">More notifications</span><span class="badge badge-danger ml-auto">14</span></span></div>
+                                    </div><!-- END list group-->
+                                </div>
+                            </div><!-- END Dropdown menu-->
+                        </li><!-- END Alert menu-->
+                        <li class="nav-item"><a class="nav-link" href="#" data-toggle-state="offsidebar-open" data-no-persist="true"><em class="icon-notebook"></em></a></li><!-- END Offsidebar menu-->
+                    </ul><!-- END Right Navbar-->
+                </div><!-- END Nav wrapper-->
+                <!-- START Search form-->
+                <form class="navbar-form" role="search" action="search.html">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Type and hit enter ...">
+                        <div class="fa fa-times navbar-form-close" data-search-dismiss=""></div>
+                    </div><button class="d-none" type="submit">Submit</button>
+                </form><!-- END Search form-->
+            </nav><!-- END Top Navbar-->
+        </header><!-- offsidebar-->
+        <section class="section-container">
+            <!-- Page content-->
+            <div class="content-wrapper" style="background-color:#ffffff">
+                <partial name="_CookieConsentPartial" />
+                @RenderBody()
+            </div>
+        </section><!-- Page footer-->
+
+    </div><!-- =============== VENDOR SCRIPTS ===============-->
+    <footer class="footer text-muted">
+        <div class="container">
+            &copy; 2019 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+        </script>
+
+    </environment>
+    <script src="~/dist/spin.min.js"></script>
+    @*<script src="~/dist/spin.js"></script>*@
+    @*<script src="~/js/site.min.js"></script>*@
+    <script src="~/dist/ladda.js"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="~/js/prism.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @*<script src="~/js/site.js"></script>*@
+    <script src="https://js.stripe.com/v3/"></script>
+    <script type="text/javascript">
+        // Bind normal buttons
+        //Ladda.bind('div:not(.progress-demo) button', { timeout: 2000 });
+        //Ladda.bind('div:not(.progress-demo) button');
+        Ladda.bind('input[type=submit]');
+        var l = Ladda.create(document.querySelector('button'));
+
+        //// Bind progress buttons and simulate loading progress
+        //Ladda.bind('.progress-demo button', {
+        //    callback: function (instance) {
+        //        var progress = 0;
+        //        var interval = setInterval(function () {
+        //            progress = Math.min(progress + Math.random() * 0.1, 1);
+        //            instance.setProgress(progress);
+
+        //            if (progress === 1) {
+        //                instance.stop();
+        //                clearInterval(interval);
+        //            }
+        //        }, 200);
+        //    }
+        //});
+
+        // You can control loading explicitly using the JavaScript API
+        // as outlined below:
+
+        var l = Ladda.create(document.querySelector('button'));
+                                                            // l.start();
+                                                            // l.stop();
+                                                            // l.toggle();
+                                                            // l.isLoading();
+                                                            // l.setProgress( 0-1 );
+    </script>
+    @*<script src="~/custom/striper.js"></script>*@
+
+    <script src="~/BundleFile/js/striper.min.js"></script>
+    @*<script src="~/vendor/app.js"></script>*@
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

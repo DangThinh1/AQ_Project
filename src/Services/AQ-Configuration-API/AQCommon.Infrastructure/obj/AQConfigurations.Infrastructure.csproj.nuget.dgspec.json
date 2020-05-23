@@ -1,0 +1,168 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon.Infrastructure\\AQConfigurations.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon.Infrastructure\\AQConfigurations.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon.Infrastructure\\AQConfigurations.Infrastructure.csproj",
+        "projectName": "AQConfigurations.Infrastructure",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon.Infrastructure\\AQConfigurations.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\ThinkPro\\.dotnet\\NuGetFallbackFolder": {},
+          "http://103.97.125.19/AQNuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-tools/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon\\AQConfigurations.Core.csproj": {
+                "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon\\AQConfigurations.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon\\AQConfigurations.Core.csproj": {
+      "version": "1.1.47",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon\\AQConfigurations.Core.csproj",
+        "projectName": "AQConfigurations.Core",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon\\AQConfigurations.Core.csproj",
+        "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\ThinkPro\\.dotnet\\NuGetFallbackFolder": {},
+          "http://103.97.125.19/AQNuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-tools/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "APIHelpers": {
+              "target": "Package",
+              "version": "[1.1.4, )"
+            },
+            "AQBooking.Core": {
+              "target": "Package",
+              "version": "[1.0.28, )"
+            },
+            "AQIdentity.Core": {
+              "target": "Package",
+              "version": "[1.1.5, )"
+            },
+            "ExtendedUtility": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

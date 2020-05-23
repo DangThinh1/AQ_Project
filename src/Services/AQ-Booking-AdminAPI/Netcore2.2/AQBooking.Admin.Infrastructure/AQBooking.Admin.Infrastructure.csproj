@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Mapper\**" />
+    <EmbeddedResource Remove="Mapper\**" />
+    <None Remove="Mapper\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interfaces\IApiServiceBase.cs" />
+    <Compile Remove="Services\ApiServiceBase.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Databases\HotelEntities\" />
+    <Folder Include="Databases\EvisaEntities\" />
+    <Folder Include="Docs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AQbooking.Admin.Core\AQBooking.Admin.Core.csproj" />
+  </ItemGroup>
+</Project>

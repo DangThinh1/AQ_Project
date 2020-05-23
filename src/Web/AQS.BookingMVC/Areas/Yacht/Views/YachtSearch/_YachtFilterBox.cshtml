@@ -1,0 +1,33 @@
+﻿@model AQS.BookingMVC.Areas.Yacht.Models.YachtSearchViewModel
+<div class="sort-yatch">
+    <span class="total-offers" id="hTotalRecord">0 offers</span>
+    <div class="right">
+        <div class="filter-type">
+            <span>Yacht Type</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                    <g opacity="0.5">
+                        <path d="M9.67603 13.4801L17.3183 5.83523C17.6529 5.49978 17.6529 4.9563 17.3183 4.62C16.9837 4.28455 16.4402 4.28455 16.1056 4.62L9.06972 11.6584L2.03382 4.62085C1.69922 4.2854 1.15574 4.2854 0.820288 4.62085C0.485685 4.9563 0.485685 5.50063 0.820288 5.83608L8.4625 13.4809C8.79364 13.8112 9.34566 13.8112 9.67603 13.4801Z" fill="#414A5A"></path>
+                    </g>
+                </g>
+                <defs>
+                    <clipPath id="clip0">
+                        <rect x="0.569336" y="17.5483" width="17" height="17" transform="rotate(-90 0.569336 17.5483)" fill="white"></rect>
+                    </clipPath>
+                </defs>
+            </svg>
+            <select id="ddlSearchYachtType" class="select-type">
+                @foreach (var item in Model.YachtTypes)
+                {
+                    <option selected="@(item.ValueInt==Model.YachtSearchModel.CharterTypeFID)" value="@item.ValueInt">@item.Text</option>
+                }
+            </select>
+        </div>
+        <div class="search-name">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.2575 25.7358L19.3986 17.877C20.8892 16.0367 21.7865 13.6973 21.7865 11.1501C21.7865 5.24536 16.9825 0.441406 11.0778 0.441406C5.17304 0.441406 0.369141 5.24536 0.369141 11.1501C0.369141 17.0548 5.17309 21.8588 11.0778 21.8588C13.625 21.8588 15.9645 20.9615 17.8047 19.471L25.6635 27.3298C25.8837 27.5499 26.2405 27.5499 26.4607 27.3298L27.2575 26.5329C27.4776 26.3127 27.4776 25.9559 27.2575 25.7358ZM11.0778 19.6043C6.41592 19.6043 2.62362 15.812 2.62362 11.1501C2.62362 6.48818 6.41592 2.69588 11.0778 2.69588C15.7398 2.69588 19.5321 6.48818 19.5321 11.1501C19.5321 15.812 15.7398 19.6043 11.0778 19.6043Z" fill="black"></path>
+            </svg>
+            <input type="text" id="txtSearchYachtName" placeholder="Yatch Name...">
+        </div>
+    </div>
+</div>
+

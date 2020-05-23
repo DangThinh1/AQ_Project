@@ -1,0 +1,12 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Infrastructure\bin\Debug\netcoreapp2.2\AQDiningPortal.Infrastructure.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Infrastructure\bin\Debug\netcoreapp2.2\AQDiningPortal.Infrastructure.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Infrastructure\bin\Debug\netcoreapp2.2\AQDiningPortal.Infrastructure.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Infrastructure\bin\Debug\netcoreapp2.2\AQDiningPortal.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Infrastructure\bin\Debug\netcoreapp2.2\AQDiningPortal.Core.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Infrastructure\obj\Debug\netcoreapp2.2\AQDiningPortal.Infrastructure.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Infrastructure\obj\Debug\netcoreapp2.2\AQDiningPortal.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Infrastructure\obj\Debug\netcoreapp2.2\AQDiningPortal.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Infrastructure\obj\Debug\netcoreapp2.2\AQDiningPortal.Infrastructure.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Infrastructure\obj\Debug\netcoreapp2.2\AQDiningPortal.Infrastructure.csproj.CopyComplete
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Infrastructure\obj\Debug\netcoreapp2.2\AQDiningPortal.Infrastructure.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-DiningPortal-API\DiningPortal.Infrastructure\obj\Debug\netcoreapp2.2\AQDiningPortal.Infrastructure.pdb

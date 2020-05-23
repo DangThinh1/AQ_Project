@@ -1,0 +1,250 @@
+.coming-soon-banner .content .title {
+  font-size: 2.92vw; }
+
+.coming-soon-banner .content .text {
+  font-size: 1.95vw; }
+
+.banner-mid-coming {
+  min-height: 300px; }
+
+.right .res-menu-icon {
+  width: 30px;
+  display: none; }
+
+header {
+  width: 100%; }
+
+@media screen and (max-width: 1480px) {
+  header .menu li.th-lang, header .menu li.en-lang {
+    padding: 0; } }
+
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 0 48px; }
+  .form-comingsoon {
+    padding: 48px; }
+  .article-list {
+    padding: 48px 33px; }
+  .article {
+    padding: 0; } }
+
+@media screen and (max-width: 992px) {
+  .article-detail {
+    padding: 33px; }
+    .article-detail .text, .article-detail .title {
+      padding: 0; }
+    .article-detail img {
+      width: 100%; }
+  footer {
+    padding: 33px;
+    padding-bottom: 15px; }
+    footer .copy-right {
+      padding-top: 15px;
+      padding-bottom: 0; }
+      footer .copy-right .left {
+        display: block;
+        position: relative; }
+        footer .copy-right .left .logo {
+          position: absolute;
+          top: 10px; }
+        footer .copy-right .left .link {
+          width: 100%;
+          margin-top: 4px;
+          margin-left: 0;
+          padding-left: 30px; }
+        footer .copy-right .left p {
+          padding-left: 30px; }
+  .banner-mid-coming .content {
+    padding: 0 80px; }
+    .banner-mid-coming .content .sub-title {
+      font-size: 18px; }
+    .banner-mid-coming .content .title {
+      font-size: 36px;
+      line-height: 36px; }
+  .coming-soon-banner .content {
+    padding: 0 15px; }
+    .coming-soon-banner .content .title {
+      font-size: 36px; }
+    .coming-soon-banner .content .text {
+      font-size: 30px; }
+  .form-comingsoon .title, .form-comingsoon .text-sub {
+    font-size: 36px; }
+  .form-comingsoon .sub-title {
+    font-size: 18px; }
+  .form-comingsoon .text {
+    font-size: 18px; }
+  .form-comingsoon input, .form-comingsoon button {
+    font-size: 16px; }
+  .article-list .col-12:last-child {
+    padding: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .article-list .col-12:last-child .article {
+      width: 50%;
+      float: left;
+      padding: 15px; } }
+
+@media screen and (max-width: 768px) {
+  .article-detail .text {
+    font-size: 16px;
+    line-height: 24px; }
+  .article-detail .title {
+    font-size: 24px;
+    line-height: 50px; }
+  .article-detail img {
+    margin: 15px 0; }
+  .article-detail .btn-blog {
+    margin-bottom: 10px; }
+    .article-detail .btn-blog svg {
+      width: 30px;
+      min-width: 20px; }
+    .article-detail .btn-blog.left svg {
+      margin-left: 0; }
+  .article-detail .btn-bottom .btn-blog {
+    margin-top: 50px;
+    margin-bottom: 0; }
+    .article-detail .btn-bottom .btn-blog svg {
+      width: 30px;
+      min-width: 20px; }
+    .article-detail .btn-bottom .btn-blog.right svg {
+      margin-right: 0; }
+    .article-detail .btn-bottom .btn-blog.left svg {
+      margin-left: 0; }
+    .article-detail .btn-bottom .btn-blog img {
+      display: none; }
+  footer {
+    padding: 13px; }
+  header {
+    padding: 0 30px; }
+    header .right .btn-subscribe-header {
+      position: absolute;
+      top: 75px;
+      margin-right: 0 !important; }
+      header .right .btn-subscribe-header #btn-subscribe-header {
+        padding: 5px 9px; }
+    header .right li.th-lang {
+      white-space: nowrap; }
+    header .right li {
+      padding: 0; }
+    header.active .right .res-menu-icon {
+      display: block;
+      width: 24px;
+      cursor: pointer; }
+    header.active .right .menu {
+      display: none;
+      margin-top: -32px; }
+      header.active .right .menu li {
+        padding: 0; }
+    header.active .right .btn-subscribe-header {
+      top: 32px; }
+    header.active.show-menu {
+      padding-top: 18px;
+      padding-bottom: 18px; }
+      header.active.show-menu .right .res-menu-icon {
+        display: none; }
+      header.active.show-menu .right .menu {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex; }
+  .banner-mid-coming .content {
+    padding: 0 30px; }
+  .form-comingsoon .title, .form-comingsoon .text-sub {
+    font-size: 24px; }
+  .form-comingsoon .sub-title {
+    font-size: 16px; }
+  .form-comingsoon .text {
+    font-size: 16px; }
+  .form-comingsoon input, .form-comingsoon button {
+    font-size: 14px; }
+  .article-list {
+    padding: 30px 13px; }
+    .article-list .article {
+      margin-bottom: 15px; }
+      .article-list .article .content {
+        padding: 15px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); }
+    .article-list .col-12:last-child {
+      padding: 0 15px; }
+      .article-list .col-12:last-child .article {
+        width: 100%;
+        float: unset;
+        padding: 0; } }
+
+@media screen and (max-width: 480px) {
+  .article-detail {
+    padding: 30px 0; }
+    .article-detail .btn-blog {
+      font-size: 14px; }
+      .article-detail .btn-blog svg {
+        width: 20px;
+        min-width: 20px; }
+      .article-detail .btn-blog.left svg {
+        margin-right: 4px; }
+    .article-detail .btn-bottom .btn-blog {
+      margin-top: 30px;
+      font-size: 14px; }
+      .article-detail .btn-bottom .btn-blog svg {
+        width: 20px;
+        min-width: 20px; }
+      .article-detail .btn-bottom .btn-blog.right svg {
+        margin-left: 4px; }
+      .article-detail .btn-bottom .btn-blog.left svg {
+        margin-right: 4px; }
+      .article-detail .btn-bottom .btn-blog img {
+        display: none; }
+  footer {
+    padding: 0; }
+    footer .copy-right {
+      padding-bottom: 15px;
+      padding-top: 40px; }
+      footer .copy-right .left .logo {
+        top: -30px; }
+      footer .copy-right .left p, footer .copy-right .left .link {
+        padding-left: 0; }
+      footer .copy-right .right {
+        position: absolute;
+        top: 10px;
+        right: 15px; }
+      footer .copy-right p, footer .copy-right .link {
+        font-size: 13px; }
+  .banner-mid-coming .content {
+    padding: 0 15px; }
+    .banner-mid-coming .content .sub-title {
+      font-size: 16px; }
+    .banner-mid-coming .content .title {
+      font-size: 24px;
+      line-height: 30px; }
+    .banner-mid-coming .content .text {
+      font-size: 14px; }
+  .form-comingsoon {
+    padding: 30px 15px; }
+    .form-comingsoon .sub-title {
+      font-size: 14px; }
+    .form-comingsoon .text {
+      font-size: 16px;
+      line-height: 24px; }
+    .form-comingsoon button img {
+      display: none; }
+  .coming-soon-banner .content .title {
+    font-size: 30px; }
+  .coming-soon-banner .content .text {
+    font-size: 24px; }
+  .article-list {
+    padding: 30px 0px; } }
+
+@media screen and (max-width: 375px) {
+  .form-comingsoon input {
+    font-size: 12px;
+    padding: 5px 10px; }
+  .form-comingsoon button {
+    padding: 0 10px;
+    font-size: 12px; } }
+
+@media screen and (max-width: 350px) {
+  header .left {
+    padding-top: 60px; } }
+
+/*# sourceMappingURL=responsive.css.map */

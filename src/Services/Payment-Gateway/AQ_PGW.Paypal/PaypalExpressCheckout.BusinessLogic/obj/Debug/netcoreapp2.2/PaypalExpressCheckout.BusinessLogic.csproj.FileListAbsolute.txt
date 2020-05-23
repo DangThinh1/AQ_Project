@@ -1,0 +1,14 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\bin\Debug\netcoreapp2.2\PaypalExpressCheckout.BusinessLogic.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\bin\Debug\netcoreapp2.2\PaypalExpressCheckout.BusinessLogic.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\bin\Debug\netcoreapp2.2\PaypalExpressCheckout.BusinessLogic.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\bin\Debug\netcoreapp2.2\AQ_PGW.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\bin\Debug\netcoreapp2.2\PayPalCore.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\bin\Debug\netcoreapp2.2\PayPalCore.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\bin\Debug\netcoreapp2.2\AQ_PGW.Core.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\obj\Debug\netcoreapp2.2\PaypalExpressCheckout.BusinessLogic.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\obj\Debug\netcoreapp2.2\PaypalExpressCheckout.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\obj\Debug\netcoreapp2.2\PaypalExpressCheckout.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\obj\Debug\netcoreapp2.2\PaypalExpressCheckout.BusinessLogic.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\obj\Debug\netcoreapp2.2\PaypalExpressCheckout.BusinessLogic.csproj.CopyComplete
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\obj\Debug\netcoreapp2.2\PaypalExpressCheckout.BusinessLogic.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PaypalExpressCheckout.BusinessLogic\obj\Debug\netcoreapp2.2\PaypalExpressCheckout.BusinessLogic.pdb

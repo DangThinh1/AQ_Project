@@ -1,0 +1,45 @@
+﻿@using AQBooking.FileStream.Core.Models.FileResponse
+@model List<FileViewModel>
+
+<div class="table-responsive bootgrid table-bordered">
+    <table class="table table-striped bootgrid-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Original Name</th>
+                <th>File Name</th>
+                <th>File extention</th>
+                <th>File Path</th>
+                <th>Deleted</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.FileId</td>
+                    <td><img class="img-fluid img-thumbnail thumb128" src="@ViewBag.Host@item.Path@item.FileName" /></td>
+                    <td>@item.OriginalName</td>
+                    <td>@item.FileName</td>
+                    <td>@item.FileExtentions</td>
+                    <td>@item.Path</td>
+                    <td>@item.Deleted</td>
+                    <td id="show_@item.FileId" class="text-center">
+                        <button class="btn btn-primary mb-2" id="restore_@item.FileId" title="Create file from database"><i class="fas fa-recycle"></i></button>
+                        <button class="btn btn-warning mb-2" id="delete_@item.FileId" title="Delete Image"><i class="fas fa-trash-alt"></i></button>
+                        <button class="btn btn-danger mb-2" id="remove_@item.FileId" title="Remove from database"><i class="fas fa-fire"></i></button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <input type="hidden" data-model="@ViewBag.SearchModel" id="getModel" />
+</div>
+
+<div class="d-flex mt-3">
+    <nav class="ml-auto">
+        <aes-pagination info="@ViewBag.PaginatedModel" model="@ViewBag.SearchModel" url="@Url.Action("Index", "ImageManagement")" update-target-id="divSearchResult"></aes-pagination>
+    </nav>
+</div>

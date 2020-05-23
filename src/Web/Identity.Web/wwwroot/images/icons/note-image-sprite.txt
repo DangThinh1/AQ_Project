@@ -1,0 +1,7 @@
+----
+Use web : https://www.toptal.com/developers/css/sprite-generator/ 
+Css coppy in file sprite.less and name class edit into .bg-sprite-(namefile)
+Name image :  image-sprite.png
+For custom size icon use css : (transform: scale) and (transform-origin) not use css zoom
+
+

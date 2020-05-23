@@ -1,0 +1,172 @@
+@import "variables";
+.aq-header {display: none;}
+.header-landing {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+
+  .banner {
+    min-height: 500px;
+    position: relative;
+    z-index: 2;
+    background-position: center;
+    background-size: cover;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 216px;
+      background: url('/images/banner/bg-banner-landing.png') no-repeat;
+      background-position: bottom;
+      background-size: cover;
+      z-index: 3;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      background-image: linear-gradient(237deg, rgba(2, 155, 228, 0.58), rgba(27, 41, 143, 0.85));
+      z-index: 2;
+      opacity: 0.65;
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+  .title-banner {
+    font-family: 'SVNSteady';
+    color: #FFF;
+    text-align: right;
+    font-size: 106px;
+    position: absolute;
+    top: 5rem;
+    right: 15%;
+    z-index: 4;
+    .small{
+      display: block;
+      font-size: 50%;
+    }
+  }
+
+  .logo-aq {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 3;
+    width: 110px;
+    height: 100px;
+    background-color: #FFF;
+    border-radius: 7px;
+
+    &::after {
+      content: attr(title);
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 14px;
+      color: #011233;
+    }
+    img {
+      display: block;
+      max-width: 75px;
+      margin: auto;
+      padding-top: 10px;
+    }
+  }
+
+  .info-landing {
+    display: flex;
+    padding-bottom: 2rem;
+  }
+
+  .logo-landing {
+    width: 160px;
+    flex: 0 0 auto;
+
+    .full-name {
+      font-family: @font-bold;
+      font-size: 2rem;
+    }
+  }
+
+  .detail-info {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    justify-content: space-around;
+    padding-top: 1rem;
+  }
+
+  .row-info {
+    font-size: 1.25rem;
+    .aes,
+    [class^="aes-"],
+    .fa {
+      font-size: 1.15rem;
+      margin-right: 10px;
+    }
+
+    .rate {
+      display: inline-block;
+      .fa {
+        margin-right: 1px;
+        font-size: 1rem;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 1199px) {
+  .header-landing {
+    .logo-aq {
+      left: 10px;
+      top: 15px;
+    }
+
+    .title-banner {
+      font-size: 70px;
+      right: 50%;
+      top: 7rem;
+      transform: translate(50%,0);
+      width: 100%;
+      text-align: center;
+    }
+
+    .info-landing {
+      flex-wrap: wrap;
+    }
+
+    .logo-landing {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px; 
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .full-name {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .detail-info {
+      flex-wrap: wrap;
+      .col-info {
+        width: 100%;
+      }
+    }
+  }
+}

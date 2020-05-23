@@ -1,0 +1,48 @@
+﻿@using AQBooking.Admin.Core.Models.Subscriber
+@model PagedListClient<SubscriberViewModel>
+
+
+
+@Html.Hidden("lstCountSub", (int)ViewBag.lstCountSub)
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">@Model.TotalItems record(s)</h3>
+
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Source</th>
+                    <th width="200">Module</th>
+                    <th width="100">Active</th>
+                    <th width="150">Created Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Data)
+                {
+                    <tr>
+                        <td>@item.Email</td>
+                        <td>@item.SourceUrl</td>
+                        <td>
+                            @item.ModuleName
+                        </td>
+                        <td>
+                            @if (item.IsActivated)
+                            {
+                                <i class="fa fa-check"></i>
+                            }
+                        </td>
+                        <td>
+                            @(item.CreatedDate.HasValue?item.CreatedDate.Value.ToString("dd/MM/yyyy"):"")
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<input type="hidden" id="hdTotalPage" value="@Model.TotalPages" />

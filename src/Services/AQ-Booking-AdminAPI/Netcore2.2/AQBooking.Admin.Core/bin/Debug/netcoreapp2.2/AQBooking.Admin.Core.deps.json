@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "AQBooking.Admin.Core/2.2.1": {
+        "dependencies": {
+          "System.Linq.Dynamic.Core": "1.0.19"
+        },
+        "runtime": {
+          "AQBooking.Admin.Core.dll": {}
+        }
+      },
+      "System.Linq.Dynamic.Core/1.0.19": {
+        "runtime": {
+          "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.0.19.0",
+            "fileVersion": "1.0.19.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AQBooking.Admin.Core/2.2.1": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Linq.Dynamic.Core/1.0.19": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GFYslLz/1ZZ0+gbqYED2zlD0H95BIK4hOpIcEEEfTDDXAcKE5vpXQQseOGduNVjcJZOF3Wx+4npa2EjdFpuDgA==",
+      "path": "system.linq.dynamic.core/1.0.19",
+      "hashPath": "system.linq.dynamic.core.1.0.19.nupkg.sha512"
+    }
+  }
+}

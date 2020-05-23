@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <PackageId>AQAccommodationMerchant.Core</PackageId>
+    <Authors>AQ Teams</Authors>
+    <Company>AQ Booking</Company>
+    <Product>AQ Booking</Product>
+    <Description>This is share package use for Accommodation Merchant Portal.</Description>
+    <Copyright>AQ Booking</Copyright>
+    <Version>1.0.39</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AQBooking.Core" Version="1.0.27" />
+    <PackageReference Include="AQConfigurations.Core" Version="1.1.46" />
+    <PackageReference Include="AQEncrypts" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AQEncrypts">
+      <HintPath>..\..\..\..\AQ DLL\AQEncrypts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Target Name="PostBuildRelease" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
+    <Exec Command="$(ProjectDir)CMD\nuget.exe push $(ProjectDir)bin\$(Configuration)\*.nupkg eefbdffc-4939-41d3-a53d-a5a9cafa705e -Source http://103.97.125.19/AQNuget/nuget" />
+  </Target>
+</Project>

@@ -1,0 +1,667 @@
+﻿@import "../../variables";
+
+.yacht-body {
+    padding: 1.5vw 0;
+}
+
+.yacht-item {
+    padding: 1.5vw 0;
+
+    .row-yacht {
+        padding-top: 1.5vw;
+    }
+
+    .item-yacht {
+        border-top-left-radius: .5rem;
+        border-bottom-right-radius: 1rem;
+        -webkit-box-shadow: 1px 2px 5px 0px rgba(196,196,196,0.75);
+        -moz-box-shadow: 1px 2px 5px 0px rgba(196,196,196,0.75);
+        box-shadow: 1px 2px 5px 0px rgba(196,196,196,0.75);
+        padding: 0;
+        text-align: center;
+        position: relative;
+        display: block;
+        transition: all 0.3s ease;
+        margin-bottom: 30px;
+        margin: 5px -7px;
+        border-radius: 20px 0 0 0;
+
+        &:hover {
+            box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px 0 0 0;
+        }
+
+        .title {
+            padding: .8rem 1rem;
+            font-size: 1.25rem;
+            font-family: 'SegoeuiSemibold';
+            margin: 0;
+            border-bottom: 1px solid @light-gray;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+            .price {
+                font-size: 1.35rem;
+                color: #fea014;
+            }
+        }
+
+        .content-yacht {
+            color: @aq-text;
+            text-align: center;
+            padding: .8rem 0.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+
+            .price {
+                overflow: hidden;
+                display: block;
+                width: 100%;
+                text-align: center;
+                span {
+                    font-size: x-large;
+                    color: @aq-orange;
+                    font-family: 'SegoeuiBold';
+                }
+            }
+
+            .local {
+                text-align: center;
+                font-style: italic;
+                color: #424444;
+                font-size: 14px;
+                display: block;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                max-height: 42px;
+                display: -webkit-box;
+                text-overflow: ellipsis;
+                position: relative;
+                margin-right: -10px;
+
+
+                .aes-location1 {
+                    
+                }
+            }
+        }
+
+        .link-landing {
+            font-size: 14px;
+            text-align: center;
+            display: block;
+            position: relative;
+            z-index: 3;
+            margin: 0 -15px;
+            img {
+                max-width: 64px;
+                margin: 5px auto 0;
+            }
+        }
+
+        .link-landing + .price {
+            text-align: left;
+        }
+
+        .type-info {
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            padding: .5rem 1.25rem;
+            color: @white;
+            background-color: @aq-orange;
+            border-top-right-radius: 10em;
+            border-bottom-right-radius: 10em;
+
+            b {
+                font-family: 'SegoeuiSemibold';
+                font-weight: 100;
+            }
+        }
+    }
+
+    .sold-out {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,.2);
+            z-index: 3;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            width: 85%;
+            background: url(../../../../images/icons/sold-out.png) no-repeat center;
+            height: 150px;
+            transform: translate(-50%,-50%);
+            background-size: contain;
+            z-index: 4;
+            
+        }
+        .txtgetDate {
+            display: none;
+        }
+
+    }
+    
+    .slick-list {
+        padding-bottom: 10px;
+    }
+
+    .slick-arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-color: transparent;
+        color: transparent;
+        border: 0;
+        z-index: 3;
+        padding: 0;
+        opacity: 0.95;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -15px;
+            z-index: 3;
+            transform: translate(0, -50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            transition: all .2s ease-in;
+            box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+        }
+        &::before {
+            content: "";
+            border: solid #000;
+            border-width: 0 4px 4px 0;
+            display: inline-block;
+            padding: 6px;
+            transform: rotate(135deg) translate(-25%, 45%);
+            position: absolute;
+            top: 50%;
+            left: 8px;
+            z-index: 4;
+            border-radius: 0 2px 3px 2px;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &.slick-disabled {
+            cursor: default;
+            opacity: 0.5;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+    
+    .slick-next {
+        left: auto;
+        right: 0;
+        &::after {
+            left: auto;
+            right: -15px;
+        }
+
+        &::before {
+            transform: rotate(-45deg) translate(25%, -45%);
+            left: auto;
+            right: 3px;
+        }
+    }
+
+    .slick-slide {
+        &:focus {
+            outline: none;
+        }
+    }
+
+
+    .have-logo {
+        .content-yacht {
+            align-items: stretch;
+
+            .btn-date {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+            .local {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                transform: translate(0,-50%);
+                padding-bottom: 38px;
+                max-height: inherit;
+            }
+        }
+    }
+
+    .txtgetDate {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 0;
+        font-size: 0;
+        outline: none;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .btn-date {
+        color: #fff;
+        background-color: #00a1e9;
+        width: 100%;
+        padding: 6px;
+        text-align: center;
+    }
+}
+
+.list-private-yacht {
+    .item-yacht {
+        border: 1px solid #DFDDDD;
+        border-radius: 5px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        position: relative;
+        z-index: 1;
+        left: 0;
+        top : 0;
+        transition: all 0.3s ease;
+
+        &:hover {
+            box-shadow: 1px 2px 5px 0 rgba(196,196,196,0.75);
+        }
+    }
+
+
+    .content-yacht {
+        position: relative;
+        z-index: 1;
+        left: 0;
+        top : 0;
+    }
+
+    .image-yacht {
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .content-info-yacht {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .name-yacht {
+        text-align: center;
+        .rem-px(font-size, 24);
+        font-family: @font-semibold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0.75rem .5rem;
+        background: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .more-info-yacht {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .item-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        flex-grow: 1;
+        .label {
+            color: #A2A2A2;
+            font-size: 14px;
+            padding-right: 6px;
+            position: relative;
+            top: 1px;
+
+            &::before {
+                margin-right: 4px;
+                vertical-align: middle;
+            }
+        }
+        .info {
+            color: #011233;
+            font-size: 16px;
+            font-family: @font-bold;
+        }
+    }
+    .item-info:last-child {
+        flex-basis: 100%;
+    }
+
+    .btn-detail {
+        .rem-px(font-size, 18);
+        font-family: @font-semibold;
+        color: #fff;
+        background-color: #00A1E9;
+        border-radius: 5px;
+        padding: 10px 20px;
+
+        .aes-up-arrow {
+            margin-left: 2rem;
+            transform: rotate(90deg);
+            display: inline-block;
+        }
+    }
+
+    .tag-hotdeal-yacht {
+        font-family: @font-bold;
+        color: #fff;    
+        .rem-px(font-size, 20);
+        background-color: #FEA014;
+        padding: 10px 30px;
+        border-radius: 0 35px 35px 0;
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+
+    .sold-out {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,.2);
+            z-index: 3;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            width: 85%;
+            background: url(../../../../images/icons/sold-out.png) no-repeat center;
+            height: 150px;
+            transform: translate(-50%,-50%);
+            background-size: contain;
+            z-index: 4;
+            
+        }
+        .txtgetDate {
+            display: none;
+        }
+
+    }
+}
+
+.calendar-modal-center {
+    //&:after {
+        // content: "";
+        // overflow-x: hidden;
+        // overflow-y: auto;
+        // position: fixed;
+        // top: 0;
+        // left: 0;
+        // z-index: 99;
+        // width: 100%;
+        // height: 100%;
+        // outline: 0;
+        // background: rgba(0,0,0,.5)
+    //}
+    .daterangepicker {
+        position: fixed;
+        z-index: 100;
+        top: 0 !important;
+        left: 0 !important;
+        margin: auto;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 530px;
+        height: 420px;
+        overflow: hidden;
+        border: 0;
+
+        &::before {
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            outline: 0;
+            background: rgba(0,0,0,.5)
+        }
+
+        &::after {
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: -1;
+            border-radius: 7px 7px 0 0;
+        }
+
+        .drp-buttons {
+            .cancelBtn {
+                display: inline-block;
+                padding: 5px 15px;
+                width: 45%;
+                margin-right: 8px;
+                background-color: #DDDDDD;
+            }
+
+            .applyBtn {
+                width: 45%;
+                margin-left: 8px;
+            }
+        }
+
+    }
+
+    .daterangepicker-title {
+        color: #FFF;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 600;
+        padding: 15px 0;
+        background-color: #00a1e9;
+    }
+
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .yacht-item {
+        .item-yacht {
+            display: flex;
+            align-items: stretch;
+
+            .type-info {
+                padding: 3px 5px;
+                font-size: 12px;
+                top: 0.5rem;
+            }
+        }
+
+        .image-yacht {
+            flex: 0 0 30%;
+            align-self: stretch;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .info-yacht {
+            text-align: left;
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .yacht-item {
+        .btn-date {
+            font-size: 14px;
+        }
+
+        .item-yacht {
+            .link-landing {
+                font-size: 14px;
+            }
+        }
+
+        .sold-out {
+            &::before {
+                top: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .calendar-modal-center {
+        .daterangepicker {
+            top : auto !important;
+            width: 100%;
+            height: inherit;
+            max-height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            // max-width: 100% !important;
+            // max-height: 100% !important;
+            // transform: scale(1) !important;
+            // zoom: 1 !important;
+
+            .drp-calendar {
+                max-width: 100%;
+                width: 100%;
+                padding: 0;
+            }
+
+            .drp-buttons {
+                background-color: #FFF;
+            }
+
+            .calendar-table {
+                border-radius: 0;
+            }
+
+            .month {font-size: 16px;}
+        }
+    }
+
+    .yacht-item {
+        .item-yacht {
+            .content-yacht {
+                .local {
+                    max-height: inherit;
+                    margin: 0;
+                    -webkit-line-clamp: inherit;
+                }
+            }
+            .title {
+                white-space: normal;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .yacht-item {
+        .item-yacht {
+            margin: 5px 0;
+            .content-yacht {
+                .local {
+                    position: static;
+                    transform: translate(0);
+                    padding-bottom: 5px;
+                }
+
+                .local + .btn-date {
+                    position: static;
+                }
+
+                .btn-date {
+                    margin-top: 10px;
+                }
+            }
+
+            .link-landing {
+                img {
+                    
+                    margin-bottom: 10px;
+                }
+            }
+
+           
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .yacht-item {
+        .image-yacht {
+            flex: 0 0 35%;
+        }
+
+        .item-yacht {
+            .type-info {
+                max-width: 35%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

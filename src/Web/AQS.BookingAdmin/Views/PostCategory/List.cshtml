@@ -1,0 +1,34 @@
+﻿
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="panelLstPostCate"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="divPage" class="mx-auto">
+            <div id="divPagging"></div>
+        </div>
+    </div>
+    <!-- /.row -->
+    <!-- /.row -->
+</div><!-- /.container-fluid -->
+@section scripts{
+
+    <script>
+    var postCategoryConfig = {
+      urlObj: {
+        GET_LIST_CATE: "@Url.Action("ListData")",
+        GET_MODAL_CATE:"@Url.Action("Create")",
+        POST_CATE: "@Url.Action("CreateOrUpdate")",
+        DELTE_CATE: "@Url.Action("Delete")",
+        LOAD_CHANGED_LANGFID_CATE: "@Url.Action("LoadLangFIdChanged")",
+        CHECK_DUPLICATE: "@Url.Action("IsDuplicatePostCateDetail")"
+      }
+    }
+    </script>
+    <script src="~/js/pages/posts/postCategory.js"></script>
+}
+@section modal{
+    <div class="modal fade" id="modal-postcategory" aria-modal="true" data-keyboard="false" data-backdrop="static"></div>
+}

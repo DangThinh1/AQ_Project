@@ -1,0 +1,86 @@
+﻿@using AQ_PGW.Core.Models.DBTables
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="row header_bar" style="background-color:#f8f9fa">
+    <div class="col-md-4 col-xs-4" style="border:1px solid; border-color:#808080">
+        <img src="~/img/user-info.png" style="width: 20%; padding: 2px;" />
+    </div>
+    <div class="col-md-2 col-md-offset-6 col-xs-6 col-xs-offset-2">
+        Sign in @DateTime.Now.ToShortDateString()
+    </div>
+</div>
+<div class="row card bg-info" style="margin-top: 1.25rem;">
+    <div class="card-body text-center">
+        <p class="card-text">Some text inside the sixth card</p>
+    </div>
+</div>
+<div class="row bg-light" style="margin-top: 1.25rem;">
+    <div class="card-body">
+        <p class="card-text">Transaction Summary /<a href="@Url.Action("Index","History")" style="margin: 10px">See All Transaction</a></p>
+    </div>
+</div>
+<section class="row" style="margin-top: 1.25rem;">
+    <div class="col-12" id="partialTable" style="padding:0px">
+    </div>
+</section>
+
+
+@*<script src="~/js/app/home.js"></script>*@
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            (function () {
+                CallPage();
+            })();
+
+        })
+
+        var sortName = "";
+        var sortDirection = "ASC";
+        var currenPage = 0;
+        function CallPage(page) {
+            //if (currenPage == page) {
+            //    return;
+            //}
+            currenPage = page;
+            console.log(page);
+            var sort = sortName + " " + sortDirection;
+            if (sortName == "") {
+                sort = null;
+            }
+            console.log(sort);
+            /**/
+            //$('#partialTable').load('/Home/PageTrans?page=' + page + '&sortOrder=' + sort);
+            /**/
+            $.ajax({
+                url: "Home/PageTrans",
+                type: 'GET',
+                data: { page: page, sortOrder: sort },
+                cache: false,
+                async: true,
+                dataType: "html",
+                success: function (data) {
+                    //called when successful
+                    var table = $('#partialTable');
+                    table.html(data);
+                },
+                error: function (e) {
+                    //called when there is an error
+                    console.log(e);
+                }
+            });
+        }
+
+        $("body").on("click", "#Otable th a", function () {
+            sortName = $(this).data("field");
+            sortDirection = sortDirection == "ASC" ? "DESC" : "ASC";
+            CallPage(currenPage);
+        });
+
+
+    </script>
+
+
+}

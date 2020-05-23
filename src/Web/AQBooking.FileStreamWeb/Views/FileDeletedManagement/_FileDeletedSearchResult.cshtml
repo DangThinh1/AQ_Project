@@ -1,0 +1,43 @@
+﻿@using AQBooking.FileStream.Core.Models.FileResponse
+@model List<FileViewModel>
+
+<div class="table-responsive bootgrid table-bordered">
+    <table class="table table-striped bootgrid-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>File</th>
+                <th>Original Name</th>
+                <th>File Name</th>
+                <th>File extention</th>
+                <th>File Path</th>
+                <th>Deleted</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.FileId</td>
+                    <td><em class="fa-3x mr-2 fas fa-file-alt"></em></td>
+                    <td>@item.OriginalName</td>
+                    <td>@item.FileName</td>
+                    <td>@item.FileExtentions</td>
+                    <td>@item.Path</td>
+                    <td>@item.Deleted</td>
+                    <td id="show_@item.FileId" class="text-center">
+                        <button class="btn btn-primary" id="restore_@item.FileId" title="Restore file"><em class="fas fa-recycle"></em></button>
+                        <button class="btn btn-danger" id="remove_@item.FileId" title="Remove from database"><i class="fas fa-fire"></i></button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="d-flex mt-3">
+    <nav class="ml-auto">
+        <aes-pagination info="@ViewBag.PaginatedModel" model="@ViewBag.SearchModel" url="@Url.Action("Index", "FileDeletedManagement")" update-target-id="divSearchResult"></aes-pagination>
+    </nav>
+</div>

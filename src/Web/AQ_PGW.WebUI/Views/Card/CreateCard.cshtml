@@ -1,0 +1,256 @@
+﻿
+@{
+    ViewData["Title"] = "CreateCard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>CreateCard</h1>
+
+<div class="row">
+    <div class="col-md-4 example3" id="example-3">
+        <form class="form-group">
+            <div class="form-group">
+                <label for="InputNumber">Card number</label>
+                <div id="example3-card-number" class="field empty mb-4" style="border: 1px solid #ced4da;">
+
+                </div>
+                @*<input class="form-control" id="example3-card-number" aria-describedby="CardNumber" placeholder="Card number">*@
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col align-self-start"><label>Expiration date</label></div>
+                    <div class="col align-self-end"><label>Security code</label></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col align-self-start">
+                        <div id="example3-card-expiry" class="field empty form-control" style="border: 1px solid #ced4da;"></div>
+
+                    </div>
+                    <div class="col align-self-end">
+                        <div id="example3-card-cvc" class="field empty form-control" style="border: 1px solid #ced4da;"></div>
+
+                    </div>
+                </div>
+                <div class="error" role="alert">
+                    <span class="message" style="color:#db4343"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <label class="col-md-6">Card holder name</label>
+                    <label class="col-md-4">Last name</label>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <input class="form-control" id="example3-FisrtName" pattern="[a-z][\s ]+{1,15}" required />
+                        @*<input asp-for="Name" class="form-control" placeholder="First name">
+                            <span asp-validation-for="Name" class="text-danger" id="name"></span>
+                            <span asp-validation-for="Name" class="text-danger"></span>*@
+                    </div>
+                    <div class="col">
+                        <input class="form-control" id="example3-LastName" pattern="[a-z][\s ]+{1,15}" required />
+                        @*<input asp-for="Name" class="form-control" placeholder="First name">
+                            <span asp-validation-for="Name" class="text-danger" id="name"></span>*@
+                    </div>
+                </div>
+            </div>
+
+
+            <label class="control-label" for="Currency">Billing address</label>
+            <div class="form-group">
+                <label class="control-label" for="Currency">Address line 1</label>
+                <input class="form-control" id="example3-address" />
+                @*<input asp-for="Address1" class="form-control" value="" type="text" id="address1" name="address1">
+                    <span asp-validation-for="Address1" class="text-danger"></span>*@
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Currency">Address line 2 (Optional)</label>
+                <input class="form-control" id="example3-address2" />
+                @*<input asp-for="Address2" class="form-control" value="" type="text" id="address2" name="address2">
+                    <span asp-validation-for="Address2" class="text-danger"></span>*@
+            </div>
+
+            <div class="form-group">
+                <label class="control-label" for="Currency">City</label>
+                <input class="form-control" id="example3-city" />
+                @*<input asp-for="City" class="form-control" value="" type="text" id="city" name="city">
+                    <span asp-validation-for="City" class="text-danger"></span>*@
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label" for="Currency">Province/State</label>
+                <input class="form-control" id="example3-state" />
+                @*<input asp-for="Province" class="form-control" value="" type="text" id="province" name="Province">
+                    <span asp-validation-for="Province" class="text-danger"></span>*@
+            </div>
+
+            <div class="form-group">
+                <label class="control-label" for="Currency">Country/Region</label>
+                <select class="form-control" id="example3-address-country"></select>
+                @*<span asp-validation-for="Country" class="text-danger"></span>*@
+            </div>
+
+            <div class="form-group">
+                <label class="control-label" for="Currency">Post/Zip code</label>
+                <input class="form-control" id="example3-zip" />
+                @*<input asp-for="ZipCode" class="form-control" value="" type="text" id="postCode" name="postCode">
+                    <span asp-validation-for="ZipCode" class="text-danger"></span>*@
+
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary ladda-button" id="btnCreateCard">Create Card</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+            $("#zoom").click(function () {
+                debugger;
+                //var l = Ladda.create(this);
+                //l.start();
+                //l.start();
+                //l.stop();
+                //l.toggle();
+                //l.isLoading();
+                //l.setProgress(0 - 1);
+            })
+            //var date = {};
+            //string tokenCard, string cusID
+            function CallCard(tokenCard, cusID) {
+                cusID = "cus_Eue2iFwuOLZHmJ";
+                //debugger;
+                $.ajax({
+                    url: '@Url.Action("CreateTokenCard", "Card")',
+                    type: "POST",
+                    data: { tokenCard: tokenCard, cusID: cusID},
+                    success: function (data) {
+                        var res = data
+                        console.log("res", res);
+                        alert(data);
+                    },
+                    error: function () {
+                        console.log("Error");
+                    }
+                })
+            }
+            //$('#btnCreateCard').click(function () {
+            //    debugger;
+            //    //var cardnumber = $("input[name=cardnumber]").value
+            //    //var expmonth = $("input[name=exp-date]").value.split("/")[0]
+            //    //var expyear = $("input[name=exp-date]").value.split("/")[1]
+            //    //var cvcname = $("input[name=cvc]").value
+            //    var nameCard = $("#name").value
+            //    var addressCard1 = $("#address1").value
+            //    var addressCard2 = $("#address2").value
+            //    var cityCard = $("#city").value
+            //    var provinceCard = $("#province").value
+            //    var countryCard = $("#country").value
+            //    var CodeCard = $("#postCode").value
+
+            //    date = {
+            //        CardNumber: cardnumber,
+            //        Exp_Month: expmonth,
+            //        Exp_Year: expyear,
+            //        CVC: cvcname,
+            //        Name: nameCard,
+            //        Address1: addressCard1,
+            //        Address2: addressCard2,
+            //        City: cityCard,
+            //        Province: provinceCard,
+            //        Country: countryCard,
+            //        ZipCode: CodeCard
+            //    }
+            //    //CallCard();
+            //})
+            var hostLocal = window.location.href;
+            var file = hostLocal.slice(0, hostLocal.indexOf(window.location.pathname));
+            $.getJSON(file + '/jsonData/countries.json',
+                function (data) {
+                    var html = '';
+                    var len = data.length;
+                    for (var i = 0; i < len; i++) {
+                        if (data[i].code == "SG") {
+                            html += '<option value="' + data[i].code + '" selected>' + data[i].name + '</option>'
+                        } else {
+                            html += '<option value="' + data[i].code + '">' + data[i].name + '</option>';
+                        }
+                    }
+                    $('#example3-address-country').append(html);
+                });
+
+            var elements = stripe.elements({
+                fonts: [
+                    {
+                        cssSrc: 'https://fonts.googleapis.com/css?family=Quicksand',
+                    },
+                ],
+                // Stripe's examples are localized to specific languages, but if
+                // you wish to have Elements automatically detect your user's locale,
+                // use `locale: 'auto'` instead.
+                locale: window.__exampleLocale,
+            });
+
+            var elementStyles = {
+                base: {
+                    lineHeight: '1.429',
+                    ':focus': {
+                        color: '#424770',
+                    },
+
+                    '::placeholder': {
+                        color: '#9BACC8',
+                    },
+
+                    ':focus::placeholder': {
+                        color: '#CFD7DF',
+                    },
+                },
+                invalid: {
+                    //color: '#fff',
+                    ':focus': {
+                        color: '#FA755A',
+                    },
+                    '::placeholder': {
+                        color: '#FFCCA5',
+                    },
+                },
+            };
+
+            var elementClasses = {
+                focus: 'focus',
+                empty: 'empty',
+                invalid: 'invalid',
+            };
+
+            var cardNumber = elements.create('cardNumber', {
+                style: elementStyles,
+                classes: elementClasses,
+                placeholder: 'Card number',
+            });
+            cardNumber.mount('#example3-card-number');
+
+            var cardExpiry = elements.create('cardExpiry', {
+                style: elementStyles,
+                classes: elementClasses,
+                placeholder: 'MM/YY',
+            });
+            cardExpiry.mount('#example3-card-expiry');
+
+            var cardCvc = elements.create('cardCvc', {
+                style: elementStyles,
+                classes: elementClasses,
+            });
+            cardCvc.mount('#example3-card-cvc');
+
+            registerElements([cardNumber, cardExpiry, cardCvc], 'example3', (result) => {
+                console.log(result);
+                CallCard(result.token.id);
+            });
+    </script>
+}
+

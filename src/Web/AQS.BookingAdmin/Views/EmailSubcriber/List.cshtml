@@ -1,0 +1,74 @@
+﻿@model AQBooking.Admin.Core.Models.Subscriber.SubscriberSearchModel
+@{
+    string pageTitle = "Email Subcriber Management";
+    ViewBag.Title = pageTitle;
+}
+
+<div class="content-header clearfix">
+    <h4 class="float-left">
+        @pageTitle
+    </h4>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-info">
+            <div class="card-header">
+                <h3 class="card-title">Search Email</h3>
+            </div>
+            <div class="card-body">
+                <form id="frmSearchEmailSubcriber" autocomplete="off">
+                    <div class="row">
+                        @* <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="Input the email" asp-for="Email" class="form-control" />
+                                        </div>
+                                            </div>*@
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" placeholder="From date" asp-for="CreatedDateFrom" class="form-control" value="" />
+                                    <span class="mx-2">	&#45;</span>
+                                    <input type="text" placeholder="To date" asp-for="CreatedDateTo" class="form-control" value="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <div class="form-group">
+                                <button class="btn btn-info">Search</button>
+                                <button class="btn btn-info" type="button" id="btnExport" disabled>Export</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            @*<form id="frmExport" method="get" asp-action="Export" asp-controller="EmailSubcriber">
+                    <button class="btn btn-info" id="btnExport" disabled>Export</button>
+                </form>*@
+
+        </div>
+        <div id="divTable"></div>
+        <div class="row">
+            <div id="divPage" class="mx-auto">
+                <div id="divPagging"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+
+    <script>
+        var emailSubcriberSearchConfig = {
+            urlObj: {
+                Search: "@Url.Action("ListData")",
+                Export: "@Url.Action("Export")",
+                Download: "@Url.Action("DownloadFileExcel")"
+            }
+        }
+    </script>
+    <script src="~/js/pages/posts/emailSubcriberSearch.js"></script>
+}
+
+

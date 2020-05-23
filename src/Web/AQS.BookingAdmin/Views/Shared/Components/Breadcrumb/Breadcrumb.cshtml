@@ -1,0 +1,22 @@
+﻿@model BreadcumbModel
+<div class="row mb-2">
+    
+    <div class="col-sm-12">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/"><i class="fa fa-home"></i> Home</a></li>
+            @foreach (var item in Model.Breadcrumbs)
+            {
+                @if (item.Key != "#")
+                {
+                    <li class="breadcrumb-item active"><a href="@item.Key">@item.Value</a></li>
+                }
+                else
+                {
+                    <li class="breadcrumb-item active">@item.Value</li>
+                }
+
+            }
+
+        </ol>
+    </div><!-- /.col -->
+</div><!-- /.row -->

@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Stripe.Customer
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-2"><h3>My account</h3></div>
+        <div class="col-md-5"><h3>History</h3></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"><h4>Manage your cards </h4></div>
+        <div class="col-md-2" style="color:#42c1e8">
+            <a asp-area="" asp-controller="Card" asp-action="CreateCard">Add Card</a>
+        </div>
+       
+    </div>
+    <div class="row">
+        <div class="col-md-11"><hr /></div>
+        <div class="col-md-1"><i class="fas fa-unlock-alt"></i></div>
+        <div class="col-12">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Card number</th>
+                        <th scope="col">Card holder name</th>
+                        <th scope="col">Name </th>
+                        <th scope="col">Status </th>
+                        <th scope="col">Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyTable">
+                    @await Html.PartialAsync("~/Views/Card/_Default.cshtml", Model)
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+        function deleteCard(cusID, cardID) {
+            var hi = confirm("Do you really want delete?");
+            if (hi == true) {
+                $.ajax({
+                    url: "@Url.Action("Delete","Card")",
+                    data: { cusID: cusID, cardID: cardID },
+                    type: 'POST',
+                    success: function (data) {
+                        var res = data;
+                        $("#tbodyTable").html(res);
+                    },
+                    error: function (errormessage) {
+                        console.log(errormessage);
+                    }
+                });
+            }
+        }
+
+
+        function Default(cusID, cardID) {
+            $.ajax({
+                url: "@Url.Action("EditDefault", "Card")",
+                data: { cusID: cusID, cardID: cardID },
+                type: "POST",               
+                success: function (data) {
+                    var res = data;
+                    $("#tbodyTable").html(res);
+                },
+                error: function (error) {
+                    alert(error.responseText);
+                }
+
+            })
+        }
+    </script>
+}
+
+
+

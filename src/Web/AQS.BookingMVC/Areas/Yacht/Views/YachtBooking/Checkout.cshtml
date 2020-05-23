@@ -1,0 +1,182 @@
+﻿@using AQS.BookingMVC.Models.YachtBooking;
+@model AQBooking.YachtPortal.Core.Models.YachtCharterings.YachtCharteringViewModel
+
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="aq-main-content" id="checkoutPage">
+    <section class="form-checkout">
+        <div class="top-text">
+            <h1 class="lefts">Secure checkout, it takes just <strong>2 minutes</strong> to get your reservation! <strong>No account needed.</strong></h1>
+            <p class="right">
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.9422 20.9201C26.8658 20.69 26.3799 20.351 25.4849 19.9039C25.2424 19.763 24.897 19.5715 24.4499 19.3286C24.0025 19.0857 23.5963 18.8618 23.2322 18.6572C22.8674 18.4527 22.5256 18.2546 22.2062 18.0631C22.1552 18.0247 21.9954 17.913 21.7269 17.7273C21.4582 17.542 21.2316 17.4045 21.0459 17.3149C20.8606 17.2257 20.6783 17.1809 20.4993 17.1809C20.2437 17.1809 19.9244 17.3632 19.541 17.7273C19.1576 18.0918 18.8059 18.4878 18.4865 18.9165C18.167 19.3449 17.8282 19.7409 17.4706 20.1053C17.1125 20.4698 16.8182 20.6519 16.5884 20.6519C16.473 20.6519 16.3291 20.6197 16.1567 20.5562C15.9844 20.4924 15.8533 20.4376 15.7633 20.3935C15.6741 20.3484 15.521 20.2592 15.3035 20.1246C15.0856 19.9903 14.9645 19.9168 14.9389 19.9039C13.1876 18.9321 11.6856 17.8199 10.4327 16.5675C9.18012 15.3143 8.06775 13.8124 7.09621 12.0609C7.08345 12.0353 7.00977 11.9138 6.87564 11.6966C6.74131 11.4792 6.65178 11.326 6.60705 11.2363C6.56232 11.1469 6.50798 11.0158 6.44418 10.8432C6.38037 10.6707 6.34833 10.527 6.34833 10.4118C6.34833 10.1818 6.53055 9.88762 6.89492 9.52964C7.25922 9.17185 7.65562 8.83294 8.08373 8.51357C8.51217 8.19421 8.90817 7.84253 9.27261 7.45916C9.63691 7.07558 9.81906 6.75615 9.81906 6.50052C9.81906 6.32166 9.77433 6.13931 9.68493 5.954C9.59547 5.76829 9.45805 5.54168 9.27261 5.27309C9.0871 5.00463 8.97527 4.84498 8.93685 4.7936C8.7453 4.47423 8.54737 4.1323 8.34258 3.76793C8.1378 3.40363 7.91427 2.99755 7.67127 2.55017C7.42847 2.10299 7.23685 1.7577 7.09608 1.51483C6.64889 0.62013 6.31018 0.134128 6.08001 0.0576943C5.99048 0.0193434 5.85615 0 5.67736 0C5.332 0 4.88146 0.0638063 4.32541 0.191822C3.76915 0.319636 3.33144 0.453696 3.0118 0.59454C2.3726 0.862862 1.69511 1.64264 0.979136 2.93361C0.32717 4.13505 0.0012207 5.3242 0.0012207 6.50018C0.0012207 6.84507 0.0235865 7.18062 0.068318 7.50691C0.11305 7.83286 0.192975 8.20045 0.308162 8.60962C0.423148 9.01865 0.515902 9.3225 0.586022 9.52037C0.656209 9.71837 0.787247 10.0731 0.979069 10.5846C1.17062 11.096 1.28581 11.409 1.32416 11.5241C1.77154 12.777 2.30208 13.8955 2.91562 14.8799C3.92511 16.5162 5.30272 18.2072 7.04765 19.9522C8.79265 21.6972 10.4833 23.0747 12.1197 24.0846C13.104 24.6981 14.2229 25.2285 15.4756 25.6763C15.5907 25.7144 15.9038 25.8293 16.4149 26.0215C16.9263 26.2132 17.2812 26.3443 17.4792 26.4146C17.6772 26.485 17.9812 26.5778 18.3899 26.693C18.7994 26.8082 19.1667 26.8881 19.4926 26.9332C19.8188 26.9773 20.1544 27.0001 20.4994 27.0001C21.6753 27.0001 22.8645 26.6739 24.0661 26.022C25.357 25.3063 26.1365 24.6287 26.405 23.989C26.5462 23.6697 26.6799 23.2319 26.8077 22.6756C26.9359 22.1196 26.9996 21.6692 26.9996 21.3239C27 21.1443 26.9807 21.0103 26.9422 20.9201Z" fill="black" />
+                </svg><span>Book online or Call us at 123456789</span>
+            </p>
+        </div>
+        <form action="">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="card">
+                            <h2 class="title">Enter your details</h2>
+                            <p class="sub-text"> <a href="#">Sign in</a><span>to book with your saved details or</span><a href="#">register</a><span>to manage your bookings on the go!</span></p>
+                            <hr>
+                            <div class="wrap-with-50">
+                                <div class="form-group">
+                                    <label for="firstNameCheckout">First Name<span class="require">*</span></label>
+                                    @*<input class="form-control" id="firstNameCheckout" type="text" aria-describedby="firstNameCheckout" placeholder="Edward">*@
+                                    @Html.TextBoxFor(x => x.CustomerName, new { @class = "form-control", @placeholder = "Your first name" })
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastNameCheckout">Last Name<span class="require">*</span></label>
+                                    @*<input class="form-control" id="lastNameCheckout" type="text" aria-describedby="lastNameCheckout" placeholder="Wong">*@
+                                    @Html.TextBoxFor(x => x.CustomerName, new { @class = "form-control", @placeholder = "Your last name" })
+                                </div>
+                            </div>
+                            <div class="wrap-with-50">
+                                <div class="form-group">
+                                    <label for="mobilePhoneCheckout">Mobile phone<span class="require">*</span></label>
+                                    @*<input class="form-control" id="mobilePhoneCheckout" type="number" aria-describedby="mobilePhoneCheckout" placeholder="+852 6737 7406">*@
+                                    @Html.TextBoxFor(x => x.ContactNo, new { @class = "form-control", @placeholder = "Your phone number" })
+                                </div>
+                            </div>
+                            <div class="wrap-with-50">
+                                <div class="form-group">
+                                    <label for="emailCheckout">Email address</label>
+                                    @*<input class="form-control" id="emailCheckout" type="email" aria-describedby="emailCheckout" placeholder="Enter email">*@
+                                    @Html.TextBoxFor(x => x.ReservationEmail, new { @class = "form-control", @placeholder = "Your email" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-0">
+                            <div class="credit">
+                                <h2 class="title">Enter Your Credit Card</h2><img class="img-credit" src="~/images/checkout.png" alt="checkout">
+                                <div class="form-group">
+                                    <input class="form-control" id="nameCreditCard" type="text" aria-describedby="nameCreditCard" placeholder="Name on credit card">
+                                    <div class="wrap-with-50">
+                                        <input class="form-control" id="expiryDate" type="number" aria-describedby="expiryDate" placeholder="Expiry date">
+                                        <input class="form-control" id="cvvCode" type="number" aria-describedby="cvvCode" placeholder="CVV code">
+                                    </div>
+                                    <input class="form-control" id="degitsCardsNumber" type="number" aria-describedby="degitsCardsNumber" placeholder="16 digits card number">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="sub-text"> <span>By clicking 'Confirm Your Reservation', I agree to the </span><a href="#">Booking Conditions, </a><a href="#">Terms and Conditions</a><span>and </span><a href="#">Privacy Policy</a></p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card right-checkout-info">
+                            <h2 class="title">Your booking summary</h2>
+                            <p class="type">Yacht</p>
+                            <div class="info-type">
+                                <div class="left"><img src="~/images/info-checkout.png" alt="Checkout"></div>
+                                <div class="info">
+                                    <div class="name">@Model.YachtPortName</div>
+                                    <div class="star">
+                                        <div class="numb-star">
+                                            <span>4.8 </span><svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.7171 1.30613L16.9996 8.42773L25.4031 9.0895C25.986 9.13564 26.2231 9.80227 25.7806 10.1532L19.4065 15.2154L21.3166 22.7462C21.4491 23.2696 20.8305 23.6812 20.3297 23.4031L13.1078 19.4107L5.88586 23.4031C5.38382 23.68 4.76654 23.2684 4.899 22.7462L6.80914 15.2154L0.433638 10.152C-0.00879252 9.80106 0.226994 9.13443 0.81116 9.08829L9.21468 8.42652L12.4971 1.30613C12.725 0.810716 13.4893 0.810716 13.7171 1.30613Z" fill="#414A5A" />
+                                            </svg>
+                                        </div>Amazing sea view
+                                    </div>
+                                    <div class="location">
+                                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.9537 2.05161C11.6308 0.728674 9.87171 0 8.0009 0C6.12973 0 4.37105 0.728674 3.04811 2.05161C0.59984 4.49952 0.295586 9.10532 2.3892 11.8958L8.0009 20L13.6042 11.9072C15.7062 9.10532 15.402 4.49952 12.9537 2.05161ZM8.06555 9.4965C6.65605 9.4965 5.5088 8.34925 5.5088 6.93975C5.5088 5.53025 6.65605 4.383 8.06555 4.383C9.47505 4.383 10.6223 5.53025 10.6223 6.93975C10.6223 8.34925 9.47505 9.4965 8.06555 9.4965Z" fill="black" />
+                                        </svg><span>257/1-3 Charoennakorn Road, Bangkok, 10600, Thailand</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="date-picker form-item">
+                                <span>Check-in - Check-out</span><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <g clip-path="url(#clip1)">
+                                            <path d="M24.3633 3.28711H23.0977V1.25586H20.9883V3.28711H7.06641V1.25586H4.95703V3.28711H3.69141C1.94674 3.28711 0.527344 4.65394 0.527344 6.33398V24.209C0.527344 25.889 1.94674 27.2559 3.69141 27.2559H24.3633C26.1079 27.2559 27.5273 25.889 27.5273 24.209V6.33398C27.5273 4.65394 26.1079 3.28711 24.3633 3.28711ZM25.418 24.209C25.418 24.769 24.9448 25.2246 24.3633 25.2246H3.69141C3.10985 25.2246 2.63672 24.769 2.63672 24.209V10.8027H25.418V24.209ZM25.418 8.77148H2.63672V6.33398C2.63672 5.77397 3.10985 5.31836 3.69141 5.31836H4.95703V7.34961H7.06641V5.31836H20.9883V7.34961H23.0977V5.31836H24.3633C24.9448 5.31836 25.418 5.77397 25.418 6.33398V8.77148Z" fill="#414A5A" />
+                                            <path d="M6.64453 12.9355H4.53516V14.9668H6.64453V12.9355Z" fill="#414A5A" />
+                                            <path d="M10.8633 12.9355H8.75391V14.9668H10.8633V12.9355Z" fill="#414A5A" />
+                                            <path d="M15.082 12.9355H12.9727V14.9668H15.082V12.9355Z" fill="#414A5A" />
+                                            <path d="M19.3008 12.9355H17.1914V14.9668H19.3008V12.9355Z" fill="#414A5A" />
+                                            <path d="M23.5195 12.9355H21.4102V14.9668H23.5195V12.9355Z" fill="#414A5A" />
+                                            <path d="M6.64453 16.998H4.53516V19.0293H6.64453V16.998Z" fill="#414A5A" />
+                                            <path d="M10.8633 16.998H8.75391V19.0293H10.8633V16.998Z" fill="#414A5A" />
+                                            <path d="M15.082 16.998H12.9727V19.0293H15.082V16.998Z" fill="#414A5A" />
+                                            <path d="M19.3008 16.998H17.1914V19.0293H19.3008V16.998Z" fill="#414A5A" />
+                                            <path d="M6.64453 21.0605H4.53516V23.0918H6.64453V21.0605Z" fill="#414A5A" />
+                                            <path d="M10.8633 21.0605H8.75391V23.0918H10.8633V21.0605Z" fill="#414A5A" />
+                                            <path d="M15.082 21.0605H12.9727V23.0918H15.082V21.0605Z" fill="#414A5A" />
+                                            <path d="M19.3008 21.0605H17.1914V23.0918H19.3008V21.0605Z" fill="#414A5A" />
+                                            <path d="M23.5195 16.998H21.4102V19.0293H23.5195V16.998Z" fill="#414A5A" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect x="0.103516" y="0.893555" width="27.0535" height="27.0535" fill="white" />
+                                        </clipPath>
+                                        <clipPath id="clip1">
+                                            <rect x="0.527344" y="1.25586" width="27" height="26" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                @*<input type="text" name="dateCheckinCheckOut" value="">*@
+                                <input type="text" readonly class="txtgetDate" />
+                            </div>
+                            <hr>
+                            <div class="room-type">
+                                <div class="left"> <span>Deluxe Room</span><a href="#">Change room</a></div>
+                                <div class="right">
+                                    <p class="price">$ @ViewBag.modelReservation.Price</p>
+                                </div>
+                            </div>
+                            <ul class="info">
+                                <li>2 Adults - 1 Room</li>
+                                <li>1 Night</li>
+                                <li>1 queen bed or 2 single beds</li>
+                                <li>Breakfast a la carte served in room</li>
+                            </ul>
+                            <div class="tax-info">
+                                <p>Taxes & Fees</p>
+                                <p class="price">$50.00</p>
+                            </div>
+                            <ul class="add-service">
+                                <li> <a href="#">Add a flight</a></li>
+                                <li> <a href="#">Add a car rental</a></li>
+                                <li> <a href="#">Add an experience</a></li>
+                            </ul>
+                            <div class="sub-info">
+                                <textarea name="subInfo" rows="5" placeholder="Special request  ex. any food allergy, additional bed, adapted rooms for disability,..."></textarea>
+                            </div>
+                            <hr>
+                            <div class="total-price">
+                                <p>Total price</p>
+                                <p>$916.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-btn"><a class="btn-cancel" href="">cancel</a><a class="btn-submit" href="javascrip:void(0)">Confirm my reservation</a></div>
+            </div>
+        </form>
+    </section>
+    <section class="home-block-6 have-bg" style="background-image:url(/images/banner-checkout.png)">
+        <div class="content">
+            <h3 class="sub-title" data-aos="fade-up" data-aos-duration="600" data-aos-offset="-1000">Concierge</h3>
+            <h2 class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-offset="-1000">Need a tailor made experience. </h2>
+            <p class="text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="-1000">Dream with no limit.</p><a class="button" href="#" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600" data-aos-offset="-1000">
+                Contact us<svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.7804 12.3587L24.5377 1.1161C24.3225 0.902344 24.0026 0.837207 23.7208 0.953568C23.4405 1.06923 23.2583 1.34299 23.2583 1.64598V3.14497C23.2583 3.34404 23.3373 3.53439 23.4779 3.67492L31.1926 11.3896H0.772971C0.358679 11.3897 0.0234375 11.7249 0.0234375 12.1392V13.6382C0.0234375 14.0525 0.358679 14.3877 0.772971 14.3877H31.1926L23.4779 22.1024C23.3373 22.2429 23.2583 22.4332 23.2583 22.6324V24.1314C23.2583 24.4344 23.4406 24.7081 23.7208 24.8238C23.8138 24.8625 23.9111 24.8809 24.0077 24.8809C24.2025 24.8809 24.3942 24.8048 24.5377 24.6613L35.7804 13.4186C36.0732 13.1258 36.0732 12.6515 35.7804 12.3587Z" fill="white" />
+                </svg>
+            </a>
+        </div>
+    </section>
+</div>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            aqs.commonFunc.datePickerRangeCustomize('.txtgetDate','@ViewBag.modelReservation.FromDate.ToString("dd MMM yyyy")','@ViewBag.modelReservation.ToDate.ToString("dd MMM yyyy")');            
+        });
+    </script>
+}

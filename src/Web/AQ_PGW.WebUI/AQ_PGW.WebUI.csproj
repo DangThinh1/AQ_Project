@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <ApplicationIcon />
+    <OutputType>WinExe</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AES_Encryption" Version="1.0.0" />
+    <PackageReference Include="BuildBundlerMinifier" Version="2.9.406" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Stripe.net" Version="25.3.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Services\Payment-Gateway\AQ_PGW.Common\AQ_PGW.Common.csproj" />
+    <ProjectReference Include="..\..\Services\Payment-Gateway\AQ_PGW.Core\AQ_PGW.Core.csproj" />
+    <ProjectReference Include="..\..\Services\Payment-Gateway\AQ_PGW.Infrastructure\AQ_PGW.Infrastructure.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\BundleFile\css\" />
+    <Folder Include="wwwroot\BundleFile\js\" />
+  </ItemGroup>
+
+</Project>

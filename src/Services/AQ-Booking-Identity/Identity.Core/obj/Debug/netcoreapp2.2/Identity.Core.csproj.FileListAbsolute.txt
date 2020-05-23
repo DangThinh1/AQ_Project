@@ -1,0 +1,9 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-Identity\Identity.Core\bin\Debug\netcoreapp2.2\Identity.Core.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-Identity\Identity.Core\bin\Debug\netcoreapp2.2\Identity.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-Identity\Identity.Core\bin\Debug\netcoreapp2.2\Identity.Core.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-Identity\Identity.Core\obj\Debug\netcoreapp2.2\Identity.Core.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-Identity\Identity.Core\obj\Debug\netcoreapp2.2\Identity.Core.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-Identity\Identity.Core\obj\Debug\netcoreapp2.2\Identity.Core.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-Identity\Identity.Core\obj\Debug\netcoreapp2.2\Identity.Core.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-Identity\Identity.Core\obj\Debug\netcoreapp2.2\Identity.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-Identity\Identity.Core\obj\Debug\netcoreapp2.2\Identity.Core.pdb

@@ -1,0 +1,14 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Infrastructure\bin\Debug\netcoreapp2.2\AQ_PGW.Infrastructure.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Infrastructure\bin\Debug\netcoreapp2.2\AQ_PGW.Infrastructure.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Infrastructure\bin\Debug\netcoreapp2.2\AQ_PGW.Infrastructure.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Infrastructure\bin\Debug\netcoreapp2.2\AQ_PGW.Common.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Infrastructure\bin\Debug\netcoreapp2.2\AQ_PGW.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Infrastructure\bin\Debug\netcoreapp2.2\AQ_PGW.Common.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Infrastructure\bin\Debug\netcoreapp2.2\AQ_PGW.Core.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Infrastructure\obj\Debug\netcoreapp2.2\AQ_PGW.Infrastructure.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Infrastructure\obj\Debug\netcoreapp2.2\AQ_PGW.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Infrastructure\obj\Debug\netcoreapp2.2\AQ_PGW.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Infrastructure\obj\Debug\netcoreapp2.2\AQ_PGW.Infrastructure.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Infrastructure\obj\Debug\netcoreapp2.2\AQ_PGW.Infrastructure.csproj.CopyComplete
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Infrastructure\obj\Debug\netcoreapp2.2\AQ_PGW.Infrastructure.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Infrastructure\obj\Debug\netcoreapp2.2\AQ_PGW.Infrastructure.pdb

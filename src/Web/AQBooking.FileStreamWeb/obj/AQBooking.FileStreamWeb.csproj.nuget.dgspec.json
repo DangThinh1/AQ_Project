@@ -1,0 +1,243 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Web\\AQBooking.FileStreamWeb\\AQBooking.FileStreamWeb.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStream.Infrastructure\\AQBooking.FileStream.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStream.Infrastructure\\AQBooking.FileStream.Infrastructure.csproj",
+        "projectName": "AQBooking.FileStream.Infrastructure",
+        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStream.Infrastructure\\AQBooking.FileStream.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStream.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\ThinkPro\\.dotnet\\NuGetFallbackFolder": {},
+          "http://103.97.125.19/AQNuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-tools/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQFileStream.Core\\AQBooking.FileStream.Core.csproj": {
+                "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQFileStream.Core\\AQBooking.FileStream.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[1.0.0-beta0006, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQFileStream.Core\\AQBooking.FileStream.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQFileStream.Core\\AQBooking.FileStream.Core.csproj",
+        "projectName": "AQBooking.FileStream.Core",
+        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQFileStream.Core\\AQBooking.FileStream.Core.csproj",
+        "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQFileStream.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\ThinkPro\\.dotnet\\NuGetFallbackFolder": {},
+          "http://103.97.125.19/AQNuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-tools/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.0.18, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Web\\AQBooking.FileStreamWeb\\AQBooking.FileStreamWeb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Web\\AQBooking.FileStreamWeb\\AQBooking.FileStreamWeb.csproj",
+        "projectName": "AQBooking.FileStreamWeb",
+        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Web\\AQBooking.FileStreamWeb\\AQBooking.FileStreamWeb.csproj",
+        "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Web\\AQBooking.FileStreamWeb\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\ThinkPro\\.dotnet\\NuGetFallbackFolder": {},
+          "http://103.97.125.19/AQNuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-tools/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStream.Infrastructure\\AQBooking.FileStream.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStream.Infrastructure\\AQBooking.FileStream.Infrastructure.csproj"
+              },
+              "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQFileStream.Core\\AQBooking.FileStream.Core.csproj": {
+                "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQFileStream.Core\\AQBooking.FileStream.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "APIHelpers": {
+              "target": "Package",
+              "version": "[1.1.5, )"
+            },
+            "AQBooking.Core": {
+              "target": "Package",
+              "version": "[1.0.29, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

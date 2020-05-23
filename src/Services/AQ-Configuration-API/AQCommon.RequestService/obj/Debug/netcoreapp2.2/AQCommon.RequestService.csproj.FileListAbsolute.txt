@@ -1,0 +1,9 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Configuration-API\AQCommon.RequestService\bin\Debug\netcoreapp2.2\AQCommon.RequestService.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Configuration-API\AQCommon.RequestService\bin\Debug\netcoreapp2.2\AQCommon.RequestService.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Configuration-API\AQCommon.RequestService\bin\Debug\netcoreapp2.2\AQCommon.RequestService.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Configuration-API\AQCommon.RequestService\obj\Debug\netcoreapp2.2\AQCommon.RequestService.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Configuration-API\AQCommon.RequestService\obj\Debug\netcoreapp2.2\AQCommon.RequestService.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Configuration-API\AQCommon.RequestService\obj\Debug\netcoreapp2.2\AQCommon.RequestService.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Configuration-API\AQCommon.RequestService\obj\Debug\netcoreapp2.2\AQCommon.RequestService.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Configuration-API\AQCommon.RequestService\obj\Debug\netcoreapp2.2\AQCommon.RequestService.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Configuration-API\AQCommon.RequestService\obj\Debug\netcoreapp2.2\AQCommon.RequestService.pdb

@@ -1,0 +1,76 @@
+﻿@model AQ_PGW.WebUI.Models.SubmitForm
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>SubmitForm</h4>
+<h4 id="status" style="color:orangered"></h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="InsertData" id="formUI">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" type="number" step=".01" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Decription" class="control-label"></label>
+                <input asp-for="Decription" class="form-control" />
+                <span asp-validation-for="Decription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BackUrl" class="control-label"></label>
+                <input asp-for="BackUrl" id="BackUrl" class="form-control" />
+                <span asp-validation-for="BackUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderId" class="control-label"></label>
+                <input asp-for="OrderId" class="form-control" />
+                <span asp-validation-for="OrderId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Currency" class="control-label"></label>
+                <input asp-for="Currency" class="form-control" value="usd" />
+                <span asp-validation-for="Currency" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaymentMethod" class="control-label"></label>
+                <select name="PaymentMethod" class="form-control">
+                    <option value="Full">Full</option>
+                    <option value="Partial">Partial</option>
+                </select>
+                @*<input asp-for="PaymentMethod" class="form-control" />*@
+                <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts{
+    <script type="text/javascript">
+        $("#BackUrl").val(window.location.origin + "/Stripe/Success");
+        //debugger
+        if (status && status != "null" && status != "") {
+            $("#status").html(status);
+        }
+     
+                    //var url = new URL(window.location.href);
+                    //var status = url.searchParams.get("status");
+                    //if (status != "null") {
+                    //    $("#status").html(status);
+                    //}
+    </script>
+}
+
+@*<div>
+        <a asp-action="Index">Back to List</a>
+    </div>*@
+

@@ -1,0 +1,12 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PayPalCore\bin\Debug\netcoreapp2.2\PayPalCore.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PayPalCore\bin\Debug\netcoreapp2.2\PayPalCore.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PayPalCore\bin\Debug\netcoreapp2.2\PayPalCore.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PayPalCore\bin\Debug\netcoreapp2.2\AQ_PGW.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PayPalCore\bin\Debug\netcoreapp2.2\AQ_PGW.Core.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PayPalCore\obj\Debug\netcoreapp2.2\PayPalCore.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PayPalCore\obj\Debug\netcoreapp2.2\PayPalCore.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PayPalCore\obj\Debug\netcoreapp2.2\PayPalCore.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PayPalCore\obj\Debug\netcoreapp2.2\PayPalCore.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PayPalCore\obj\Debug\netcoreapp2.2\PayPalCore.csproj.CopyComplete
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PayPalCore\obj\Debug\netcoreapp2.2\PayPalCore.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Paypal\PayPalCore\obj\Debug\netcoreapp2.2\PayPalCore.pdb

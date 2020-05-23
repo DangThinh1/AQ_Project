@@ -1,0 +1,78 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using AQ_PGW.Core.Models.Model
+@using AQ_PGW.Core.Models.DBTables
+@using System.Globalization
+@model PageModel<TransactionModel>
+
+
+
+<table class="table" data-toggle="table" id="Otable">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col"><a href="javascript:;" data-field="CreatedDate">CreatedDate</a></th>
+            <th scope="col" data-sortable="true" ><a href="javascript:void(0);" data-field="ModifiedDate">Post.Date</a></th>
+            <th scope="col"> <a href="javascript:void(0);" data-field="Status">Status</a> <i class="fas fa-exclamation-circle"></i></th>
+            <th scope="col"> <a href="javascript:void(0);" data-field="Description">Description</a></th>
+            <th scope="col" data-sortable="true"><a href="javascript:void(0);" data-field="OrderAmount">Amount</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Items == null)
+        {
+            <tr>
+                <td colspan="6" class="text-center">No Record</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var item in Model.Items)
+            {
+                <tr>
+                    <td scope="row">#</td>
+                    <td>@item.CreatedDate?.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)</td>
+                    <td>@item.ModifiedDate?.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)</td>
+                    <td>@item.Status</td>
+                    <td>@item.Description</td>
+                    <td>@item.OrderAmount</td>
+                </tr>
+            }
+        }
+
+    </tbody>
+</table>
+
+@if (Model.Pager !=null && Model.Pager.EndPage > 1)
+{
+    <ul class="pagination" style="margin-top:10px">
+        @if (Model.Pager.CurrentPage > 1)
+        {
+            <li>
+                <a style="color: #fff;" class="btn btn-info" onclick="CallPage(1)">First</a>
+            </li>
+            <li>
+                <a style="color: #fff;" onclick="CallPage('@(Model.Pager.CurrentPage - 1)')" class="btn btn-info">Previous</a>
+            </li>
+        }
+
+        @for (var page = Model.Pager.StartPage; page <= Model.Pager.EndPage; page++)
+        {
+            <li>
+                <a style="color: #fff;" class="btn btn-info @(page == Model.Pager.CurrentPage ? "active" : "")" onclick="CallPage(@(page))" data-toggle="javascript:void">@(page)</a>
+            </li>
+        }
+
+        @if (Model.Pager.CurrentPage < Model.Pager.TotalPages)
+        {
+            <li>
+                <a style="color: #fff;" class="btn btn-info" onclick="CallPage('@(Model.Pager.CurrentPage + 1)')">Next</a>
+            </li>
+            <li>
+                <a style="color: #fff;" class="btn btn-info" onclick="CallPage('@(Model.Pager.TotalPages)')">Last</a>
+            </li>
+        }
+    </ul>
+}
+@*<script type="text/javascript" src="~/lib/bootstrap/table/js/bootstrap-table.min.js"></script>*@

@@ -1,0 +1,76 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\AES\Yacht\Yacht_API\YachtMerchant.Api\YachtMerchant.Api.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591;0168</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\CommonLanguaguesController.cs" />
+    <Compile Remove="Controllers\CommonResourcesController.cs" />
+    <Compile Remove="Controllers\CommonValuesController.cs" />
+    <Compile Remove="Controllers\CurrencyController.cs" />
+    <Compile Remove="Controllers\PortalLanguageController.cs" />
+    <Compile Remove="Controllers\YachtMerchantProductPricingController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="APIHelpers" Version="1.1.4" />
+    <PackageReference Include="AQBooking.Admin.Core" Version="2.2.0" />
+    <PackageReference Include="AQBooking.Core" Version="1.0.29" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YachtMerchant.Infrastructure\YachtMerchant.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AQBooking.Core.ApiServiceBase">
+      <HintPath>..\..\..\..\AQ DLL\AQBooking.Core.ApiServiceBase.dll</HintPath>
+    </Reference>
+    <Reference Include="AQEncrypts">
+      <HintPath>..\..\..\..\AQ DLL\AQEncrypts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="YachtMerchant.Api.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <!--<Target Name="UpdateNugetPackageDebug" AfterTargets="Rebuild" Condition="'$(Configuration)' == 'Debug'">
+	<PropertyGroup>
+		<PowerShellExe Condition=" '$(PowerShellExe)'=='' "> 
+		  C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+		</PowerShellExe>
+		<ScriptLocation Condition=" '$(ScriptLocation)'=='' ">
+		  $(ProjectDir)CMD\AutoUpdateNugetPackages.ps1
+		</ScriptLocation>
+	</PropertyGroup>
+	<Exec Command="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe  -file $(ProjectDir)CMD\AutoUpdateNugetPackages.ps1" />                            
+  </Target>
+ 
+  <Target Name="UpdateNugetPackageRelease" AfterTargets="Rebuild" Condition="'$(Configuration)' == 'Release'">
+	<PropertyGroup>
+		<PowerShellExe Condition=" '$(PowerShellExe)'=='' "> 
+		  C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+		</PowerShellExe>
+		<ScriptLocation Condition=" '$(ScriptLocation)'=='' ">
+		  $(ProjectDir)CMD\AutoUpdateNugetPackages.ps1
+		</ScriptLocation>
+	</PropertyGroup>
+	<Exec Command="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe  -file $(ProjectDir)CMD\AutoUpdateNugetPackages.ps1" />                            
+  </Target>-->
+
+</Project>

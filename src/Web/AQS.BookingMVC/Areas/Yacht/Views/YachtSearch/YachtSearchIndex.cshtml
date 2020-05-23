@@ -1,0 +1,49 @@
+﻿@model AQS.BookingMVC.Areas.Yacht.Models.YachtSearchViewModel
+@{
+    ViewData["Title"] = "Search Yacht";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <div class="aq-main-content" id="yatchListPage">
+        @await Component.InvokeAsync("YachtSearchBox", Model.YachtSearchModel)
+        <section class="yatch-list-banner have-bg" style="background-image:url(@Url.Content("~/images/yacht/banner-yatch-list.png"))">
+            <div class="content">
+                <h1 class="title" data-aos="fade-up" data-aos-duration="800">World of luxury at your fingerprint.</h1>
+                <p class="text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Book now and enjoy luxury services</p>
+            </div>
+        </section>
+        @await Html.PartialAsync("_YachtFilterBox", Model)
+        <div class="yatch-list">
+            <div class="container-fluid">
+                <div class="row" id="div-list-data">
+                </div>
+            </div>
+            <div class="bottom">
+                <button class="btn-more" id="btnViewMore" style="display:none">view more cars</button>
+                <p class="text">Haven't found what you are looking for? </p>
+                <p class="sub-text">Give us a call or book online:  xxx-xxx-xxx</p>
+            </div>
+        </div>
+
+        @await Component.InvokeAsync("NewsLetterBoxBottom")
+        @await Component.InvokeAsync("FooterBlogBox")
+    </div>
+@section styles{
+    <link rel="stylesheet" href="~/libs/daterangepicker/daterangepicker.min.css" />
+    <link rel="stylesheet" href="~/libs/select2/select2.min.css" />
+}
+@section scripts{
+    <script src="~/libs/daterangepicker/daterangepicker.min.js"></script>
+    <script src="~/libs/jquery.twbsPagination/jquery.twbsPagination.min.js"></script>
+    <script src="~/libs/select2/select2.min.js"></script>
+    <script src="~/js/pages/yacht/yachtSearchPage.js"></script>
+    <script>
+        $(document).ready(function () {
+            yachtComponent.initSearchBox(@Json.Serialize(Model.YachtSearchModel));
+            yachtComponent.initSearchYacht();
+        })
+
+    </script>
+
+}
+
+

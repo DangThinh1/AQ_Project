@@ -1,0 +1,94 @@
+﻿@model AQS.BookingAdmin.Models.Posts.PostSearchViewModel
+@{
+    string pageTitle = "Search Post";
+    ViewBag.Title = pageTitle;
+}
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-info">
+            <div class="card-header">
+                <div>
+                    <h3 class="card-title">@pageTitle</h3>
+                </div>
+                <div class="float-right">
+                    <a href="@Url.Action("CreateUpdatePost")" class="btn btn-success" id="btnCreateNew">Create new</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <form id="frmSearchBlog">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Title</label>
+                                <input type="text" asp-for="Title" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Category</label>
+                                <select class="form-control" asp-for="CategoryFID" asp-items="Model.Categories">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div text-align:center; class="form-group">
+                                <label>Is Deleted</label>
+                                <div>
+                                    <input data-style="ios" class="form-control" asp-for="IsDeleted" data-on="Yes" data-off="No" type="checkbox" checked data-toggle="toggle">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Status</label>
+                                <select class="form-control" asp-for="IsActived">
+                                    <option value="">All</option>
+                                    <option value="true">Active</option>
+                                    <option value="false">Draft</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div style="height:100%;" class="row">
+                                <div class="col text-center" style="margin:auto;">
+                                    <button class="btn btn-info">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div id="divPostTable"></div>
+        <div class="row">
+            <div id="divPage" class="mx-auto">
+                <div id="divPagging"></div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!-- /.row -->
+<!-- /.row -->
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            
+        });
+    var postSearchConfig = {
+        defaultModel:@Json.Serialize(Model),
+        urlObj: {
+            SearchPostUrl: "@Url.Action("ListData")",
+            DeletePostUrl: "@Url.Action("DeletePost")",
+            RestorePostUrl: "@Url.Action("RestorePost")",
+            FileStreamPostDetailUrl: "@Url.Action("ListFileStreamOfPostDetail")"
+        }
+    }
+    </script>
+    <script asp-append-version="true" src="~/js/pages/posts/postSearch.js"></script>
+
+}

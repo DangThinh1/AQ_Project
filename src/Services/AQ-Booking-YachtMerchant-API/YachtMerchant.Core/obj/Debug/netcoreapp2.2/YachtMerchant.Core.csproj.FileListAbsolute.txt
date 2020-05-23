@@ -1,0 +1,9 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Core\bin\Debug\netcoreapp2.2\YachtMerchant.Core.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Core\bin\Debug\netcoreapp2.2\YachtMerchant.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Core\bin\Debug\netcoreapp2.2\YachtMerchant.Core.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Core\obj\Debug\netcoreapp2.2\YachtMerchant.Core.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Core\obj\Debug\netcoreapp2.2\YachtMerchant.Core.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Core\obj\Debug\netcoreapp2.2\YachtMerchant.Core.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Core\obj\Debug\netcoreapp2.2\YachtMerchant.Core.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Core\obj\Debug\netcoreapp2.2\YachtMerchant.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Core\obj\Debug\netcoreapp2.2\YachtMerchant.Core.pdb

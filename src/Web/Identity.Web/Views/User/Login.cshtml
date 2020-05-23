@@ -1,0 +1,154 @@
+﻿@model Identity.Web.Models.LoginViewModel;
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var isValidEmail = (Model == null || !Model.IsValidEmail) ? false : true;
+    //var returnUrl = string.IsNullOrEmpty(Model.ReturnUrl) ? string.Empty : Model.ReturnUrl;
+    var email = string.IsNullOrEmpty(Model.Email) ? string.Empty : Model.Email;
+}
+
+<style>
+    .aq-header,
+    .aq-footer {
+        display: none;
+    }
+</style>
+<div class="aq-signin">
+    <div class="aq-signin-form">
+        <div class="dropdown action-signin">
+            <span class="aes-dot1" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Forgot your password?</a>
+                <a class="dropdown-item" href="#">Privacy statement</a>
+                <a class="dropdown-item" href="#">Terms & conditions</a>
+                <a class="dropdown-item" href="#">Terms & conditions</a>
+                <span class="dropdown-item">Close</span>
+            </div>
+        </div>
+        <span class="go-back">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </span>
+        <div class="content-form">
+            <div class="logo">
+                <img src="~/Images/logo.png" alt="" />
+            </div>
+            <h1 class="title">Sign in</h1>
+            <div class="desc">You can sign in using your <a href="#" class="link">AQbooking.com</a> account to access our services.</div>
+            <div class="group-signin">
+                <form action="/User/Login" method="post" id="loginForm">
+                    @*@Html.HiddenFor(m => m.ReturnUrl)*@
+                    @Html.HiddenFor(m => m.CallBackUrl)
+                    @Html.HiddenFor(m => m.IsValidEmail)
+                    @if (isValidEmail)
+                    {
+                        <input type="password" name="Password" id="Password" class="form-control" placeholder="Your Password">
+                        @Html.HiddenFor(m => m.Email)
+                    }
+                    else
+                    {
+                        <input type="text" name="Email" id="Email" class="form-control" placeholder="Email address">
+                    }
+                </form>
+                <button class="btn" id="btnLogin">Next</button>
+            </div>
+            <div class="signin-via">
+                <div class="text"><span>or</span></div>
+                <div class="group-via">
+                    <a href="javascript:LoginFacebook()" class="via-fb">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        Sign in with <br>
+                        facebook
+                    </a>
+                    <a href="" class="via-gg">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        Sign in with <br>
+                        Google
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="trouble">
+                Having trouble signing in?
+            </a>
+            <div class="new-account">
+                <p>Create an account to easily use AQbooking.com services.</p>
+                <a class="btn" asp-controller="User" asp-action="Register">Create your account</a>
+            </div>
+            <div class="term">
+                By proceeding with this booking, I agree to AQbooking’s <span class="link">Terms of Use</span> and <span class="link">Privacy Policy</span>.
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            var logInUrl = '@Url.Action("Login", "User")';
+            $("#btnLogin").click(function () {
+                var isValidEmail = $("#IsValidEmail").val();
+                if (isValidEmail === "True") {
+                    $("#loginForm").submit();
+                }
+                else {
+                    var email = $("#Email").val();
+                    if (email != "") {
+                        window.location.href = logInUrl + "?Email=" + email;
+                    }
+                }
+            });
+        });
+
+        function LoginFacebook() {
+            FB.getLoginStatus(function (response) {
+                console.log(response.status);
+                if (response.status === "connected") {
+                    var accessToken = response.authResponse.accessToken;
+                    var userID = response.authResponse.userID;
+                    var model = {
+                        UserId: userID,
+                        AccessToken: accessToken,
+                        ReturnUrl: returnUrl
+                    };
+                    var url = "/User/LoginFacebookAsync";
+                    $.ajax({
+                        type: 'POST',
+                        url: url,
+                        data: model,
+                        beforeSend: function () {
+                        },
+                        success: function (result) {
+                            window.location.href = result;
+                        },
+                        error: function (xhr) { // if error occured
+                            console.log("verify fail");
+                        },
+                        complete: function () {
+                        },
+                        dataType: 'html'
+                    });
+                }
+                else {
+                    console.log("disconnected");
+                }
+            });
+        }
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '290076775029206',
+                cookie: true,
+                xfbml: true,
+                version: 'v4.0'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+}

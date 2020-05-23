@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AQDiningPortal.Api</name>
+    </assembly>
+    <members>
+        <member name="M:AQDiningPortal.Api.Controllers.RestaurantAttributesController.GetAllByCategoryFid(System.Int32)">
+            <summary>
+            Return list restaurant attribute by category id
+            </summary>
+            <param name="categoryFid">CategoryFid in int format</param>
+            <returns>List of RestaurantAttributeViewModel</returns>
+        </member>
+        <member name="M:AQDiningPortal.Api.Controllers.RestaurantAttributesController.GetAllByCategoryFids(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Return list restaurant attribute by category id
+            </summary>
+            <param name="listCategoryIds">List CategoryFid in int format</param>
+            <returns>List of RestaurantAttributeViewModel</returns>
+        </member>
+        <member name="M:AQDiningPortal.Api.Controllers.RestaurantAttributesController.GetAllForSearch">
+            <summary>
+            Return list restaurant attribute by category id=[1,2,4]
+            </summary>
+            <returns>List of RestaurantAttributeViewModel</returns>
+        </member>
+        <member name="M:AQDiningPortal.Api.Controllers.RestaurantsController.GetDetail(System.Int32,System.Int32)">
+            <summary>
+            Get Detail properties of restaurant by id and filter by language
+            </summary>
+            <param name="restaurantId">Id of restaurant in int format</param>
+            <param name="languageId">Id of language in int format by default 1</param>
+            <returns>Restaurant Detail view model content all info of restaurant</returns>
+        </member>
+        <member name="M:AQDiningPortal.Api.Controllers.RestaurantsController.GetDetailWithActivatedDate(AQDiningPortal.Core.Models.Restaurants.RestaurantDetaiRequestModel)">
+            <summary>
+            Get Detail properties of restaurant by id and filter by language
+            => the same GetDetail Api but support filter Activated Date instead Now Date
+            </summary>
+            <param name="requestModel">Model of request Get Details Restaurant</param>
+        </member>
+    </members>
+</doc>

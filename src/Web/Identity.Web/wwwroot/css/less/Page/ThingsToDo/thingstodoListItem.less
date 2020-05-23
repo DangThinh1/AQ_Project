@@ -1,0 +1,170 @@
+﻿@import "../../variables";
+
+.aq-thingstodo {
+
+    .thing-item {
+        padding-bottom: 1.5vw;
+    }
+
+    .thing-about {
+        margin-top: 1.5vw;
+
+        .div-left {
+            padding-right: 5%;
+
+            h3 {
+                font-family: 'SegoeuiBold';
+                margin: 0;
+                margin-bottom: 1rem;
+                font-size: 2rem;
+            }
+
+            .form-control {
+                background-color: @aq-light-gray;
+                padding: .75rem 1rem;
+                border-color: @aq-light-gray;
+                border-radius: 0;
+            }
+
+            .btn-light-blue {
+                text-transform: uppercase;
+                border-radius: 0;
+                min-width: 150px;
+                padding: .75rem 1rem;
+            }
+        }
+
+        .div-right {
+            .thing-content {
+                word-spacing: -5px;
+                margin-left: -1rem;
+                margin-right: -1rem;
+
+                .item-content {
+                    display: inline-block;
+                    word-spacing: 0px;
+                    width: 33.333333%;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    h4 {
+                        font-family: 'SegoeuiSemibold';
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .thing-info {
+        margin-top: 2.5vw;
+
+        h3 {
+            font-family: 'SegoeuiBold';
+            font-size: 2rem;
+
+            small {
+                opacity: .5;
+                font-size: 75%;
+                font-family: 'SegoeuiSemibold';
+            }
+        }
+
+        .div-left {
+            padding-right: 5%;
+
+            .img-thing {
+                position: relative;
+                z-index: 2;
+                width: 90%;
+
+                img {
+                    width: 100%;
+                    position: relative;
+                    z-index: 2;
+                }
+
+                &:before {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 1;
+                    right: -1.5rem;
+                    top: 1.5rem;
+                    background-color: @aq-light-gray;
+                    border-bottom-right-radius: 2em;
+                }
+
+                &:after {
+                    content: "Top rates";
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 60%;
+                    height: 30%;
+                    z-index: 3;
+                    background-color: @aq-light-gray;
+                    font-family: 'SegoeuiBold';
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 200%;
+                }
+            }
+        }
+
+        .div-right {
+            .list-group-item {
+                border: none;
+                border-bottom: 2px solid @aq-light-gray;
+                border-radius: 0;
+                padding-left: 0;
+                padding-right: 0;
+
+                .body-it {
+                    display: flex;
+                    margin-right: 1rem;
+                    img {
+                        width: 7.5rem;
+                        height: 7.5rem;
+                        float: left;
+                        margin-right: 1rem;
+                    }
+
+                    .div-content {
+                        float: left;
+
+                        h5 {
+                            font-family: 'SegoeuiSemibold';
+                            margin-bottom: 1rem;
+                        }
+
+                        label{
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .lbl-gray {
+        font-size: small;
+        background-color: @aq-light-gray;
+        padding: .5rem 1rem;
+    }
+
+    .btn-orange {
+        background-color: @aq-orange;
+        color: @white !important;
+        border-radius: 10em;
+        font-size: small;
+        font-family: 'SegoeuiSemibold';
+        padding: .25rem .75rem;
+    }
+}

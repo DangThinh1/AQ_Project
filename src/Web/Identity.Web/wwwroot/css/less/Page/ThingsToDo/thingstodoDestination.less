@@ -1,0 +1,49 @@
+﻿@import "../../variables";
+
+.aq-thingstodo {
+    .destination-quicklink {
+        position: relative;
+        padding: 2.5vw 0;
+
+        .tab-destination {
+            margin-top: 1.5vw;
+
+            .nav {
+                justify-content: center;
+
+                .nav-link {
+                    padding: .75rem 3.5rem;
+                    border-bottom: 1px solid @grey;
+                    position: relative;
+
+                    &.active {
+                        color: @aq-light-blue;
+                    }
+
+                    &.active:after {
+                        content: "";
+                        height: 3px;
+                        width: 100%;
+                        background-color: @aq-light-blue;
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                    }
+                }
+            }
+
+            .tab-content {
+                margin-top: 1.5vw;
+            }
+
+            .label-item {
+                padding: .75rem 1.75rem;
+                background-color: @aq-light-gray;
+                font-family: 'SegoeuiSemibold';
+                margin: 0 .5rem;
+                margin-bottom: 1rem;
+                border-radius: .25rem;
+            }
+        }
+    }
+}

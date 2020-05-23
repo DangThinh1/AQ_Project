@@ -1,0 +1,374 @@
+﻿.search-result {
+    .body-search-result {
+        padding: 1.5vw 0;
+    }
+
+    .result-right {
+        .attention {
+            font-family: 'Segoeui', sans-serif;
+            position: relative;
+            border: 0;
+            background-color: transparent;
+
+            &::after {
+                content: "";
+                background-color: #f2fbff;
+                border-left: 3px solid #00a1e9;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+        }
+    }
+
+    .result-item {
+        .item-info {
+            padding: 1rem;
+            border: 1px solid @light-gray;
+            border-bottom-left-radius: .5rem;
+            border-top-left-radius: .5rem;
+            border-right: none;
+
+            .img-info {
+                position: relative;
+                padding: 0;
+                overflow: hidden;
+                align-self: self-start;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    padding-bottom: 100%;
+                }
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .text-image,
+                .favorite {
+                    color: @white;
+                    background-color: @aq-orange;
+                    padding: .5rem 1rem;
+                }
+
+                .text-image {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 75%;
+                }
+
+                .favorite {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .content-info {
+                h3 {
+                    font-family: 'SegoeuiSemibold';
+                    margin-bottom: 1rem;
+                    font-size: 1.55rem;
+                    word-wrap: break-word;
+                    max-height: 4rem;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    text-overflow: ellipsis;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    line-height: 2rem;
+                }
+
+                .small {
+                    font-family: 'SegoeuiItalic';
+                    margin-bottom: 1rem;
+                    font-size: 85%;
+                }
+
+                .tb-list {
+                    margin: .5rem 0;
+
+                    b {
+                        font-family: 'SegoeuiItalic';
+                    }
+
+                    .aes,
+                    .fa {
+                        color: @aq-light-blue  !important;
+                        margin-right: .75rem;
+                    }
+                }
+
+                h5 {
+                    font-family: 'SegoeuiItalic';
+                    font-weight: bold;
+                    font-size: 1rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .item-contact {
+            border-bottom-right-radius: .5rem;
+            border-top-right-radius: .5rem;
+            border-left: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .content-contact {
+                flex-basis: 0;
+                flex-grow: 1;
+                max-width: 100%;
+                background-color: @aq-light-blue;
+                border: 1px solid @white;
+                border-left: none;
+                border-right: none;
+                transition: all 0.2s ease-out;
+
+                &:hover {
+                    opacity: .8;
+                }
+
+                &:first-child {
+                    border-top-right-radius: 0.5rem;
+                    border-top: none;
+                }
+
+                &:last-child {
+                    border-bottom-right-radius: 0.5rem;
+                    border-bottom: none;
+                }
+
+                &.bg-darkgray {
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    a {
+                        cursor: default;
+                    }
+                }
+
+                a {
+                    color: @white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.modal-book-time {
+    .modal-header {
+        border: 0;
+    }
+
+    .modal-title {
+        color: #011233;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 5px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 25%;
+            height: 2px;
+            background-color: #4B5261;
+        }
+    }
+
+    .modal-body {
+        line-height: 2rem;
+    }
+
+    .modal-footer {
+        .btn {
+            display: block;
+            width: 100%;
+            padding: .7rem 0;
+        }
+    }
+}
+
+.aq-restaurant {
+    .filter-left {
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.06);
+    }
+
+    .result-right {
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.06);
+        padding: 25px 25px 40px 25px;
+    }
+
+    .body-search-result {
+        .result-item {
+            .img-info {
+                h3 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .bg-banner {
+        display: none;
+    }
+
+    .banner-get-data {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .search-result {
+        .body-search-result {
+            padding-top: 0;
+        }
+    }
+
+    .body-search-result {
+        position: relative;
+
+        .container {
+            padding: 0;
+        }
+
+        .breadcrumbs {
+            padding: 0 15px;
+            white-space: nowrap;
+        }
+
+        .component-result {
+            padding-top: 0;
+
+            .count-find {
+                padding-top: 30px;
+                font-size: 14px;
+                color: #4B5261;
+            }
+        }
+    }
+
+    .search-result-desc {
+        display: none;
+    }
+
+    .aq-restaurant.search-result {
+        .component-result {
+            .title-filter {
+                display: flex;
+            }
+
+            .attention {
+                display: none;
+            }
+
+            .result-right {
+                .title-filter {
+                    position: relative;
+                    border: 0;
+                    padding-bottom: 13px;
+                }
+            }
+        }
+        
+        .body-search-result {
+            .result-item {
+                border: 1px solid #dcdcdc;
+                border-radius: 5px;
+
+                .img-info {
+                    h3 {
+                        display: block;
+                    }
+                }
+
+                .item-info {
+                    border: 0;
+
+                    .content-info {
+                        h3 {
+                            display: none;
+                        }
+                    }
+
+                    .img-info {
+                        &::after {
+                            padding-bottom: 0;
+                        }
+
+                        img {
+                            position: static;
+                        }
+                    }
+                }
+
+                .content-info {
+                    padding: 0;
+
+                    .small {
+                        font-size: 20px;
+                        padding-top: 10px;
+                    }
+
+                    .tb-list {
+                        .col-4 {
+                            white-space: nowrap;
+                        }
+                    }
+                }
+
+                .item-contact {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    .content-contact {
+                        font-family: @font-bold;
+                        border: 0;
+                        padding: 5px 0;
+
+                        &:first-child {
+                            border-radius: 0;
+                        }
+
+                        &:nth-child(2) {
+                            border-left: 1px solid #fff;
+                            border-right: 1px solid #fff;
+                        }
+
+                        &.bg-blue {
+                            flex-basis: 100%;
+                            border-radius: 0 0 5px 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

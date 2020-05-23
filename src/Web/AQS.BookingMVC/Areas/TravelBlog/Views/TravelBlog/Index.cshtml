@@ -1,0 +1,126 @@
+﻿@using AQS.BookingMVC.Areas.TravelBlog.Models;
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+@model TravelBlogViewModel
+@{
+    ViewData["Title"] = "Travel Blog List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var index = 0;
+}
+@section Header{
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+}
+<div class="aq-main-content" id="comingsoonPage">
+    <section class="coming-soon-banner blog-banner have-bg" style="background-image:url(@Url.Content("~/images/banner-coming-soon.jpg"))">
+        <div class="content">
+            <h1 class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">@R("LAUNCHINGSOON")</h1>
+            <h2 class="text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">AQbooking.com - @R("SLOGAN")</h2>
+        </div>
+    </section>
+    <section class="form-comingsoon">
+        <img class="img-bg-1" src="~/images/home/leaf-1.png" alt="background">
+        <h3 class="sub-title">@R("COMINGSOON")</h3>
+        <h2 class="title">@R("STAYTUNEDFOR") AQbooking.com </h2>
+        <p class="text">@R("VISION")</p>
+        <div class="wrap-form">
+            <p class="text-sub">@R("STAYINTOUCH")</p>
+            <div id="divFormSubscribe">
+                <form method="post" action="/Subscribe">
+                    <div class="wrap-input">
+                        <input name="Email" id="txtEmail" type="email" required placeholder="@R("ENTERYOUREMAIL")">
+                        <button type="submit" id="btnSubmitSub"><span>@R("SUBSCRIBE")</span><img src="~/images/right-sub.png" alt="icon"></button>
+                        <h2 id='result'></h2>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="@(Configuration.GetValue<String>("GoogleReCaptcha:ClientKey"))" style="display:none"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="banner-mid-coming have-bg" style="background-image:url(@Url.Content("~/images/banner-mid-coming.png"))">
+        <div class="content">
+            <h4 class="sub-title" style="text-transform: uppercase;" data-aos="fade-up" data-aos-duration="600" data-aos-offset="-1000">@R("TRAVELBLOG")</h4>
+            <h3 class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-offset="-1000">@R("EXPERIENCE")</h3>
+            <p class="text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="-1000">@R("ATTRACTIVE")</p>
+        </div>
+    </section>
+    @if (Model.TravelBlogItems != null)
+    {
+        <div class="container-fluid">
+            <div class="row article-list">
+                <div id="dvCol1" class="col-12 col-md-6 col-lg-4">
+                    @if (Model.TravelBlogItems.Data.Count > 0)
+                    {
+                        @for (int i = index; i < Model.TravelBlogItems.Data.Count; i = i + 3)
+                        {
+                            <div class="article">
+                                <a title="@Model.TravelBlogItems.Data[i].Title" class="link-overlay" href="@Model.TravelBlogItems.Data[i].CustomProperties["DetailUrl"]"></a><img alt="@Model.TravelBlogItems.Data[i].Title" src="@Model.TravelBlogItems.Data[i].CustomProperties["ImageUrl"]">
+                                <div class="content">
+                                    <div class="top">
+                                        <h4 class="sub-title">@Model.TravelBlogItems.Data[i].PostCategoryName</h4><span class="time">@Model.TravelBlogItems.Data[i].TimeToRead min read</span>
+                                    </div>
+                                    <h3 class="title">@Model.TravelBlogItems.Data[i].Title</h3>
+                                    <p class="writer">@R("TRAVELBLOG_AUTHOR")</p>
+                                    <p class="text">@Model.TravelBlogItems.Data[i].ShortDescription</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+                <div id="dvCol2" class="col-12 col-md-6 col-lg-4">
+                    @if (Model.TravelBlogItems.Data.Count > 1)
+                    {
+                        @for (int i = index + 1; i < Model.TravelBlogItems.Data.Count; i = i + 3)
+                        {
+                            <div class="article">
+                                <a title="@Model.TravelBlogItems.Data[i].Title" class="link-overlay" href="@Model.TravelBlogItems.Data[i].CustomProperties["DetailUrl"]"></a><img alt="@Model.TravelBlogItems.Data[i].Title" src="@Model.TravelBlogItems.Data[i].CustomProperties["ImageUrl"]">
+                                <div class="content">
+                                    <div class="top">
+                                        <h4 class="sub-title">@Model.TravelBlogItems.Data[i].PostCategoryName</h4><span class="time">@Model.TravelBlogItems.Data[i].TimeToRead min read</span>
+                                    </div>
+                                    <h3 class="title">@Model.TravelBlogItems.Data[i].Title</h3>
+                                    <p class="writer">@R("TRAVELBLOG_AUTHOR")</p>
+                                    <p class="text">@Model.TravelBlogItems.Data[i].ShortDescription</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+                <div id="dvCol3" class="col-12 col-md-6 col-lg-4">
+                    @if (Model.TravelBlogItems.Data.Count > 2)
+                    {
+                        @for (int i = index + 2; i < Model.TravelBlogItems.Data.Count; i = i + 3)
+                        {
+                            <div class="article">
+                                <a title="@Model.TravelBlogItems.Data[i].Title" class="link-overlay" href="@Model.TravelBlogItems.Data[i].CustomProperties["DetailUrl"]"></a><img alt="@Model.TravelBlogItems.Data[i].Title" src="@Model.TravelBlogItems.Data[i].CustomProperties["ImageUrl"]">
+                                <div class="content">
+                                    <div class="top">
+                                        <h4 class="sub-title">@Model.TravelBlogItems.Data[i].PostCategoryName</h4><span class="time">@Model.TravelBlogItems.Data[i].TimeToRead min read</span>
+                                    </div>
+                                    <h3 class="title">@Model.TravelBlogItems.Data[i].Title</h3>
+                                    <p class="writer">@R("TRAVELBLOG_AUTHOR")</p>
+                                    <p class="text">@Model.TravelBlogItems.Data[i].ShortDescription</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+
+        </div>
+        <div class="btn-wrap-news-list"><a id="btnViewMore" href="javascript:void(0)">@R("LOADMORE")</a></div>
+    }
+</div>
+@section scripts{
+    <script src="~/js/pages/travelblog/TravelBlogList.js"></script>
+    <script type="text/javascript">
+            $(document).ready(function () {
+            main.InitLoadMore(@(Model.TravelBlogItems != null ? Model.TravelBlogItems.TotalPages : 0));
+            main.InitSubscribe({
+            warning: '@R("SUBSCRIBE_WARNING")',
+                success: '@R("SUBSCRIBE_SUCCESS")',
+                existEmail: '@R("SUBSCRIBE_EXIST")'
+                });
+                    main.InitLanguage(aqs.commonFunc.getCookie('lang'));
+                });
+    </script>
+}

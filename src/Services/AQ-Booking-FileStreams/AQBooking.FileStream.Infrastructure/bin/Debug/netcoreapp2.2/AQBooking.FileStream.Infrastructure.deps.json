@@ -1,0 +1,104 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "AQBooking.FileStream.Infrastructure/1.0.0": {
+        "dependencies": {
+          "AQBooking.FileStream.Core": "1.0.0",
+          "SixLabors.ImageSharp": "1.0.0-beta0006"
+        },
+        "runtime": {
+          "AQBooking.FileStream.Infrastructure.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.2.23222"
+          }
+        }
+      },
+      "SixLabors.Core/1.0.0-beta0007": {
+        "runtime": {
+          "lib/netcoreapp2.1/SixLabors.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SixLabors.ImageSharp/1.0.0-beta0006": {
+        "dependencies": {
+          "SixLabors.Core": "1.0.0-beta0007"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "System.Linq.Dynamic.Core/1.0.18": {
+        "runtime": {
+          "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.0.18.0",
+            "fileVersion": "1.0.18.0"
+          }
+        }
+      },
+      "AQBooking.FileStream.Core/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.2",
+          "System.Linq.Dynamic.Core": "1.0.18"
+        },
+        "runtime": {
+          "AQBooking.FileStream.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AQBooking.FileStream.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "path": "newtonsoft.json/12.0.2",
+      "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
+    },
+    "SixLabors.Core/1.0.0-beta0007": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s9aPl6yxwcvoKRD0u0zjkCISZCCifbUi9/XVFjdvlx5Pt7vRYmGV0anq1EEftUjIEHbEu5aNBipbUSBIV2CE7w==",
+      "path": "sixlabors.core/1.0.0-beta0007",
+      "hashPath": "sixlabors.core.1.0.0-beta0007.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/1.0.0-beta0006": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VHDX00uAzPWj5qFYE5xJZyr5Cx4Jtd3p2dfX7swSrzlQoPEZPXXwQ+O3Fc4hNWvaNvR1NAiXSb27Ts6yv3lMDw==",
+      "path": "sixlabors.imagesharp/1.0.0-beta0006",
+      "hashPath": "sixlabors.imagesharp.1.0.0-beta0006.nupkg.sha512"
+    },
+    "System.Linq.Dynamic.Core/1.0.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VonVK0xHQLzm+H6n5TE6wDwoCrVMuTBMdGQrXDfIAmf/klG/sJUai3bkMTlTgtqArB1NYEdWxUVqpPFnMZwVog==",
+      "path": "system.linq.dynamic.core/1.0.18",
+      "hashPath": "system.linq.dynamic.core.1.0.18.nupkg.sha512"
+    },
+    "AQBooking.FileStream.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,34 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Success";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card text-center">
+    <div class="card-header">
+        Info Payment
+    </div>
+    <div class="card-body">
+        <h5 class="card-title" id="info"></h5>
+        <p class="card-text"></p>
+        <a href="#" class="btn btn-primary" id="goback">Go Back Url</a>
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+@section Scripts{
+    <script type="text/javascript">
+         var url = new URL(window.location.href);
+        var status = url.searchParams.get("status");
+        if (status != "null") {
+            $("#info").html(status);
+        } 
+        else if (@string.IsNullOrEmpty(@Model.RequestId)) {
+            $("#info").html('@Model.RequestId');
+        }
+        $("#goback").click(() => {
+            window.location.href=(window.location.origin + "@Url.Action("Create", "Stripe")");
+        });
+    </script>
+}

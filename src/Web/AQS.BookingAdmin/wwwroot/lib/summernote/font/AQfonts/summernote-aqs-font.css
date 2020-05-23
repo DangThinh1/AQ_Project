@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('AvenirLTStd-Medium.eot');
+    src: url('AvenirLTStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AvenirLTStd-Medium.woff2') format('woff2'),
+        url('AvenirLTStd-Medium.woff') format('woff'),
+        url('AvenirLTStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BanglaMN';
+    src: url('BanglaMN.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url('NotoSansThai-Light.eot');
+    src: url('NotoSansThai-Light.eot?#iefix') format('embedded-opentype'),
+        url('NotoSansThai-Light.woff2') format('woff2'),
+        url('NotoSansThai-Light.woff') format('woff'),
+        url('NotoSansThai-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('Lora-Regular.woff2') format('woff2'),
+        url('Lora-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-MediumItalic.eot');
+    src: url('Montserrat-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-MediumItalic.woff2') format('woff2'),
+        url('Montserrat-MediumItalic.woff') format('woff'),
+        url('Montserrat-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sawarabi Mincho';
+    src: url('SawarabiMincho-Regular.eot');
+    src: url('SawarabiMincho-Regular.eot?#iefix') format('embedded-opentype'), url('SawarabiMincho-Regular.woff2') format('woff2'), url('SawarabiMincho-Regular.woff') format('woff'), url('SawarabiMincho-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ZCOOL XiaoWei';
+    src: url('ZCOOLXiaoWei-Regular.eot');
+    src: url('ZCOOLXiaoWei-Regular.eot?#iefix') format('embedded-opentype'), url('ZCOOLXiaoWei-Regular.woff2') format('woff2'), url('ZCOOLXiaoWei-Regular.woff') format('woff'), url('ZCOOLXiaoWei-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSanSC';
+    src: url('NotoSansSC-Light-Alphabetic.eot');
+    src: url('NotoSansSC-Light-Alphabetic.eot?#iefix') format('embedded-opentype'), url('NotoSansSC-Light-Alphabetic.woff2') format('woff2'), url('NotoSansSC-Light-Alphabetic.woff') format('woff'), url('NotoSansSC-Light-Alphabetic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+  

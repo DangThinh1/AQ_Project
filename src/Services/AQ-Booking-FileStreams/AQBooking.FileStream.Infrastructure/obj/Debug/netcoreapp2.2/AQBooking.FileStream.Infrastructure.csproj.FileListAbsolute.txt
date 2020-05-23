@@ -1,0 +1,15 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\bin\Debug\netcoreapp2.2\AQBooking.FileStream.Infrastructure.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\bin\Debug\netcoreapp2.2\AQBooking.FileStream.Infrastructure.runtimeconfig.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\bin\Debug\netcoreapp2.2\AQBooking.FileStream.Infrastructure.runtimeconfig.dev.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\bin\Debug\netcoreapp2.2\AQBooking.FileStream.Infrastructure.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\bin\Debug\netcoreapp2.2\AQBooking.FileStream.Infrastructure.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\bin\Debug\netcoreapp2.2\AQBooking.FileStream.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\bin\Debug\netcoreapp2.2\AQBooking.FileStream.Core.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.FileStream.Infrastructure.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.FileStream.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.FileStream.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.FileStream.Infrastructure.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.FileStream.Infrastructure.csproj.CopyComplete
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.FileStream.Infrastructure.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.FileStream.Infrastructure.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\AQBooking.FileStream.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.FileStream.Infrastructure.genruntimeconfig.cache

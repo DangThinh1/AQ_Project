@@ -1,0 +1,109 @@
+﻿@inject IWorkContext WorkContext
+@inject AQS.BookingMVC.Services.Interfaces.IWebHelper WebHelper
+<!DOCTYPE html>
+<html lang="en" class="@WorkContext.CurrentLanguageCode.Split('-')[0]">
+<head>
+    <title>@(ViewBag.Title==null?"AQBooking":$"AQBooking - {ViewBag.Title}")</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8" />
+    <meta property="fb:app_id" content="659249811560723" />
+    <meta property="fb:type" content="website" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="revisit-after" content="1 days" />
+    @if (IsSectionDefined("Seo"))
+    {
+        RenderSection("Seo");
+    }
+    else
+    {
+        <meta property="og:image" content="@(WebHelper.GetHostName() + "images/banner-coming-soon.jpg")" />
+        <meta property="og:title" content="@(ViewBag.Title==null?"AQBooking":$"AQBooking - {ViewBag.Title}")" />
+        <meta property="og:description" content="AQ Booking travel blog" />
+        <meta property="og:url" content="@WebHelper.GetThisPageUrl(false,includeLanguageParams:true)" />
+        <link rel="alternate" href="@WebHelper.GetThisPageUrl(false,includeLanguageParams:true)" hreflang="@WorkContext.CurrentLanguageCode" />
+        <script type="application/ld+json">
+            {
+            "@@context": "https://schema.org",
+            "@@type": "WebSite",
+            "name": "AQbooking.com",
+            "image": "@WebHelper.GetThisPageUrl(false)/images/logo.svg")",
+            "@@id": "",
+            "url": "@WebHelper.GetHostName()"
+            }
+        </script>
+        <!---TWitter-->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="@WebHelper.GetHostName()">
+        <meta property="twitter:title" content="@(ViewBag.Title==null?"AQBooking":$"AQBooking - {ViewBag.Title}")">
+        <meta property="twitter:description" content="AQ Booking travel blog">
+        <meta property="twitter:image" content="@(WebHelper.GetHostName() + "images/banner-coming-soon.jpg")">
+    }
+    @RenderSection("Header", required: false)
+    <link rel="shortcut icon" href="@Url.Content("~/images/favicon.ico")" />
+    <link rel="stylesheet" type="text/css" href="~/libs/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/libs/slick-master/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="~/libs/slick-master/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="~/libs/aos/aos.css" />
+    <link rel="stylesheet" type="text/css" href="~/libs/font-awesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/libs/font-awesome/css/brands.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/libs/font-awesome/css/solid.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/libs/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="~/libs/fancybox/jquery.fancybox-thumbs.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet">
+    <link href="~/libs/toastr/toastr.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" asp-append-version="true" href="~/css/style.css" />
+    <link href="~/css/common.css" rel="stylesheet" />
+    <script>
+        var BASE_VAR = {
+            langCode: "@WorkContext.CurrentLanguageCode",
+            langId:@WorkContext.CurrentLanguageId
+        };
+    </script>
+    @Html.GenerateCss(ResourceLocation.Header)
+    @Html.GenerateScripts(ResourceLocation.Header)
+    @RenderSection("Styles", required: false)
+</head>
+
+<body>
+    @await Html.PartialAsync("_Loading")
+    @await Component.InvokeAsync("Header")
+
+    @RenderBody()
+    @await Component.InvokeAsync("Footer")
+
+    <script type="text/javascript" src="~/libs/jquery/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="~/libs/popper/popper.min.js"></script>
+    <script type="text/javascript" src="~/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/libs/slick-master/slick/slick.js"></script>
+    <script type="text/javascript" src="~/libs/aos/aos.js"></script>
+    <script type="text/javascript" src="~/libs/parallax/parallax.js"></script>
+    <script type="text/javascript" src="~/libs/jquery-throttle-debounce/jquery.ba-throttle-debounce.js"></script>
+    <script type="text/javascript" src="~/libs/jquery-scrolltofixed/jquery-scrolltofixed-min.js"></script>
+    <script type="text/javascript" src="~/libs/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="~/libs/fancybox/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="~/libs/fancybox/jquery.fancybox-thumbs.js"></script>
+    <script type="text/javascript" src="~/libs/moment/moment.min.js"></script>
+    <script type="text/javascript" src="~/libs/sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript" src="~/libs/notify/bootstrap-notify.min.js"></script>
+    <script src="~/libs/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="~/js/common/public.common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" asp-append-version="true" src="~/js/pages/main.js"></script>
+    @RenderSection("Scripts", required: false)
+    @RenderSection("Modal", required: false)
+
+    @Html.GenerateCss(ResourceLocation.Footer)
+    @Html.GenerateScripts(ResourceLocation.Footer)
+    @Html.GenerateInlineScript()
+    @if (!WorkContext.IsAuthentication)
+    {
+        @*<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">*@
+        <script src="https://apis.google.com/js/api:client.js"></script>
+        <script type="text/javascript" src="~/js/pages/user/login.js"></script>
+        @await Component.InvokeAsync("Login")
+        <vc:register></vc:register>
+    }
+</body>
+</html>

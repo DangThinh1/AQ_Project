@@ -1,0 +1,377 @@
+﻿.aq-restaurant.restaurant-info {
+    .restaurant-banner {
+        .text-title {
+            display: none;
+        }
+
+        .sub-title {
+            font-size: 2rem;
+            color: @white;
+            font-family: 'SegoeuiBold';
+            position: absolute;
+            top: 2rem;
+            left: 1rem;
+            z-index: 2;
+
+            h3 {
+                text-transform: uppercase;
+                font-size: 3vw;
+                letter-spacing: 0.1vw;
+            }
+
+        }
+    }
+
+    .restaurant-info-content {
+        .info-tab {
+            padding: 2vw 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            .item-tab {
+                width: 20vw;
+
+                img {
+                    width: 50%;
+                    max-width: 154px;
+                }
+
+                h4 {
+                    font-family: 'SegoeuiSemibold';
+                }
+
+                span {
+                    opacity: .5;
+                }
+            }
+        }
+
+        .restaurant-guides {
+            padding-top: 1.5vw;
+            padding-bottom: 1.5vw;
+
+            .list-guides {
+                padding-top: 2.5vw;
+                padding-bottom: 1.5vw;
+
+                .guide-content {
+                    height: 100%;
+                    -webkit-box-shadow: 0px 2px 7px 0px rgba(189, 189, 189, 0.5);
+                    -moz-box-shadow: 0px 2px 7px 0px rgba(189, 189, 189, 0.5);
+                    box-shadow: 0px 2px 7px 0px rgba(189, 189, 189, 0.5);
+                    transition: all .1s;
+                    display: block;
+                    overflow: hidden;
+                    border-radius: 1rem 0 1rem 0;
+                    &:hover {
+                        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+                    }
+                    img {
+                        width: 100%;
+                        
+                    }
+
+                    .detail {
+                        h3 {
+                            font-size: 1.25rem;
+                            font-family: 'SegoeuiSemibold';
+                            margin: 0;
+                            text-align: center;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            padding: 0.7rem;
+                            border-bottom: 1px solid @aq-light-gray;
+
+                        }
+
+                        .description {
+                            padding: 0.8rem 1rem;
+                            min-height: 104px;
+                            color: @aq-text;
+                        }
+                    }
+                }
+            }
+
+            .list-info-guides {
+                padding-top: 1.5vw;
+
+                .guide-content {
+                    position: relative;
+                    height: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column-reverse;
+                    -webkit-box-shadow:0px 5px 10px 0px rgba(189, 189, 189, 0.7);
+                    -moz-box-shadow:0px 5px 10px 0px rgba(189, 189, 189, 0.7);
+                    box-shadow: 0px 5px 10px 0px rgba(189, 189, 189, 0.7);
+                    border-radius: 1rem;
+                    background-color: @white;
+                    justify-content: space-between;
+                    &::after {
+                        content: "";
+                        border: 3px dashed @aq-light-blue;
+                        position: absolute;
+                        top : 30px;
+                        left: 30px;
+                        right: 30px;
+                        bottom: 30px;
+                    }
+
+                    .detail {
+                        
+                        padding: 15%;
+                        padding-bottom: 7.5%;
+
+                        h2 {
+                            margin: 0;
+                            color: #0590CE;
+                            margin-bottom: 1.2vw;
+
+                            a {
+                                color: inherit;
+                            }
+                        }
+
+                        .desc {
+                            font-size: 1.25rem;
+                            font-style: italic;
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                        border-bottom-left-radius: 1rem;
+                        border-bottom-right-radius: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tab-additions {
+    padding-top: 2.5vw;
+    padding-bottom: 1vw;
+
+    .tab-function {
+        padding: 2.5vw 0;
+
+        .nav-tabs {
+            border-color: @light-gray;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3.5vw;
+
+            .nav-item {
+                padding: 1rem 2vw;
+                font-size: 1.25rem;
+                font-family: 'SegoeuiSemibold';
+                text-transform: capitalize;
+                border: 0;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 4px;
+                    background-color: transparent;
+                }
+
+                &.active {
+                    color: @aq-light-blue;
+                    &::after {
+                        background-color: @aq-light-blue;
+                    }
+                    &:hover {
+                    }
+                }
+
+                &:hover {
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        .additions-list {
+            .addition-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: @aq-light-gray;
+                position: relative;
+                margin-bottom: 20px;
+                transition: all .1s;
+
+                &:before {
+                    content: "";
+                    width: 1px;
+                    background-color: @light-gray;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 25%;
+                }
+
+                &:hover {
+                    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+                    color: #011233; 
+                }
+
+                .img-item {
+                    width: 25%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .desc {
+                    width: 50%;
+                    text-align: left;
+                    padding: 1rem;
+
+                    h4 {
+                        font-family: 'SegoeuiSemibold';
+                        color: #011233; 
+                    }
+
+                    p {
+                        font-family: 'SegoeuiItalic';
+                        margin: 0;
+                        color: #011233; 
+                    }
+                }
+
+                .price {
+                    width: 25%;
+                    font-size: 1.5rem;
+                    font-family: 'SegoeuiBold';
+                    color: @aq-orange;
+                    text-align: center;
+                    height: 100%;
+                }
+            }
+
+            .row {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+            .col-lg-4 {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and  (max-width: 1199px) {
+    .aq-restaurant.restaurant-info {
+        .restaurant-info-content {
+            .info-tab {
+                display: none;
+            }
+
+            .restaurant-guides {
+                .list-guides {
+                    .guide-content {
+                    }
+
+                    .guide-content {
+                       .detail {
+                            .description {
+                                min-height: inherit;
+                            }
+                       }
+                    }
+
+                    .col-lg-3 {
+                        margin-bottom: 15px;
+                    }
+
+                    
+                }
+
+                .list-info-guides {
+                    .col-lg-4 {
+                        margin-bottom: 30px;
+                    }
+                    .guide-content {
+
+                        &::after {
+                            top: 1rem;
+                            left: 1rem;
+                            right: 1rem;
+                            bottom: 1rem;
+                        }
+
+                        .detail {
+                            padding: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-additions {
+        .tab-function {
+            .nav-tabs  {
+                white-space: nowrap;
+                display: block;
+                overflow-y: auto;
+
+                .nav-item {
+                    white-space: nowrap;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+
+.restaurant-city {
+    padding: 2rem 0;
+    .item-city {
+        display: flex;
+        align-items: center;
+        position: relative;
+        border: 5px solid #EFEFEF;
+        transition: all 0.2s ease;
+        padding: 10px;
+        margin-bottom: 30px;
+
+        &:hover {
+            border-color: #00A1E9;
+        }
+    }
+
+    .image-city {
+        flex: 0 0 auto;
+        width: 100px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .name-city {
+        font-family: @font-semibold;
+        color: #011233;
+        font-size: 1.35rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        padding-left: 1rem;
+    }
+}

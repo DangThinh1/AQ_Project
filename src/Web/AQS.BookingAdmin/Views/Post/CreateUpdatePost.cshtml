@@ -1,0 +1,185 @@
+﻿@model AQS.BookingAdmin.Models.Posts.PostCreateViewModel
+@{
+    string pageTitle = Model.PostInfo.Id > 0 ? $"Edit post detail - {Model.PostInfo.Id}" : "Create new post";
+    ViewBag.Title = pageTitle;
+}
+
+
+<form id="frmCreatePost" novalidate>
+    <input type="hidden" asp-for="FriendlyUrl"/>
+    <div class="content-header clearfix">
+        <h4 class="float-left">
+            @pageTitle
+        </h4>
+        <div class="float-right">
+            <a href="@Url.Action("List")" class="btn btn-default">Back</a>
+            @if (Model.PostInfo.Id > 0)
+            {
+                <a target="_blank" href="javascript:void()" class="btn btn-warning btn-preview">Preview</a>
+            }
+
+            <button class="btn btn-warning btn-save-draft" type="button" data-toggle="tooltip">Save Draft</button>
+            <button class="btn btn-success btn-save-publish" type="button">Save And Publish</button>
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <input type="hidden" asp-for="PostInfo.Id" />
+
+            <div class="card card-info">
+                <div class="card-header">
+                    <h3 class="card-title"><i class="fas fa-info-circle mr-2"></i>Post Information</h3>
+
+                </div>
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label text-right required">
+                            Default Title
+                            @Html.Help("This title is use for admin easy to track and translate the post")
+                        </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" asp-for="PostInfo.DefaultTitle" placeholder="Default Title" required maxlength="255">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label text-right required">
+                            Category
+                            @Html.Help("Category of the post")
+                        </label>
+                        <div class="col-sm-4">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <select class="form-control" required asp-for="PostInfo.PostCategoryFid" asp-items="@Model.Categories">
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" class="btn btn-success" id="btnCreateNew"><i class="fa fa-plus"></i> Add New</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label text-right required">
+                            Time To Read
+                            @Html.Help("The estimate time user can finish to read this post")
+                        </label>
+                        <div class="col-sm-4">
+                            <input type="number" min="0" class="form-control" asp-for="PostInfo.TimeToRead" placeholder="Time to Read" required>
+                        </div>
+                    </div>
+                    @if (Model.PostInfo.Id > 0)
+                    {
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label text-right">
+                                Post status
+                                @Html.Help("This post will auto deactive if any post language draft")
+                            </label>
+                            <div class="col-sm-10">
+                                @if (Model.PostInfo.IsActivated)
+                                {
+                                <span class="badge badge-success p-1">Actived</span>
+                                   
+                                }
+                                else
+                                {
+                                    <span class="badge badge-danger p-1">Draft</span>
+                                   
+                                }
+
+                            </div>
+                        </div>
+                    }
+
+                </div>
+
+            </div>
+
+            <div class="card card-info">
+                <div class="card-header">
+                    <h3 class="card-title"><i class="fa fa-globe mr-2"></i> Post Detail - Multiple Language</h3>
+
+                </div>
+                <div class="card-body">
+
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label text-right">
+                            Language
+                            @Html.Help("Select the language which you want to write post")
+                        </label>
+                        <div class="col-sm-4">
+                            <select id="ddlLanguageId" class="form-control" asp-for="LanguageId" asp-items="Model.Languages" required>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="divMutipleLanguage">
+                        @await Html.PartialAsync("_CreateUpdate_MutipleLanguage", Model)
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-right mb-4">
+            <a href="@Url.Action("List")" class="btn btn-default">Back</a>
+            @if (Model.PostInfo.Id > 0)
+            {
+                <a target="_blank" href="@Url.Action("Preview",new {Id=Model.PostInfo.Id,languageId=Model.PostDetail.LanguageFid})" class="btn btn-warning btn-preview">Preview</a>
+            }
+            <button class="btn btn-warning btn-save-draft" type="button">Save Draft</button>
+            <button class="btn btn-success btn-save-publish" type="button">Save And Publish</button>
+        </div>
+    </div>
+</form>
+
+@section modal{
+    @await Html.PartialAsync("_UploadImageModal")
+    <div class="modal fade" id="modal-postcategory" aria-modal="true"></div>
+}
+
+@section styles{
+    <link href="~/lib/summernote/summernote-bs4.css" rel="stylesheet" />
+    <link href="~/lib/summernote/font/AQfonts/summernote-aqs-font.css" rel="stylesheet" />
+    <link href="~/lib/ekko-lightbox/ekko-lightbox.css" rel="stylesheet" />
+}
+@section scripts{
+
+    <script>
+    var postConfig = {
+        PostId:@Model.PostInfo.Id,
+        CategoryId:@Model.PostInfo.PostCategoryFid,
+        urlObj: {
+            CreateUpdatePost:"/Post/CreateUpdatePost/",
+            CreatePost: "@Url.Action("CreatePost")",
+            UpdatePost: "@Url.Action("UpdatePost")",
+            GetPostDetail: "@Url.Action("GetPostDetail")",
+            GetCategoryList: "@Url.Action("GetListCategory", "PostCategory")",
+            GetFileStreamOfPostDetail: "@Url.Action("ListFileStreamOfPostDetail", "Post")",
+            PreviewUrl:"@Url.Action("Preview")"
+        }
+        };
+        var postCategoryConfig = {
+            isPostPage:true,
+            urlObj: {
+                GET_LIST_CATE: "@Url.Action("ListData","PostCategory")",
+                GET_MODAL_CATE: "@Url.Action("Create", "PostCategory")",
+                POST_CATE: "@Url.Action("CreateOrUpdate", "PostCategory")",
+                CHECK_DUPLICATE: "@Url.Action("IsDuplicatePostCateDetail", "PostCategory")"
+            }
+
+        };
+    </script>
+    
+    <script src="~/lib/ekko-lightbox/ekko-lightbox.js"></script>
+    <script src="~/js/pages/posts/postCreateUpdate.js"></script>
+    <script src="~/js/pages/posts/postCategory.js"></script>
+}

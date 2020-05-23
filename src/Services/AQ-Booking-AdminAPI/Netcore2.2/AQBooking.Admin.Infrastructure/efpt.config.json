@@ -1,0 +1,42 @@
+﻿{
+   "ContextClassName": "AQHotelContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "DoNotCombineNamespace": false,
+   "IdReplace": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Databases\/HotelEntities",
+   "ProjectRootNamespace": "AQBooking.Admin.Infrastructure",
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelAttributes]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelAttributeValues]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelMerchantAQMgts]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelMerchants]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelMerchantUsers]"
+      }
+   ],
+   "UseDatabaseNames": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseSpatial": false
+}

@@ -1,0 +1,71 @@
+﻿@import "../../variables";
+
+.hotel-partners {
+    position: relative;
+    padding: 2.5vw 0;
+
+    .list-hotel {
+        margin-top: 1.5vw;
+        word-spacing: -4px;
+
+        .image-hotel {
+            word-spacing: 0px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 14.25%;
+            height: 14.25%;
+            padding: 1rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .hotel-partners {
+        .list-hotel {
+            word-spacing: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .image-hotel {
+                width: 20%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hotel-partners {
+        .list-hotel {
+            .image-hotel {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .hotel-partners {
+        .list-hotel {
+            .image-hotel {
+                width: 33%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hotel-partners {
+        .list-hotel {
+            .image-hotel {
+                width: 50%;
+            }
+        }
+    }
+}

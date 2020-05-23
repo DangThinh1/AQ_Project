@@ -1,0 +1,8 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Common\bin\Debug\netcoreapp2.2\AQ_PGW.Common.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Common\bin\Debug\netcoreapp2.2\AQ_PGW.Common.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Common\bin\Debug\netcoreapp2.2\AQ_PGW.Common.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Common\obj\Debug\netcoreapp2.2\AQ_PGW.Common.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Common\obj\Debug\netcoreapp2.2\AQ_PGW.Common.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Common\obj\Debug\netcoreapp2.2\AQ_PGW.Common.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Common\obj\Debug\netcoreapp2.2\AQ_PGW.Common.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.Common\obj\Debug\netcoreapp2.2\AQ_PGW.Common.pdb

@@ -1,0 +1,9 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Core\bin\Debug\netcoreapp2.2\AQBooking.YachtPortal.Core.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Core\bin\Debug\netcoreapp2.2\AQBooking.YachtPortal.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Core\bin\Debug\netcoreapp2.2\AQBooking.YachtPortal.Core.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Core\obj\Debug\netcoreapp2.2\AQBooking.YachtPortal.Core.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Core\obj\Debug\netcoreapp2.2\AQBooking.YachtPortal.Core.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Core\obj\Debug\netcoreapp2.2\AQBooking.YachtPortal.Core.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Core\obj\Debug\netcoreapp2.2\AQBooking.YachtPortal.Core.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Core\obj\Debug\netcoreapp2.2\AQBooking.YachtPortal.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Core\obj\Debug\netcoreapp2.2\AQBooking.YachtPortal.Core.pdb

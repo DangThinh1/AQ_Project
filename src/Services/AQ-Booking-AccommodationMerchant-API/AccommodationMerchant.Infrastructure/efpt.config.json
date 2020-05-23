@@ -1,0 +1,102 @@
+﻿{
+   "ContextClassName": "AccommodationContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "DoNotCombineNamespace": false,
+   "IdReplace": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": "AccommodationMerchant.Infrastructure.Databases",
+   "OutputPath": null,
+   "ProjectRootNamespace": "AccommodationMerchant.Infrastructure.Databases.Entities",
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelAttributes]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelAttributeValues]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelCounters]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelFileStreams]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelInformationDetails]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelInformations]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelInventories]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelInventoryAttributes]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelInventoryAttributeValues]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelInventoryDescriptions]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelInventoryFileStreams]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelInventoryRates]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelMerchantAQMgts]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelMerchants]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelMerchantUsers]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelReservationDetails]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelReservationPaymentLogs]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelReservationProcessingFees]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[HotelReservations]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Hotels]"
+      }
+   ],
+   "UseDatabaseNames": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseSpatial": false
+}

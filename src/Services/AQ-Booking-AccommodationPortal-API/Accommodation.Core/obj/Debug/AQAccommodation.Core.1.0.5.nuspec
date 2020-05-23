@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AQAccommodation.Core</id>
+    <version>1.0.5</version>
+    <authors>AQ Teams</authors>
+    <owners>AQ Teams</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is share package use for Accommodation Portal.</description>
+    <copyright>AES Technologies</copyright>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.2">
+        <dependency id="AQBooking.Core" version="1.0.27" exclude="Build,Analyzers" />
+        <dependency id="AQEncrypts" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="ExtendedUtility" version="1.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-AccommodationPortal-API\Accommodation.Core\bin\Debug\netcoreapp2.2\Accommodation.Core.dll" target="lib\netcoreapp2.2\Accommodation.Core.dll" />
+  </files>
+</package>

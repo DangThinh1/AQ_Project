@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AccommodationMerchant.Api</name>
+    </assembly>
+    <members>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelAttributeValuesController.AddAttributeValueAsync(AccommodationMerchant.Core.Models.HotelAttributeValues.HotelAttributeValueCreateModel)">
+            <summary>
+            Add attribute 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelAttributeValuesController.CreateRangeAsync(AccommodationMerchant.Core.Models.HotelAttributeValues.HotelAttributeValueCreateModel)">
+            <summary>
+            Create attribute with range 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelAttributeValuesController.GetHotelAttributeValuesByHotelId(System.String)">
+            <summary>
+            Get all attribute Of Hotel By HotelId 
+            </summary>
+            <param name="hotelId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelAttributeValuesController.GetAttributeValuesByCategoryId(System.String,System.Int32)">
+            <summary>
+            Get all attribute of Hotel By Category Id
+            </summary>
+            <param name="hotelId"></param>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelAttributeValuesController.GetListUpdateAttributeValue(System.String,System.Int32)">
+            <summary>
+            Get Hotel attributes based on category to update
+            </summary>
+            <param name="hotelId">ID of Hotel in int format</param>
+            <param name="categoryId">ID of attribute category in int format</param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelAttributeValuesController.UpdateAttributeValuesRangeAsync(AccommodationMerchant.Core.Models.HotelAttributeValues.HotelAttributeValueUpdateRangeModel,System.String)">
+            <summary>
+            Update attribute of Hotel with range
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelInventoryAttributeValuesController.CreateRangeAsync(AccommodationMerchant.Core.Models.HotelAttributeValues.HotelInventoryAttributeValueCreateModel)">
+            <summary>
+            Create attribute value with range 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelInventoryAttributeValuesController.GetAllAttributeValuesByInventoryId(System.Int32)">
+            <summary>
+            Get all attribute of inventory By InventoryId
+            </summary>
+            <param name="inventoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelInventoryAttributeValuesController.GetAllAttributeValuesByCategoryIdAndInventoryId(System.Int32,System.Int32)">
+            <summary>
+            Get all attribute value of inventorty by inventoryId and category Id
+            </summary>
+            <param name="inventoryId"></param>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelInventoryAttributeValuesController.GetListUpdateAttributeValueAsync(System.Int32,System.Int32)">
+            <summary>
+            Get attributes based on category to update
+            </summary>
+            <param name="inventoryId">ID of inventory in int format</param>
+            <param name="categoryId">ID of attribute category in int format</param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelInventoryAttributeValuesController.AddAttributeValueAsync(AccommodationMerchant.Core.Models.HotelAttributeValues.HotelInventoryAttributeValueCreateModel)">
+            <summary>
+            Add attribute value
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelInventoryAttributeValuesController.UpdateAttributeValuesRangeAsync(AccommodationMerchant.Core.Models.HotelAttributeValues.HotelInventoryAttributeValueUpdateRangeModel)">
+            <summary>
+            Update attribute value  with range
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelMerchantUsersController.GetInfomationOfMerchantUserById(System.Int32)">
+            <summary>
+            Get infomation of user for merchant control by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelMerchantUsersController.GetAllUserOfMerchantByMerchantId(System.Int32)">
+            <summary>
+            Get all user of merchant control by MerchantId
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelMerchantUsersController.GetDropdowwnListUserOfMerchantByMerchantId(System.Int32)">
+            <summary>
+            Get Dropdownlist user of merchant control by MerchantId
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelMerchantUsersController.GetAllUserOfMerchantByRole(AccommodationMerchant.Core.Models.HotelMerchantUsers.HotelMerchantUserRequestGetAllUserWithRolesOfMerchantModel)">
+            <summary>
+            Get all user of Merchant control by Role
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelMerchantUsersController.CreateMerchantUserAsync(AccommodationMerchant.Core.Models.HotelMerchantUsers.HotelMerchantUserCreateModel)">
+            <summary>
+            Create new user of control by Merchant
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelMerchantUsersController.UpdateMerchantUserAsync(AccommodationMerchant.Core.Models.HotelMerchantUsers.HotelMerchantUserUpdateModel)">
+            <summary>
+            Update infomation of user control by Merchant
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelMerchantUsersController.DeleteMerchantUserAsync(System.Int32)">
+            <summary>
+            Delete user control by Merchant
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationPaymentLogsController.GetReservationPaymentLogs(System.Int64)">
+            <summary>
+            Get log payment of reservation
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.GetInfomationReservationById(System.Int64)">
+            <summary>
+            Get infomation of reservation by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.CreateReservationFromOriginSource(AccommodationMerchant.Core.Models.HotelReservations.HotelReservationCreateModel)">
+            <summary>
+            Create new Reservation from Origin source AQBooking
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.CreateYachtCharteringFromOtherSourceAsync(AccommodationMerchant.Core.Models.HotelReservations.HotelCreateReservationFromOtherSourceModel)">
+            <summary>
+            Create new reservation from Other source (outsite aqbooking)
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.UpdateStatusAsync(AccommodationMerchant.Core.Models.HotelReservations.HotelReservationConfirmStatusModel)">
+            <summary>
+            Change status of Reservation
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.DeleteAsync(System.Int64)">
+            <summary>
+            Delete reservation by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.SearchAllReservationsForMerchant(AccommodationMerchant.Core.Models.HotelReservations.ReservationForMerchantSearchPagingModel)">
+            <summary>
+            Search all reservation of Merchant by type with paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.SearchAllReservationsForHotel(AccommodationMerchant.Core.Models.HotelReservations.ReservationOfHotelSearchPagingModel)">
+            <summary>
+            Search all reservation of Hotel by type with paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.SearchAllReservationsPaging(AccommodationMerchant.Core.Models.HotelReservations.ReservationSearchPagingModel)">
+            <summary>
+            Search all reservation by type with paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.GetReservationDetail(AccommodationMerchant.Core.Models.HotelReservations.ReservationDetailSearchPagingModel)">
+            <summary>
+            Get detail reservation with paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.GetAllReservationByTypeNoPaging(System.Int64)">
+            <summary>
+            Get all  reservation by type no paging
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.GetAllReservationByTypePaging(System.Int64)">
+            <summary>
+            Get all  reservation by type paging
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.GetAllReservationOfMerchantByTypeNoPaging(AccommodationMerchant.Core.Models.HotelReservations.ReservationOfMerchantSearchModel)">
+            <summary>
+            Get all reservation of Merchant by type no paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.GetAllReservationOfHotelByTypeNoPaging(AccommodationMerchant.Core.Models.HotelReservations.ReservationOfHotelSearchModel)">
+            <summary>
+            Get all  reservation of Hotel by type no paging
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.ShowDashboardReservationInfo(System.Int32)">
+            <summary>
+            Show infomation in dashboard about reservation infomation in date in hotel
+            </summary>
+            <param name="hotelId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.ShowDashboardRequestProcessReservations(System.Int32)">
+            <summary>
+            Show infomation in dashboard about request process reservation in hotel
+            </summary>
+            <param name="hotelId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelReservationsController.ShowDashboardRecentPaymentReservations(System.Int32)">
+            <summary>
+            Show infomation in dashboard about recent payment reservation in hotel
+            </summary>
+            <param name="hotelId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.HotelsController.GetBasicProfile(System.Int32)">
+            <summary>
+            Get hotel basic profile with Hotel Id
+            </summary>
+            <param name="hotelId">yachtId</param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.MerchantsController.GetUniquedId(System.Int32)">
+            <summary>
+            Get UniqueId of Merchant from Id of Merchant
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.MerchantsController.GetProfile(System.Int32)">
+            <summary>
+            Get Basic Infomation ( Id, UniqueId ) of Merchant By Id 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.MerchantsController.GetListMerchantOfAccommodationAccountManager(System.String)">
+            <summary>
+            Get all merchant manager by user have role Accomodation Account Manager ( AAM )
+            </summary>
+            <param name="userId"></param>
+            <returns> list merchant use for select list</returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.MerchantsController.GetMerchantOfUserRoleAccommodationMerchant(System.String)">
+            <summary>
+            Get merchant of user have role Accommodation Merchant (AM)
+            </summary>
+            <param name="userId"></param>
+            <returns> one merchant </returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.MerchantsController.GetListHotelOfMerchant(System.Int32)">
+            <summary>
+            Get all hotel of merchant
+            </summary>
+            <param name="merchantId"></param>
+            <returns>list hotel for select list</returns>
+        </member>
+        <member name="M:AccommodationMerchant.Api.Controllers.MerchantsController.GetMerchantByHotelId(System.Int32)">
+            <summary>
+            Get Merchant Id by hotelId
+            </summary>
+            <param name="hotelId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.HotelReservationProcessingFeesController.GetHotelReservationProcessingFees(System.Int64)">
+            <summary>
+            Get infomation of Procesing Fee for Reseravtion
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.HotelReservationProcessingFeesController.CreateReservationProcessingFeesAsync(AccommodationMerchant.Core.Models.HotelReservationProcessingFees.HotelReservationProcessingFeeCreateModel)">
+            <summary>
+            Create new Procesing Fee of Reservation 
+            </summary>
+            <param name="requestModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.HotelReservationProcessingFeesController.CreateReservationProcessingFeesAndChangeStatusReservationAsync(AccommodationMerchant.Core.Models.HotelReservationProcessingFees.HotelReservationProcessingFeeWithChangeStatusReservationCreateModel)">
+            <summary>
+            Create new Reservation Procesing Fee and change status reservation
+            </summary>
+            <param name="requestModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.HotelReservationProcessingFeesController.UpdateReservationProcessingFeesAsync(AccommodationMerchant.Core.Models.HotelReservationProcessingFees.HotelReservationProcessingFeeUpdateModel)">
+            <summary>
+            Update Reservation Processing Fee
+            </summary>
+            <param name="requestModel"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

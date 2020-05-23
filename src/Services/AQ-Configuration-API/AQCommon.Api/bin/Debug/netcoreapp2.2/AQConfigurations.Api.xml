@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AQConfigurations.Api</name>
+    </assembly>
+    <members>
+        <member name="M:AQConfigurations.Api.Controllers.PortalLanguagesController.GetListLanguageByProtalUID(System.String)">
+            <summary>
+            Get List portal language support as List SelectItem
+            </summary>
+            <param name="portalUniqueId">uniqueId of Portal</param>
+            <returns> List portal language support as List SelectItem </returns>
+        </member>
+    </members>
+</doc>

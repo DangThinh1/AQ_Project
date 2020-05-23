@@ -1,0 +1,131 @@
+﻿@import "../../variables";
+
+.common-subcribe {
+    background-size: cover !important;
+    position: relative;
+    text-align: center;
+    padding: 3.5vw 0;
+
+    .gradient-footer {
+        background-color: rgba(1, 18, 51, 0.8);
+    }
+
+    .form-subscribe {
+        margin: 0 auto;
+        position: relative;
+        max-width: 530px;
+        h3 {
+            color: @white;
+            margin: 0;
+            font-size: 2.25rem;
+        }
+
+        small {
+            color: @white;
+            font-size: 14px;
+        }
+
+        form {
+            padding-top: 2vw;
+        }
+
+        .form-control {
+            border: none;
+            border-radius: .25rem !important;
+            padding: 0.375rem 1.75rem;
+        }
+
+        .input-group {
+            margin-bottom: 1rem;
+            height: 2.625rem;
+
+            .input-group-append {
+                margin-left: .2rem;
+            }
+
+            .input-group-text {
+                padding: 0;
+                border: none;
+                border-radius: .25rem;
+            }
+
+            .btn-light-blue {
+                min-width: 8.75rem;
+                height: 2.625rem;
+                padding: 0;
+                line-height: 2.625rem;
+                text-transform: capitalize;
+                font-size: 1.25rem;
+                
+            }
+
+            .checkbox {
+                color: @aq-light-blue;
+                font-size: 14px;
+            }
+
+            .glyphicon-ok {
+                background-color: @white;
+            }
+
+            input[type="checkbox"]:checked + span {
+                border-color: @aq-light-green;
+                background-color: @aq-light-green;
+            
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .common-subcribe {
+        .form-subscribe {
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .common-subcribe {
+        padding: 60px 0;
+        
+        .form-subscribe {
+            .input-group {
+                height: inherit;
+
+                .input-group-append {
+                    width: 100%;
+                    margin: 0;
+                }
+
+                .input-group-text {
+                    width: 100%;
+                }
+
+                .btn-light-blue {
+                    width: 100%;
+                }
+            }
+
+            .form-control {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            form {
+                padding-top: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .common-subcribe {
+        .form-subscribe {
+            width: 100%;
+            
+            padding: 0 30px;
+        }
+    }
+}

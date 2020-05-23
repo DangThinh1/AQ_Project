@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;0168</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\**" />
+    <Compile Remove="New\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <EmbeddedResource Remove="New\**" />
+    <None Remove="Entities\**" />
+    <None Remove="New\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Database\Entities\AuthorizationFunctions.cs" />
+    <Compile Remove="Database\Entities\AuthorizationModules.cs" />
+    <Compile Remove="Database\Entities\AuthorizationPageFunctions.cs" />
+    <Compile Remove="Database\Entities\AuthorizationPages.cs" />
+    <Compile Remove="Database\Entities\AuthorizationRoles.cs" />
+    <Compile Remove="Database\Entities\CommonLanguages.cs" />
+    <Compile Remove="Database\Entities\CommonResources.cs" />
+    <Compile Remove="Database\Entities\CommonValues.cs" />
+    <Compile Remove="Database\Entities\Currencies.cs" />
+    <Compile Remove="Database\Entities\PortalLanguageControls.cs" />
+    <Compile Remove="Database\Entities\PortalLocationControls.cs" />
+    <Compile Remove="Database\YachtOperatorDbContext_Backup.cs" />
+    <Compile Remove="Interfaces\ICommonLanguagesServices.cs" />
+    <Compile Remove="Interfaces\ICommonResourcesServices.cs" />
+    <Compile Remove="Interfaces\ICommonValueService.cs" />
+    <Compile Remove="Interfaces\ICurrencyService.cs" />
+    <Compile Remove="Interfaces\IPortalLanguageService.cs" />
+    <Compile Remove="Services\CommonLanguagesServices.cs" />
+    <Compile Remove="Services\CommonResourcesServices.cs" />
+    <Compile Remove="Services\CommonValueService.cs" />
+    <Compile Remove="Services\CurrencyService.cs" />
+    <Compile Remove="Services\PortalLanguageService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Database\Entities\efpt.config.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AQEncrypts" Version="1.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="ValueInjecter" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YachtMerchant.Core\YachtMerchant.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AQEncrypts">
+      <HintPath>..\..\..\..\AQ DLL\AQEncrypts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.options\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

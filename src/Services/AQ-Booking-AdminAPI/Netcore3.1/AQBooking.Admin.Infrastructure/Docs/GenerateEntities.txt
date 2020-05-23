@@ -1,0 +1,1 @@
+Scaffold-DbContext "Server=172.16.10.137,1600;Initial Catalog=AQ_BookingsRev4;User=erp;Password=erp2017;Integrated Security=False" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities -f

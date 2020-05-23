@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Identity.Core": {
+      "commandName": "Project"
+    }
+  }
+}

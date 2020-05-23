@@ -1,0 +1,228 @@
+﻿@using AQ_PGW.Core.Models.DBTables;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row" style="height:50px;">
+        <div class="col-sm-3" style="background-color:#38bee7;text-align: center; padding: 15px; color: black;">
+            Transaction history
+        </div>
+    </div>
+    <div class="row" style="background-color: #e9ecef;">
+        <div class="col-md-7">
+
+            <label style="color: black;">Duration</label>
+            <input type="date" id="inputDate" name="Day" style="padding:0.7rem 1rem; margin: 0.4rem 0.2rem;" />
+            <label>-</label>
+            <input type="date" id="inputTong" name="ToDay" style="padding:0.7rem 1rem; margin: 0.4rem 0.2rem;" />
+            <button type="submit" class="btn btn-light" id="btnSearch" style="color: black;width: 100px;line-height: initial;height: 38px;">Search</button>
+
+        </div>
+        <div class="col-md-5">
+            <div class="btn-group btn-block" role="group" aria-label="Default button group">
+                <button type="button" class="btn btn-secondary btn-block" id="dateToday" style="padding: 0.7rem 1rem;margin: 0.4rem 0.2rem;color: black;">Today</button>
+                <button type="button" class="btn btn-secondary btn-block" id="dateWeek" style="padding: 0.7rem 1rem;margin: 0.4rem 0.2rem;color: black;">1 week</button>
+                <button type="button" class="btn btn-secondary btn-block" id="dateMonth" style="padding: 0.7rem 1rem;margin: 0.4rem 0.2rem;color: black;">1 month</button>
+                <button type="button" class="btn btn-secondary btn-block" id="dateMonths" style="padding: 0.7rem 1rem;margin: 0.4rem 0.2rem;color: black;">3 months</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row" style="background-color:#38bee7">
+        <div class="col" style="height:50px;">
+            <p class="time-zone" style="color: black;">Time zone: PST Pacific standard time GMT-8:00</p>
+        </div>
+    </div>
+    <div id="search">
+        <div class="row">
+            <div class="container mt-3">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" id="tabActive">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" data-value="#loadAll" data-page-type="All" href="#loadAll" style="color:#656565" onclick="searchType('@Url.Action("PageAll", "History")')">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" data-value="#loadUnpaid" data-page-type="UnPaid" href="#loadUnpaid" style="color:#656565" onclick="searchType('@Url.Action("PageUnPaid", "History")','#loadUnpaid')">Unpaid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" data-value="#loadPending" data-page-type="Pending" href="#loadPending" style="color:#656565" onclick="searchType('@Url.Action("PagePending", "History")','#loadPending')">Pending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" data-value="#loadPaid" data-page-type="Paid" href="#loadPaid" style="color:#656565" onclick="searchType('@Url.Action("PagePaid", "History")','#loadPaid')">Paid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" data-value="#loadOrderComplete" data-page-type="Complete" href="#loadOrderComplete" style="color:#656565" onclick="searchType('@Url.Action("PageComplete", "History")','#loadOrderComplete')">Order Complete</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="loadAll" class="container tab-pane active">
+                        <div class="row">
+
+                            <table class="table" id="tableSort">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th scope="col">Trans.Date</th>
+                                        <th scope="col"><i class="fas fa-exclamation-circle"></i>Post.Date</th>
+                                        <th scope="col">Status </th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Amount</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div id="loadUnpaid" class="container tab-pane fade">
+
+                        @*@await Html.PartialAsync("~/Views/History/_SearchUnPaid.cshtml", Model.ViewNoPaid)*@
+                    </div>
+
+                    <div id="loadPending" class="container tab-pane fade">
+                        @*@await Html.PartialAsync("~/Views/History/_SearchPending.cshtml", Model.ViewPending)*@
+                    </div>
+
+                    <div id="loadPaid" class="container tab-pane fade">
+                        @*@await Html.PartialAsync("~/Views/History/_SearchPaid.cshtml", Model.ViewPaid)*@
+                    </div>
+
+                    <div id="loadOrderComplete" class="container tab-pane fade">
+                        @*@await Html.PartialAsync("~/Views/History/_SearchComplete.cshtml", Model.ViewCompleted)*@
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script>
+        var sortName = "";
+        var sortDirection = "ASC";
+        var currenPage = 1;
+        var sortGlobal = null;
+        $("body").on("click", "#tableSort th a", function () {
+            var activeTab = $("#tabActive li a.active");
+            var tab = activeTab.data("value");
+            var typeActive = activeTab.html();
+            sortName = $(this).data("field");
+            sortDirection = sortDirection == "ASC" ? "DESC" : "ASC";
+            console.log(sortDirection, sortName);
+            if (sortName) {
+                var sort = `${sortName} ${sortDirection}`;
+                CallPageType("@Url.Action("Search","History")", tab, currenPage, typeActive, sort);
+            }
+        });
+
+        var date = {};
+
+        function CallPageType(url, otable, page, typePage = 'All',sortBy = null) {
+            currenPage = page;
+            //debugger;
+            setTimeout(() => {
+                var activeTab = $("#tabActive li a.active");
+                var tab = activeTab.data("value");
+                var pagetype = activeTab.data("page-type");
+                typePage = pagetype;
+                otable = tab;
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    data: { page: page, dt: (date), typePage: typePage, sortBy: sortBy },
+                    cache: false,
+                    async: false,
+                    dataType: "html",
+                    success: function (data) {
+                        var table = $(otable);
+                        table.html(data);
+                        addIdTable(otable);
+                    },
+                    error: function (e) {
+                        console.log(e);
+                    }
+                })
+            }, 500)
+          
+        }
+
+        
+        function addIdTable(otable) {
+            $("#tableSort").removeAttr('id');
+            var activeTab = $("#tabActive li a.active");
+            if (activeTab) {
+                $(otable).find("table").attr("id", "tableSort");
+            }
+        }
+        function searchType(url, otable = "#loadAll") {
+            CallPageType(url, otable, 0);
+            //addIdTable(otable);
+        }
+
+        $('#btnSearch').click(function () {
+            //debugger;
+            var todaycopy = $('#inputDate').val();
+            var daycopy = $('#inputTong').val();
+            if (todaycopy == "" || daycopy == "") {
+                alert("CHECK DAY");
+                return;
+            }
+            date = {
+                Day: daycopy,
+                Today: todaycopy
+            }
+            var activeTab = $("#tabActive li a.active");
+            if (activeTab) {
+                var tab = activeTab.data('value');
+                var typeActive = activeTab.html();
+                CallPageType("@Url.Action("Search","History")", tab, 1, typeActive);
+            }
+            //addIdTable(activeTab.data('value'));
+        })
+        function Today() {
+            var date1 = new Date();
+            var convertDate = date1.toISOString().substr(0, 10);
+            $('#inputTong').val(convertDate)
+        }
+
+            $('#dateToday').click(function () {
+
+                var date1 = new Date();
+                var convertDate = date1.toISOString().substr(0, 10);
+                $('#inputDate').val(convertDate);
+                $('#inputTong').val(convertDate)
+            });
+            function addDays(dateObj, numDays) {
+                dateObj.setDate(dateObj.getDate() + numDays);
+                return dateObj;
+            }
+            $('#dateWeek').click(function () {
+                var date2 = new Date();
+                var nextWeek = date2.setDate(date2.getDate() + (-7));
+                var convertDate = new Date(nextWeek).toISOString().substr(0, 10);
+                $('#inputDate').val(convertDate);
+                Today();
+            });
+            $('#dateMonth').click(function () {
+
+                var date3 = new Date();
+                date3.setMonth(date3.getMonth() - 1);
+                var convertDate = date3.toISOString().substr(0, 10);
+                $('#inputDate').val(convertDate);
+                Today();
+            });
+            $('#dateMonths').click(function () {
+                var date3 = new Date();
+                date3.setMonth(date3.getMonth() - 3);
+                var convertDate = date3.toISOString().substr(0, 10);
+                $('#inputDate').val(convertDate);
+                Today();
+            });
+    </script>
+}

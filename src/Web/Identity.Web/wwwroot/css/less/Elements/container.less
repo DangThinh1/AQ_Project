@@ -1,0 +1,177 @@
+﻿@import "../variables.less";
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+::selection {
+    background-color: @aq-blue;
+    color: @white;
+}
+
+.widthpercent-1 {
+    width: 100% !important;
+}
+
+.widthpercent-2 {
+    width: 50% !important;
+}
+
+.widthpercent-3 {
+    width: 33.33333333% !important;
+}
+
+.widthpercent-4 {
+    width: 25% !important;
+}
+
+.widthpercent-5 {
+    width: 20% !important;
+}
+
+.widthpercent-6 {
+    width: 16.66666667% !important;
+}
+
+.widthrest-1 {
+    width: 100% !important;
+}
+
+.widthrest-2 {
+    width: 50% !important;
+}
+
+.widthrest-3 {
+    width: 66.66666667% !important;
+}
+
+.widthrest-4 {
+    width: 75% !important;
+}
+
+.widthrest-5 {
+    width: 80% !important;
+}
+
+.widthrest-6 {
+    width: 83.33333333% !important;
+}
+
+.intl-tel-input *:focus {
+    outline: none;
+}
+
+.aq-row {
+    margin-right: -.5rem;
+    margin-left: -.5rem;
+}
+
+.aq-col {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.bg-download {
+    background-color: @aq-light-blue;
+}
+
+.bg-save {
+    background-color: @aq-orange;
+}
+
+.bg-mail {
+    background-color: @aq-green;
+}
+
+.bg-facebook {
+    background-color: @aq-blue;
+}
+
+.btn-dot-blue {
+    padding: 0.5rem 2rem;
+    background-color: @white;
+    border: 1px dashed @aq-light-blue;
+    color: @aq-light-blue !important;
+    width: 100%;
+    font-family: @font-semibold;
+    &:hover, &:focus{
+        border-style: solid;
+        background-color: @aq-light-blue;
+        color: @white !important;
+    }
+}
+
+.aq-contact {
+    padding: 1.5vw;
+
+    .row {
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+    }
+
+    [class^="col-"] {
+        padding-left: 0.5rem;
+        padding-right: .5rem;
+    }
+
+    .checkbox {
+        display: inline-block;
+        margin-right: 1rem;
+
+        span {
+            vertical-align: sub;
+        }
+    }
+
+    .form-control {
+        border: none;
+        background-color: @aq-light-gray;
+        height: auto !important;
+        padding: 0.775rem 0.75rem;
+    }
+
+    .btn {
+        padding: .5rem 2rem;
+        font-family: 'SegoeuiSemibold';
+    }
+
+    .form-contact-bottom {
+        text-align: left;
+        align-items: center;
+    }
+}
+
+
+.list-package {
+    margin: 1.25rem 0;
+
+    .list-item {
+        margin: 1.25rem 0;
+        position: relative;
+        padding-left: 1.5rem;
+
+        &:before {
+            content: "\e983";
+            color: @aq-light-green;
+            margin-right: 0.5rem;
+            font-family: 'font-aestechgroup';
+            font-size: .675rem;
+            position: absolute;
+            left: 0;
+            top: .25rem;
+        }
+
+        &:first-child{
+            margin-top: 0;
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

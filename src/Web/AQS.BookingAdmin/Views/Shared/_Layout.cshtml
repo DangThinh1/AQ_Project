@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AQBooking Admin | @ViewBag.Title</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/lib/fontawesome-free/css/all.min.css" />
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- iCheck -->
+    <link rel="stylesheet" href="~/lib/icheck-bootstrap/icheck-bootstrap.min.css" />
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="~/lib/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/css/adminlte/adminlte.min.css" />
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="~/lib/overlayScrollbars/css/OverlayScrollbars.min.css" />
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="~/lib/daterangepicker/daterangepicker.css" />
+
+    <!--Toast-->
+    <link href="~/lib/toastr/toastr.css" rel="stylesheet" />
+    <link href="~/lib/pace-progress/pace.min.css" rel="stylesheet" />
+    <!-- Google Font: Source Sans Pro -->
+    <!--Sweet alert-->
+    <!-- Fancybox -->
+    <link href="~/lib/fancybox/jquery.fancybox.min.css" rel="stylesheet" />
+
+    <link href="~/lib/cropper/cropper.css" rel="stylesheet" />
+    <link href="~/css/custom.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    @RenderSection("Styles", required: false)
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <partial name="_Navbar" />
+
+        <partial name="_MainSideBar" />
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- /.content-header -->
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    @RenderBody()
+                </div><!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <partial name="_Footer" />
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+    <!-- jQuery -->
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery1.19.1.validate.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="~/lib/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- daterangepicker -->
+    <script src="~/lib/moment/moment.min.js"></script>
+    <script src="~/lib/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="~/lib/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!--Toast-->
+    <script src="~/lib/toastr/toastr.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="~/lib/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="~/lib/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="~/lib/pace-progress/pace.js"></script>
+    <!-- Fancybox -->
+    <script src="~/lib/fancybox/jquery.fancybox.min.js"></script>
+    <!-- Lazyload -->
+    <script src="~/lib/lazyload/lazyload.min.js"></script>
+    <script src="~/lib/summernote/summernote-bs4.js"></script>
+
+    <!-- AdminLTE App -->
+    <script src="~/js/adminlte/adminlte.min.js"></script>
+    <script src="~/js/common/public.common.js"></script>
+
+    <!-- Jquery Pagging -->
+    <script src="~/lib/jquery.twbsPagination/jquery.twbsPagination.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    @RenderSection("Scripts", required: false)
+    @RenderSection("Modal", required: false)
+
+</body>
+</html>

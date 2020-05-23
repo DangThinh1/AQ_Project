@@ -1,0 +1,12 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Infrastructure\bin\Debug\netcoreapp2.2\YachtMerchant.Infrastructure.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Infrastructure\bin\Debug\netcoreapp2.2\YachtMerchant.Infrastructure.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Infrastructure\bin\Debug\netcoreapp2.2\YachtMerchant.Infrastructure.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Infrastructure\bin\Debug\netcoreapp2.2\YachtMerchant.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Infrastructure\bin\Debug\netcoreapp2.2\YachtMerchant.Core.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Infrastructure\obj\Debug\netcoreapp2.2\YachtMerchant.Infrastructure.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Infrastructure\obj\Debug\netcoreapp2.2\YachtMerchant.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Infrastructure\obj\Debug\netcoreapp2.2\YachtMerchant.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Infrastructure\obj\Debug\netcoreapp2.2\YachtMerchant.Infrastructure.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Infrastructure\obj\Debug\netcoreapp2.2\YachtMerchant.Infrastructure.csproj.CopyComplete
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Infrastructure\obj\Debug\netcoreapp2.2\YachtMerchant.Infrastructure.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtMerchant-API\YachtMerchant.Infrastructure\obj\Debug\netcoreapp2.2\YachtMerchant.Infrastructure.pdb

@@ -1,0 +1,283 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Api\\YachtMerchant.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Api\\YachtMerchant.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Api\\YachtMerchant.Api.csproj",
+        "projectName": "YachtMerchant.Api",
+        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Api\\YachtMerchant.Api.csproj",
+        "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\ThinkPro\\.dotnet\\NuGetFallbackFolder": {},
+          "http://103.97.125.19/AQNuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-tools/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Infrastructure\\YachtMerchant.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Infrastructure\\YachtMerchant.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "APIHelpers": {
+              "target": "Package",
+              "version": "[1.1.4, )"
+            },
+            "AQBooking.Admin.Core": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "AQBooking.Core": {
+              "target": "Package",
+              "version": "[1.0.29, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Core\\YachtMerchant.Core.csproj": {
+      "version": "1.8.6",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Core\\YachtMerchant.Core.csproj",
+        "projectName": "YachtMerchant.Core",
+        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Core\\YachtMerchant.Core.csproj",
+        "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\ThinkPro\\.dotnet\\NuGetFallbackFolder": {},
+          "http://103.97.125.19/AQNuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-tools/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AQBooking.Core": {
+              "target": "Package",
+              "version": "[1.0.27, )"
+            },
+            "AQConfigurations.Core": {
+              "target": "Package",
+              "version": "[1.1.46, )"
+            },
+            "AQIdentity.Core": {
+              "target": "Package",
+              "version": "[1.1.5, )"
+            },
+            "ExtendedUtility": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.StaticFiles": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Infrastructure\\YachtMerchant.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Infrastructure\\YachtMerchant.Infrastructure.csproj",
+        "projectName": "YachtMerchant.Infrastructure",
+        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Infrastructure\\YachtMerchant.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\ThinkPro\\.dotnet\\NuGetFallbackFolder": {},
+          "http://103.97.125.19/AQNuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-tools/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Core\\YachtMerchant.Core.csproj": {
+                "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Core\\YachtMerchant.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AQEncrypts": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "ValueInjecter": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+﻿{
+   "ContextClassName": "AQCMSContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "DoNotCombineNamespace": false,
+   "IdReplace": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Databases\/CMSEntities",
+   "ProjectRootNamespace": "AQBooking.Admin.Infrastructure",
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[PostCategories]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[PostCategoryDetails]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[PostDetails]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[PostFileStreams]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Posts]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Subscribers]"
+      }
+   ],
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseSpatial": false
+}

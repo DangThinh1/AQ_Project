@@ -1,0 +1,23 @@
+[
+  {
+    "outputFileName": "wwwroot/BundleFile/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/css/site.css",
+      "wwwroot/css/base.css",
+      "wwwroot/css/example3.css",
+      "wwwroot/css/ladda.min.css",
+      "wwwroot/css/prism.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/BundleFile/js/striper.min.js",
+    "inputFiles": [
+      "wwwroot/custom/striper.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]

@@ -1,0 +1,28 @@
+﻿
+@model Stripe.Customer
+
+@foreach (Stripe.Card item in Model.Sources.Data)
+{
+    <tr>
+        @if (item.Brand == "Visa")
+        {
+            <td><i class="fab fa-cc-visa"></i>@item.Brand</td>
+        }
+        else
+        {
+            <td><i class="fab fa-cc-mastercard"></i>@item.Brand</td>
+        }
+        <td>**** **** ***@item.Last4</td>
+        <td>@item.Name</td>
+        @if (item.Id == Model.DefaultSourceId)
+        {
+            <td><i class="fas fa-location-arrow"></i>Default primary</td>
+        }
+        else
+        {
+            <td><a href="javascript:;" onclick="Default('@item.CustomerId','@item.Id')">Set as primary</a> </td>
+        }
+        <td><a href="javascript:;" onclick="deleteCard('@item.CustomerId','@item.Id')">Delete</a></td>
+
+    </tr>
+}

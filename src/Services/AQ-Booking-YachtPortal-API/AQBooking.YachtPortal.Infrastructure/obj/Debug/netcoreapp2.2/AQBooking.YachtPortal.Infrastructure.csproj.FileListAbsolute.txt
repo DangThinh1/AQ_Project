@@ -1,0 +1,12 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Infrastructure\bin\Debug\netcoreapp2.2\AQBooking.YachtPortal.Infrastructure.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Infrastructure\bin\Debug\netcoreapp2.2\AQBooking.YachtPortal.Infrastructure.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Infrastructure\bin\Debug\netcoreapp2.2\AQBooking.YachtPortal.Infrastructure.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Infrastructure\bin\Debug\netcoreapp2.2\AQBooking.YachtPortal.Core.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Infrastructure\bin\Debug\netcoreapp2.2\AQBooking.YachtPortal.Core.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.YachtPortal.Infrastructure.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.YachtPortal.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.YachtPortal.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.YachtPortal.Infrastructure.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.YachtPortal.Infrastructure.csproj.CopyComplete
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.YachtPortal.Infrastructure.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-YachtPortal-API\AQBooking.YachtPortal.Infrastructure\obj\Debug\netcoreapp2.2\AQBooking.YachtPortal.Infrastructure.pdb

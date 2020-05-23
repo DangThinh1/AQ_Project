@@ -1,0 +1,487 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AQBooking.Admin.API</name>
+    </assembly>
+    <members>
+        <member name="M:AQBooking.Admin.API.Controllers.EVisaMerchantAccController.SearchEVisaMerchantAcc(AQBooking.Admin.Core.Models.EVisaMerchantAccount.EVisaMerchantAccSearchModel)">
+            <summary>
+            Search for hotel merchant user matching supplied query
+            </summary>
+            <param name="model"></param>
+            <response code="200">OK</response>
+            <response code="401">Unauthorized</response>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.EVisaMerchantAccController.GetEVisaMerchantAccById(System.Int32)">
+            <summary>
+            Retrieve merchant user by spcified id
+            </summary>
+            <param name="id"></param>
+            <response code="200">OK</response>
+            <response code="401">Unauthorized</response>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.HotelMerchantController.SearchHotelMerchant(AQBooking.Admin.Core.Models.HotelMerchant.HotelMerchantSearchModel)">
+            <summary>
+            Search for hotel merchant matching supplied query
+            </summary>
+            <param name="model"></param>
+            <response code="200">OK</response>
+            <response code="401">Unauthorized</response>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.HotelMerchantController.GetHotelMerchantById(System.Int32)">
+            <summary>
+            Retrieve merchant by spcified id
+            </summary>
+            <param name="id"></param>
+            <response code="200">OK</response>
+            <response code="401">Unauthorized</response>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.HotelMerchantController.CreateHotelMerchant(AQBooking.Admin.Core.Models.HotelMerchant.HotelMerchantCreateUpdateModel)">
+            <summary>
+            
+            </summary>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.HotelMerchantController.UpdateHotelMerchant(AQBooking.Admin.Core.Models.HotelMerchant.HotelMerchantCreateUpdateModel)">
+            <summary>
+            
+            </summary>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.HotelMerchantController.DeleteHotelMerchant(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.HotelMerchantMgtController.SearchHotelMerchantMgt(AQBooking.Admin.Core.Models.HotelMerchantMgt.HotelMerchantMgtSearchModel)">
+            <summary>
+            Search for hotel merchant manager matching supplied query
+            </summary>
+            <param name="model"></param>
+            <response code="200">OK</response>
+            <response code="401">Unauthorized</response>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.HotelMerchantMgtController.GetHotelMerchantMgtById(System.Int32)">
+            <summary>
+            Retrieve merchant manager by spcified id
+            </summary>
+            <param name="id"></param>
+            <response code="200">OK</response>
+            <response code="401">Unauthorized</response>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.HotelMerchantUserController.SearchHotelMerchantUser(AQBooking.Admin.Core.Models.HotelMerchantUser.HotelMerchantUserSearchModel)">
+            <summary>
+            Search for hotel merchant user matching supplied query
+            </summary>
+            <param name="model"></param>
+            <response code="200">OK</response>
+            <response code="401">Unauthorized</response>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.HotelMerchantUserController.GetHotelMerchantUserById(System.Int32)">
+            <summary>
+            Retrieve merchant user by spcified id
+            </summary>
+            <param name="id"></param>
+            <response code="200">OK</response>
+            <response code="401">Unauthorized</response>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantAccountController.SearchRestaurantMerchantAcc(AQBooking.Admin.Core.Models.RestaurantMerchantAccount.RestaurantMerchantAccSearchModel)">
+            <summary>
+            API Search restaurant merchant user
+            </summary>
+            <param name="searchModel"></param>
+            <remarks>
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantAccountController.FindRestaurantMerchantAcc(System.Int32)">
+            <summary>
+            API get restaurant merchant user by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantAccountController.CreateRestaurantMerchantAcc(AQBooking.Admin.Core.Models.RestaurantMerchantAccount.RestaurantMerchantAccCreateModel)">
+            <summary>
+            API Create new restaurant merchant user
+            </summary>
+            <param name="createModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantAccountController.UpdateRestaurantMerchantAcc(AQBooking.Admin.Core.Models.RestaurantMerchantAccount.RestaurantMerchantAccCreateModel)">
+            <summary>
+            API update restaurant merchant user
+            </summary>
+            <param name="updateModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantAccountController.DeleteRestaurantMerchantAcc(System.Int32)">
+            <summary>
+            API delete restaurant merchant user by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantAccountController.GetRestaurantMerchantAccByMerchantId(System.Int32)">
+            <summary>
+            Get restaurant account management by merchant id
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantAccountMgtController.SearchRestaurantMerchantAccMgt(AQBooking.Admin.Core.Models.RestaurantMerchantAccountMgt.RestaurantMerchantAccMgtSearchModel)">
+            <summary>
+            API Search restaurant merchant account management
+            </summary>
+            <param name="searchModel"></param>
+            <remarks>
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantAccountMgtController.FindRestaurantMerchantAccMgt(System.Int32)">
+            <summary>
+            API get restaurant merchant account management by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantAccountMgtController.CreateRestaurantMerchantAccMgt(AQBooking.Admin.Core.Models.RestaurantMerchantAccountMgt.RestaurantMerchantAccMgtCreateModel)">
+            <summary>
+            API Create new restaurant merchant account management
+            </summary>
+            <param name="createModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantAccountMgtController.UpdateRestaurantMerchantAccMgt(AQBooking.Admin.Core.Models.RestaurantMerchantAccountMgt.RestaurantMerchantAccMgtCreateModel)">
+            <summary>
+            API update restaurant merchant account management
+            </summary>
+            <param name="updateModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantAccountMgtController.DeleteRestaurantMerchantAccMgt(System.Int32)">
+            <summary>
+            API delete restaurant merchant account mamagement by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantAccountMgtController.GetRestaurantMerchantAccMgtByMerchantId(System.Int32)">
+            <summary>
+            Get restaurant merchant account management by merchant id
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantController.SearchrantMerchants(AQBooking.Admin.Core.Models.RestaurantMerchant.RestaurantMerchantSearchModel)">
+            <summary>
+            API Search restaurant merchant 
+            </summary>
+            <param name="searchModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantController.FindRestaurantMerchant(System.Int32)">
+            <summary>
+            API get restaurant merchant by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantController.CreateRestaurantMerchant(AQBooking.Admin.Core.Models.RestaurantMerchant.RestaurantMerchantCreateModel)">
+            <summary>
+            API Create restaurant merchant
+            </summary>
+            <param name="createModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantController.UpdateRestaurantMerchant(AQBooking.Admin.Core.Models.RestaurantMerchant.RestaurantMerchantCreateModel)">
+            <summary>
+            API Update restaurant merchant 
+            </summary>
+            <param name="updateModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.RestaurantMerchantController.DeleteRestaurantMerchant(System.Int32)">
+            <summary>
+            API Delete restaurant merchant
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.SelectListController.GetRestaurantMerchantNoManagerSelectList">
+            <summary>
+            Get restaurant merchant selectlist don't have manager
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.SelectListController.GetRestaurantMerchantNoUserSelectList">
+            <summary>
+            Get restaurant merchant select list don't have user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.SelectListController.GetAllRestaurantMerchantSelectList">
+            <summary>
+            Get all restaurant merchant
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.SelectListController.GetYachtMerchantNoManagerSelectList">
+            <summary>
+            Get yacht merchant don't have manager
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.SelectListController.GetYachtMerchantNoUserSelectList">
+            <summary>
+            Get yacht merchant selectlist don't have user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.SelectListController.GetAllYachtMerchantSelectList">
+            <summary>
+            Get all yacht merchant
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.SelectListController.GetYachtAccMgtHasMerchant">
+            <summary>
+            Get yacht merchant account management has merchant
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.SelectListController.GetYachtAccHasMerchant">
+            <summary>
+            Get yacht merchant account has merchant
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.SelectListController.GetResAccMgtHasMerchant">
+            <summary>
+            Get restaurant merchant account management has merchant
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.SelectListController.GetResAccHasMerchant">
+            <summary>
+            Get restaurant merchant account has merchant
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.SelectListController.GetEVisaMerchantNoUserSll">
+            <summary>
+            Get evisa merchant selectlist don't have user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.SelectListController.GetAllEVisaMerchant">
+            <summary>
+            Get all evisa merchant
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantAccountController.SearchYachtMerchantAcc(AQBooking.Admin.Core.Models.YachtMerchantAccount.YachtMerchantAccSearchModel)">
+            <summary>
+            API Search Yacht merchant user
+            </summary>
+            <param name="searchModel"></param>
+            <remarks>
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantAccountController.FindYachtMerchantAcc(System.Int32)">
+            <summary>
+            API get Yacht merchant user by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantAccountController.CreateYachtMerchantAcc(AQBooking.Admin.Core.Models.YachtMerchantAccount.YachtMerchantAccCreateModel)">
+            <summary>
+            API Create new Yacht merchant user
+            </summary>
+            <param name="createModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantAccountController.UpdateYachtMerchantAcc(AQBooking.Admin.Core.Models.YachtMerchantAccount.YachtMerchantAccCreateModel)">
+            <summary>
+            API update Yacht merchant user
+            </summary>
+            <param name="updateModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantAccountController.DeleteYachtMerchantAcc(System.Int32)">
+            <summary>
+            API delete Yacht merchant user by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantAccountController.GetYachtMerchantAccByMerchantId(System.Int32)">
+            <summary>
+            Get yacht merchant account by merchant id
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantAccountMgtController.SearchYachtMerchantAccMgt(AQBooking.Admin.Core.Models.YachtMerchantAccountMgt.YachtMerchantAccMgtSearchModel)">
+            <summary>
+            API Search Yacht merchant account management
+            </summary>
+            <param name="searchModel"></param>
+            <remarks>
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantAccountMgtController.FindYachtMerchantAccMgt(System.Int32)">
+            <summary>
+            API get Yacht merchant account management by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantAccountMgtController.CreateYachtMerchantAccMgt(AQBooking.Admin.Core.Models.YachtMerchantAccountMgt.YachtMerchantAccMgtCreateModel)">
+            <summary>
+            API Create new Yacht merchant account management
+            </summary>
+            <param name="createModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantAccountMgtController.UpdateYachtMerchantAccMgt(AQBooking.Admin.Core.Models.YachtMerchantAccountMgt.YachtMerchantAccMgtCreateModel)">
+            <summary>
+            API update Yacht merchant account management
+            </summary>
+            <param name="updateModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantAccountMgtController.DeleteYachtMerchantAccMgt(System.Int32)">
+            <summary>
+            API delete Yacht merchant account mamagement by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantAccountMgtController.GetYachtMerchantAccMgtByMerchantId(System.Int32)">
+            <summary>
+            Get yacht merchant account management by merchant id
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantCharterFeeController.GetAllYachtMerchantCharterFee">
+            <summary>
+            Get all yacht merchant charter fee
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantCharterFeeController.GetYachtMerchantCharterFeeByMerchantId(System.Int32)">
+            <summary>
+            Get list yacht merchant charter fee by merchantid
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantCharterFeeController.GetYachtMerchantCharterFeeById(System.Int32)">
+            <summary>
+            Get yacht merchant charter fee by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantCharterFeeController.CreateYachtMerchantCharterFee(AQBooking.Admin.Core.Models.YachtMerchantCharterFee.YahctMerchantCharterFeeCreateModel)">
+            <summary>
+            Create new yacht merchant charter fee
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantCharterFeeController.UpdateYachtMerchantCharterFee(AQBooking.Admin.Core.Models.YachtMerchantCharterFee.YachtMerchantCharterFeeUpdateModel)">
+            <summary>
+            Update yacht merchant charter fee
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantCharterFeeController.DeleteYachtMerchantCharterFee(System.Int32)">
+            <summary>
+            Delete yacht merchant charter fee
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantController.SearchYachtMerchants(AQBooking.Admin.Core.Models.YachtMerchant.YachtMerchantSearchModel)">
+            <summary>
+            API Search Yacht merchant 
+            </summary>
+            <param name="searchModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantController.FindYachtMerchant(System.Int32)">
+            <summary>
+            API get Yacht merchant by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantController.CreateYachtMerchant(AQBooking.Admin.Core.Models.YachtMerchant.YachtMerchantCreateModel)">
+            <summary>
+            API Create Yacht merchant
+            </summary>
+            <param name="createModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantController.UpdateYachtMerchant(AQBooking.Admin.Core.Models.YachtMerchant.YachtMerchantCreateModel)">
+            <summary>
+            API Update Yacht merchant 
+            </summary>
+            <param name="updateModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtMerchantController.DeleteYachtMerchant(System.Int32)">
+            <summary>
+            API Delete Yacht merchant
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtTourCategoryController.SearchYachtMerchants(AQBooking.Admin.Core.Models.YachtTourCategory.YachtTourCategorySearchModel)">
+            <summary>
+            API Search Yacht merchant
+            </summary>
+            <param name="searchModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtTourCategoryController.FindInfoDetail(System.Int32)">
+            <summary>
+            API get Yacht merchant by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtTourCategoryController.Create(AQBooking.Admin.Core.Models.YachtTourCategory.YachtTourCategoryCreateModel)">
+            <summary>
+            API Create Yacht merchant
+            </summary>
+            <param name="createModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtTourCategoryController.UpdateDetail(AQBooking.Admin.Core.Models.YachtTourCategory.YachtTourCategoryCreateModel)">
+            <summary>
+            API Update Yacht merchant
+            </summary>
+            <param name="updateModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AQBooking.Admin.API.Controllers.YachtTourCategoryController.DeleteYachtMerchant(System.Int32)">
+            <summary>
+            API Delete Yacht merchant
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

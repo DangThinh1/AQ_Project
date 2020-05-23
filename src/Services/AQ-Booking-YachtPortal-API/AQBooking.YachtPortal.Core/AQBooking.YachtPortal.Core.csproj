@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Authors>AQ Teams</Authors>
+    <Product>AQ Booking</Product>
+    <Company>AES Technologies</Company>
+    <PackageId>AQYachtPortal.Core</PackageId>
+    <Version>1.5.3.9</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AQBooking.Core" Version="1.0.29" />
+    <PackageReference Include="AQEncrypts" Version="1.0.0" />
+    <PackageReference Include="AQIdentity.Core" Version="1.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.0.601" />
+  </ItemGroup>
+  <Target Name="PostBuildDev" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
+    <Exec Command="$(ProjectDir)CMD\nuget.exe push $(ProjectDir)bin\$(Configuration)\$(PackageId).$(PackageVersion).nupkg eefbdffc-4939-41d3-a53d-a5a9cafa705e -Source http://103.97.125.19/AQNuget/nuget" />
+  </Target>  
+  <!--<Target Name="PostBuildRelease" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
+    <Exec Command="$(ProjectDir)CMD\nuget.exe push $(ProjectDir)bin\$(Configuration)\*.nupkg eefbdffc-4939-41d3-a53d-a5a9cafa705e -Source http://103.97.125.19/AQNuget/nuget" />
+  </Target>-->
+</Project>

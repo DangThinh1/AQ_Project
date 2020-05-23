@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUi" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AQBooking.YachtPortal.Infrastructure\AQBooking.YachtPortal.Infrastructure.csproj">
+      <Private>true</Private>
+    </ProjectReference>
+  </ItemGroup>
+
+  <Target Name="PostBuildDev" AfterTargets="Pack" Condition="'$(Configuration)' == 'Debug'">
+    <Exec Command="$(ProjectDir)CMD\nuget.exe push $(ProjectDir)bin\$(Configuration)\$(PackageId).$(PackageVersion).nupkg XhwIjoxNTYwMjk3ODM2LCJpYXQiOjE1NTk2Mzc8MzYsImlzcyI6 -Source http://115.75.195.93/aq-package/nuget" />
+  </Target>
+  
+  <Target Name="PostBuildRelease" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
+    <Exec Command="$(ProjectDir)CMD\nuget.exe push $(ProjectDir)bin\$(Configuration)\*.nupkg XhwIjoxNTYwMjk3ODM2LCJpYXQiOjE1NTk2Mzc8MzYsImlzcyI6 -Source http://115.75.195.93/aq-package/nuget" />
+  </Target>
+  
+  <!--<Target Name="UpdateNugetPackageDebug" AfterTargets="Rebuild" Condition="'$(Configuration)' == 'Debug'">
+    <PropertyGroup>
+      <PowerShellExe Condition=" '$(PowerShellExe)'=='' ">
+        C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+      </PowerShellExe>
+      <ScriptLocation Condition=" '$(ScriptLocation)'=='' ">
+        $(ProjectDir)CMD\AutoUpdateNugetPackages.ps1
+      </ScriptLocation>
+    </PropertyGroup>
+    <Exec Command="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe  -file $(ProjectDir)CMD\AutoUpdateNugetPackages.ps1" />
+  </Target>-->
+
+  <!--<Target Name="UpdateNugetPackageRelease" AfterTargets="Rebuild" Condition="'$(Configuration)' == 'Release'">
+    <PropertyGroup>
+      <PowerShellExe Condition=" '$(PowerShellExe)'=='' ">
+        C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+      </PowerShellExe>
+      <ScriptLocation Condition=" '$(ScriptLocation)'=='' ">
+        $(ProjectDir)CMD\AutoUpdateNugetPackages.ps1
+      </ScriptLocation>
+    </PropertyGroup>
+    <Exec Command="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe  -file $(ProjectDir)CMD\AutoUpdateNugetPackages.ps1" />
+  </Target>-->
+</Project>

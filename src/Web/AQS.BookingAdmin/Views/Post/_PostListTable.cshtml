@@ -1,0 +1,71 @@
+﻿@using AQBooking.Admin.Core.Models.Post
+@model PagedListClient<PostViewModel>
+
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">@Model.TotalItems record(s)</h3>
+
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Default Title</th>
+                        <th width="30%">Languages</th>
+                        <th width="150px">Category</th>
+                        <th width="100px">Created Date</th>
+                        <th width="100px">Created By</th>
+                        <th style="width: 100px">
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Data)
+                {
+                    <tr>
+                        <td>@item.DefaultTitle</td>
+                     <td>
+                            @if(item.CustomProperties["Languages"]!=null){
+                                @foreach (var language in (item.CustomProperties["Languages"] as IEnumerable<SelectListItem>))
+                                {
+                                    <a data-toggle="tooltip" title="Click to edit language @language.Text" href="@Url.Action("CreateUpdatePost",new {id=item.PostID,languageId=language.Value })" class="btn btn-success btn-sm mt-2">
+                                        @language.Text
+                                        @if(language.Selected){
+                                            <i class="fa fa-check-circle"></i>
+                                        }
+                                    </a>
+                                }
+                            }
+
+                    </td>
+                    <td>@item.PostCategoryName</td>
+
+                    <td>
+                        @item.CreatedDate.ToString("dd/MM/yyyy")
+                    </td>
+                    <td>
+                        @item.CustomProperties["CreatedByName"]
+                    </td>
+                    <td>
+                        <a data-toggle="tooltip" title="Edit post" href="@Url.Action("CreateUpdatePost",new {id=item.PostID })" class="btn btn-default btn-sm btn-edit-post"><i class="fas fa-pen"></i></a>
+                        @if (!item.Deleted)
+                        {
+                            <button data-toggle="tooltip" title="Delete post" type="button" data-post-id="@item.PostID" class="btn btn-danger btn-sm btn-delete-post"><i class="fas fa-times"></i></button>
+                        }
+                        else
+                        {
+                            <button data-toggle="tooltip" title="Restore post" type="button" data-post-id="@item.PostID" class="btn btn-success btn-sm btn-restore-post"><i class="fas fa-trash-restore"></i></button>
+                        }
+                    </td>
+                </tr>
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<input type="hidden" id="hdTotalPage" value="@Model.TotalPages" />

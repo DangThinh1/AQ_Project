@@ -1,0 +1,59 @@
+﻿@*@model IEnumerable<YachtMerchant.Core.Models.YachtMerchantInformation.YachtMerchantInformationSupportModel>
+@using YachtMerchant.Core.Enum
+
+@{
+    R.GetLangId(new List<string> { "COMMON", "DINING" });
+}*@
+@*<div class="form-table">
+    <div class="table-responsive">
+        <table class="table table-customize">
+            <thead>
+                <tr>
+                    <th>@R.GetResource("LANGUAGES")</th>
+                    <th style="width: 160px;" class="text-center">@R.GetResource("IMAGE")</th>
+                    <th class="text-center">@R.GetResource("LANGUAGESSUPPORTED")</th>
+                    <th style="width: 160px;">@R.GetResource("ACTION")</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.ToList().Count > 0)
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@R.GetResource(item.ResourceKey)</td>
+                            <td class="text-center">
+                                @if (item.FileStreamFid.GetValueOrDefault() > 0)
+                                {
+                                    <img class="img-table" src="@await Component.InvokeAsync("GetImageUrl", new { fileId = item.FileStreamFid, ratio = ThumbRatioEnum.full })" />
+                                }
+                            </td>
+                            <td class="text-center">
+                                @if (item.Supported)
+                                {
+                                    <span><i class="fa fa-2x fa-check-circle color-green"></i></span>
+                                }
+                            </td>
+                            <td>
+                                @if (!item.Supported)
+                                {
+                                    <a id="btnCreateLanguage" onclick="createInfoDetail(@item.InfoFid, @item.LanguageFid, '@item.ResourceKey')" title="@R.GetResource("CREATE")" class="btn btn-outline outline-success btn-sm" data-toggle="tooltip"><i class="fa fa-plus"></i></a>
+                                }
+                                else
+                                {
+                                    <a id="btnEditLanguage" onclick="editInfoDetail(@item.Id)" title="@R.GetResource("EDIT")" class="btn btn-outline outline-success btn-sm" data-toggle="tooltip"><i class="fa fa-edit"></i></a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" style="text-align:center">@R.GetResource("NORECFOUND")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>*@

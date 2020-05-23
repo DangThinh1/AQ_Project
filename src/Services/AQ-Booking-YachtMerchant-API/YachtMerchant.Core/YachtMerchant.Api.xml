@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YachtMerchant.Api</name>
+    </assembly>
+    <members>
+        <member name="M:YachtMerchant.Api.Controllers.CommonValuesController.GetCommonValueByValueInt(System.String,System.Int32)">
+            <summary>
+            Get Common value
+            </summary>
+            <param name="valueGroup"> Value group in string format </param>
+            <param name="valueInt">Value Int in int format</param>
+            <returns>CommonValue{Id, UniqueId, ValueGroup, ValueInt, ValueString, ValueDouble}</returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.CommonValuesController.GetCommonValueByValueString(System.String,System.String)">
+            <summary>
+            Get Common value
+            </summary>
+            <param name="valueGroup"> Value group in string format </param>
+            <param name="valueString">Value String in string format</param>
+            <returns>CommonValue{Id, UniqueId, ValueGroup, ValueInt, ValueString, ValueDouble}</returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.CommonValuesController.GetCommonValueByValueDouble(System.String,System.Double)">
+            <summary>
+            Get Common value
+            </summary>
+            <param name="valueGroup"> Value group in string format </param>
+            <param name="valueDouble">Value Double in double format</param>
+            <returns>CommonValue{Id, UniqueId, ValueGroup, ValueInt, ValueString, ValueDouble}</returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.CurrencyController.GetCurrencyInfoAsync(System.String)">
+            <summary>
+            Get currency info by currency code
+            </summary>
+            <param name="currencyCode">Currency code in shortname format. Ex: USD, HKD, ...</param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.CurrencyController.GetCultureCode(System.String)">
+            <summary>
+            Get culture code for currency format by currency core
+            </summary>
+            <param name="currencyCode">Currency code in shortname format. Ex: USD, HKD, ...</param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.CurrencyController.GetCurrencyInfoByLocation(System.String)">
+            <summary>
+            Get currency info by location - country
+            </summary>
+            <param name="country">country as string format</param>   
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.MerchantsController.GetUniquedId(System.Int32)">
+            <summary>
+            Get UniqueId of Merchant from Id of Merchant
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.MerchantsController.GetProfile(System.Int32)">
+            <summary>
+            Get Basic Infomation ( Id, UniqueId ) of Merchant By Id 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.MerchantsController.GetListMerchant">
+            <summary>
+            Get Basic Infomation ( Id, UniqueId ) of Merchant By Id 
+            </summary>
+            <param name="id"></param>
+            <returns>list merchant use for select list</returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.MerchantsController.GetListMerchantOfYachtAccountManager(System.String)">
+            <summary>
+            Get all merchant manager by user have role Yacht Account Manager ( YAM )
+            </summary>
+            <param name="yamId"></param>
+            <returns> list merchant use for select list</returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.MerchantsController.GetMerchantOfUserRoleYachtMerchant(System.String)">
+            <summary>
+            Get merchant of user have role Yacht Merchant ( YM )
+            </summary>
+            <param name="userId"></param>
+            <returns> one merchant </returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.MerchantsController.GetListYachtOfMerchant(System.Int32)">
+            <summary>
+            Get all Yacht manager by user have role Yacht Merchant (YM)
+            </summary>
+            <param name="merchantId"></param>
+            <returns>list yacht use for select list</returns>
+        </member>
+        <member name="M:YachtMerchant.Api.Controllers.PortalLanguageController.GetAllLanguageSupportByPortalId(System.String)">
+            <summary>
+            API support get all language support for Portal,
+            API allow anonymous access
+            </summary>
+            <param name="id">Id of domain portal support both Id number and Unique Id </param>
+            <returns>List language support with Text and Value </returns>
+        </member>
+    </members>
+</doc>

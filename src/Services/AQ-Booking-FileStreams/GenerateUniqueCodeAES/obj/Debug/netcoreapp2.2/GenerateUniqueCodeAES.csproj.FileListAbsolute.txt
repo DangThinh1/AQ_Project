@@ -1,0 +1,9 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\GenerateUniqueCodeAES\bin\Debug\netcoreapp2.2\GenerateUniqueCodeAES.deps.json
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\GenerateUniqueCodeAES\bin\Debug\netcoreapp2.2\GenerateUniqueCodeAES.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\GenerateUniqueCodeAES\bin\Debug\netcoreapp2.2\GenerateUniqueCodeAES.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\GenerateUniqueCodeAES\obj\Debug\netcoreapp2.2\GenerateUniqueCodeAES.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\GenerateUniqueCodeAES\obj\Debug\netcoreapp2.2\GenerateUniqueCodeAES.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\GenerateUniqueCodeAES\obj\Debug\netcoreapp2.2\GenerateUniqueCodeAES.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\GenerateUniqueCodeAES\obj\Debug\netcoreapp2.2\GenerateUniqueCodeAES.AssemblyInfo.cs
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\GenerateUniqueCodeAES\obj\Debug\netcoreapp2.2\GenerateUniqueCodeAES.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-FileStreams\GenerateUniqueCodeAES\obj\Debug\netcoreapp2.2\GenerateUniqueCodeAES.pdb

@@ -1,0 +1,80 @@
+.aq-nav-profile {
+
+  .nav-list {
+    padding-top: 0.8rem;
+  }
+
+  .nav-item {
+    padding: .5rem 0;
+
+    &.active {
+      .nav-link {
+        color: @aq-light-blue;
+      }
+
+      .sub-nav-list {
+        display: block;
+      }
+    }
+  }
+
+  .nav-link {
+    font-family: 'SegoeuiSemibold';
+    font-size: 1.15rem;
+    color: #4B5261;
+    padding: 0.5rem;
+    display: inline-block;
+    transition: all .2s ease;
+    position: relative;
+    &:hover {
+      color: @aq-light-blue;
+    }
+
+    .notification {
+      color: @white;
+      font-size: 11px;
+      text-align: center;
+      line-height: 1rem;
+      position: absolute;
+      top: 0;
+      right: -0.5rem;
+      background-color: @aq-red;
+      border-radius: 50%;
+      width: 1rem;
+      height: 1rem;
+    }
+
+    [class^="aes-"] {
+      text-align: center;
+      font-size: 20px;
+      width: 2rem;
+      margin-right: .5rem;
+      display: inline-block;
+      vertical-align: text-bottom;
+    }
+    .aes-cash1 {
+      font-size: 18px;
+      padding-right: 0.5rem;
+    }
+  }
+
+  .sub-nav-list {
+    display: none;
+
+    .nav-item {
+      padding: 0 0 0 3rem;
+      &.active {
+        .nav-link {color: @aq-light-blue;}
+      }
+      .nav-link {
+        color: #9C9A9A;
+        font-family: 'SegoeuiRegular';
+
+        
+        &:hover {
+          color: @aq-text;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <PackageReleaseNotes>AQConfigurations.Core</PackageReleaseNotes>
+    <Description>AQConfigurations support cal api Configurations</Description>
+    <PackageId>AQConfigurations.Core</PackageId>
+    <Authors>AQ Teams</Authors>
+    <Product>AQConfigurations.Core</Product>
+    <Version>1.1.47</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <None Remove="bin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Helper\ConfigurationsApiHelper.cs" />
+    <Compile Remove="Services\Implements\AppSettingValueService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="APIHelpers" Version="1.1.4" />
+    <PackageReference Include="AQBooking.Core" Version="1.0.28" />
+    <PackageReference Include="AQIdentity.Core" Version="1.1.5" />
+    <PackageReference Include="ExtendedUtility" Version="1.0.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+  <Target Name="PostBuildDev" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
+    <Exec Command="$(ProjectDir)CMD\nuget.exe push $(ProjectDir)bin\$(Configuration)\$(PackageId).$(PackageVersion).nupkg eefbdffc-4939-41d3-a53d-a5a9cafa705e -Source http://103.97.125.19/AQNuget/nuget" />
+  </Target>  
+  <!--<Target Name="PostBuildRelease" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
+    <Exec Command="$(ProjectDir)CMD\nuget.exe push $(ProjectDir)bin\$(Configuration)\*.nupkg eefbdffc-4939-41d3-a53d-a5a9cafa705e -Source http://103.97.125.19/AQNuget/nuget" />
+  </Target>-->
+  <ItemGroup>
+    <Folder Include="CMD\" />
+  </ItemGroup>
+
+</Project>

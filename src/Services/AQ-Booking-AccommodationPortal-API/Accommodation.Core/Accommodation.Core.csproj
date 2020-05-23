@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Description>This is share package use for Accommodation Portal.</Description>
+    <PackageId>AQAccommodation.Core</PackageId>
+    <Authors>AQ Teams</Authors>
+    <Company>AQ Booking</Company>
+    <Product>AQ Booking</Product>
+    <Copyright>AQ Booking</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.5</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="CMD\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AQBooking.Core" Version="1.0.27" />
+    <PackageReference Include="AQEncrypts" Version="1.0.0" />
+    <PackageReference Include="ExtendedUtility" Version="1.0.3" />
+  </ItemGroup>
+  <Target Name="PostBuildDev" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
+    <Exec Command="$(ProjectDir)CMD\nuget.exe push $(ProjectDir)bin\$(Configuration)\$(PackageId).$(PackageVersion).nupkg eefbdffc-4939-41d3-a53d-a5a9cafa705e -Source http://103.97.125.19/AQNuget/nuget" />
+  </Target>  
+  <!--<Target Name="PostBuildRelease" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
+    <Exec Command="$(ProjectDir)CMD\nuget.exe push $(ProjectDir)bin\$(Configuration)\*.nupkg eefbdffc-4939-41d3-a53d-a5a9cafa705e -Source http://103.97.125.19/AQNuget/nuget" />
+  </Target>-->
+</Project>

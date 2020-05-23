@@ -1,0 +1,12 @@
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.WinService\bin\Debug\AQ_PGW.WinService.exe.config
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.WinService\bin\Debug\AQ_PGW.WinService.exe
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.WinService\bin\Debug\AQ_PGW.WinService.pdb
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.WinService\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.WinService\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.WinService\obj\Debug\AQ_PGW.WinService.csprojAssemblyReference.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.WinService\obj\Debug\AQ_PGW.WinService.ProjectInstaller.resources
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.WinService\obj\Debug\AQ_PGW.WinService.csproj.GenerateResource.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.WinService\obj\Debug\AQ_PGW.WinService.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.WinService\obj\Debug\AQ_PGW.WinService.csproj.CopyComplete
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.WinService\obj\Debug\AQ_PGW.WinService.exe
+C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\Payment-Gateway\AQ_PGW.WinService\obj\Debug\AQ_PGW.WinService.pdb

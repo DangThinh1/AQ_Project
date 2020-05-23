@@ -1,0 +1,52 @@
+﻿@using AQBooking.FileStream.Core.Models.FileResponse
+@model FileStatisticalModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section ContentHeader {
+    Dashboard
+}
+
+<div class="row">
+    <div class="col-xl-3 col-md-6">
+        <!-- START card-->
+        <div class="card flex-row align-items-center align-items-stretch border-0">
+            <div class="col-4 d-flex align-items-center bg-primary-dark justify-content-center rounded-left"><em class="icon-cloud-upload fa-3x"></em></div>
+            <div class="col-8 py-3 bg-primary rounded-right">
+                <div class="h2 mt-0">@Model.TotalFiles</div>
+                <div class="text-uppercase">Total Files</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <!-- START card-->
+        <div class="card flex-row align-items-center align-items-stretch border-0">
+            <div class="col-4 d-flex align-items-center bg-purple-dark justify-content-center rounded-left"><em class="icon-picture fa-3x"></em></div>
+            <div class="col-8 py-3 bg-purple rounded-right">
+                <div class="h2 mt-0">@Model.TotalImageFiles<small> images</small></div>
+                <div class="text-uppercase">Total Images</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-6 col-md-12">
+        <!-- START card-->
+        <div class="card flex-row align-items-center align-items-stretch border-0">
+            <div class="col-4 d-flex align-items-center bg-green-dark justify-content-center rounded-left"><em class="fas fa-file-pdf fa-3x"></em></div>
+            <div class="col-8 py-3 bg-green rounded-right">
+                <div class="h2 mt-0">@Model.TotalBrochureFiles<small> brochures</small></div>
+                <div class="text-uppercase">Total Brochures</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-6 col-md-12">
+        <!-- START date widget-->
+        <div class="card flex-row align-items-center align-items-stretch border-0">
+            <div class="col-4 d-flex align-items-center bg-green justify-content-center rounded-left"><em class="icon-trash fa-3x"></em></div>
+            <div class="col-8 py-3 rounded-right">
+                <div class="h2 mt-0">@Model.TotalDeletedFiles<small> deleted</small></div>
+                <div class="text-uppercase">Total Deleted Files</div>
+            </div>
+        </div><!-- END date widget-->
+    </div>
+</div>

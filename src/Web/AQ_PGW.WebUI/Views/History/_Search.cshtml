@@ -1,0 +1,71 @@
+﻿@using AQ_PGW.Core.Models.Model;
+@model PageModel<TransactionModel>
+
+<table class="table" id="tableSort">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Trans.Date</th>
+                <th scope="col"><i class="fas fa-exclamation-circle"></i>Post.Date</th>
+                <th scope="col">Status </th>
+                <th scope="col">Description</th>
+                <th scope="col">Amount</th>
+            </tr>
+        </thead>
+    <tbody>
+        @if (Model.Items.Count() == 0)
+        {
+            <tr>
+                <td colspan="6" class="text-center">No Record</td>
+            </tr>
+        }
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>@item.CreatedDate</td>
+                <td>@item.ModifiedDate</td>
+                <td>@item.Status</td>
+                <td>@item.Description</td>
+                <td>@item.OrderAmount</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+    @if (Model.Pager.EndPage > 1)
+    {
+        <ul class="pagination">
+            @if (Model.Pager.CurrentPage > 1)
+            {
+                <li>
+                    <a style="color: #fff;" class="btn btn-info" onclick="CallPageType('@Url.Action("Search", "History")','#loadAll',null)">First</a>
+                </li>
+                <li>
+                    <a style="color: #fff;" onclick="CallPageType('@Url.Action("Search", "History")','#loadAll','@(Model.Pager.CurrentPage - 1)')" class="btn btn-info">Previous</a>
+                </li>
+            }
+
+            @for (var page = Model.Pager.StartPage; page <= Model.Pager.EndPage; page++)
+            {
+                <li>
+                    <a style="color: #fff;" class="btn btn-info @(page == Model.Pager.CurrentPage ? "active" : "")" onclick="CallPageType('@Url.Action("Search", "History")','#loadAll',@(page))" data-toggle="javascript:void">@(page)</a>
+                </li>
+            }
+
+            @if (Model.Pager.CurrentPage < Model.Pager.TotalPages)
+            {
+                <li>
+                    <a style="color: #fff;" class="btn btn-info" onclick="CallPageType('@Url.Action("Search", "History")','#loadAll','@(Model.Pager.CurrentPage + 1)')">Next</a>
+                </li>
+                <li>
+                    <a style="color: #fff;" class="btn btn-info" onclick="CallPageType('@Url.Action("Search", "History")','#loadAll','@(Model.Pager.TotalPages)')">Last</a>
+                </li>
+            }
+        </ul>
+    }
+
+   
+
+
+
+
+

@@ -1,0 +1,73 @@
+﻿@model int
+
+<div class="row">
+    <div class="col-md-12">
+        <label class="btn btn-primary btn-upload" for="inputImage" title="Upload image file">
+            <input type="file" class="sr-only" id="inputImage" name="file" accept="image/*" />
+            <span class="docs-tooltip" data-toggle="tooltip" title="Import image">
+                <span class="fa fa-upload"></span> Import Image
+            </span>
+        </label>
+    </div>
+</div>
+
+<div class="img-container mb-2 text-center">
+    <img style="width: 100%; height: auto" id="imageDrop" src="~/images/avatar.png" alt="Picture" />
+</div>
+
+<div class="row" id="groupCropper">
+    <div class="col-md-12 docs-buttons">
+        <div id="groupRatio">
+            <label class="btn btn-outline-primary" id="lblImage">
+                <input type="radio" class="sr-only" id="asprYachtImage" name="aspectRatio" value="1">
+                <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 1 / 1">
+                    Image
+                </span>
+            </label>
+            <label class="btn btn-outline-primary" id="lblBanner">
+                <input type="radio" class="sr-only" id="asprYachtBanner" name="aspectRatio" value="4.8">
+                <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 4 / 1">
+                    Banner
+                </span>
+            </label>
+            <label class="btn btn-outline-primary" id="lblRefImage">
+                <input type="radio" class="sr-only" id="asprYachtRef" name="aspectRatio" value="1">
+                <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 1 / 1">
+                    Ref Image
+                </span>
+            </label>
+            <label class="btn btn-outline-primary" id="lblTourImage">
+                <input type="radio" class="sr-only" id="asprTourImage" name="aspectRatio" value="3.7">
+                <span class="docs-tooltip" data-toggle="tooltip" title="Tour image">
+                    Tour Image
+                </span>
+            </label>
+            <label class="btn btn-outline-primary" id="lblTourRefImage">
+                <input type="radio" class="sr-only" id="asprTourImage" name="aspectRatio" value="1">
+                <span class="docs-tooltip" data-toggle="tooltip" title="Tour Ref image">
+                    Tour Ref Image
+                </span>
+            </label>
+            <label class="btn btn-outline-primary" id="lblFree">
+                <input type="radio" class="sr-only" id="aspectRatio6" name="aspectRatio" value="NaN">
+                <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: NaN">
+                    Free
+                </span>
+            </label>
+        </div>
+
+        <div class="btn-group" id="groupCrop">
+            <button type="button" id="setDragMode" class="btn btn-primary mb-2" data-method="setDragMode" data-option="move" title="Move">
+                <span class="fa fa-arrows-alt"></span> Move Image
+            </button>
+            <button type="button" class="btn btn-primary mb-2" id="btnCancel" data-method="destroy" title="Cancel">
+                <i class="fa fa-ban" aria-hidden="true"></i> Cancel
+            </button>
+            <button type="button" class="btn btn-primary mb-2" id="btnCrop" data-method="setDragMode" data-option="move" title="Crop">
+                <i class="fa fa-check-circle-o" aria-hidden="true"></i> Crop
+            </button>
+        </div>
+    </div>
+</div>
+
+

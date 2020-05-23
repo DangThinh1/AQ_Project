@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "6s/c1KlNWmVwuGjksaR/ABgIuFB8gmq4u99j6RXI7PrHLRhQLtIPb8sd3LVDmJDcBkExCnh/t3xk29IaNdQWiA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\Payment-Gateway\\AQ_PGW.Common\\AQ_PGW.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
+    "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",
+    "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.2.0\\microsoft.netcore.dotnethostpolicy.2.2.0.nupkg.sha512",
+    "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.2.0\\microsoft.netcore.dotnethostresolver.2.2.0.nupkg.sha512",
+    "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.netcore.platforms\\2.2.0\\microsoft.netcore.platforms.2.2.0.nupkg.sha512",
+    "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.netcore.targets\\2.0.0\\microsoft.netcore.targets.2.0.0.nupkg.sha512",
+    "C:\\Users\\ThinkPro\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

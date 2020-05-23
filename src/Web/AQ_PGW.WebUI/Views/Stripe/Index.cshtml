@@ -1,0 +1,377 @@
+﻿@model AQ_PGW.Core.Models.DBTables.Transactions
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var currencyType = Model.Currency.Trim().ToLower() == "usd" ? "en-us" : "en-HK";
+    System.Globalization.CultureInfo ci = new System.Globalization.CultureInfo(currencyType);
+    double floating = Convert.ToDouble(Model.OrderAmount);
+    var currencyAmount = floating.ToString("C", ci);
+}
+@* https://jsfiddle.net/ywain/whj357u9/ *@
+<div class="mb-4" style="background-color:#eef1f3">
+    <div class="border mb-4" style="background-color:#ffffff">
+        <div class="row">
+            <div class="col-md-8 ml-3" style="margin:10px">
+                <h5> OrderID: @Model.OrderId</h5>
+            </div>
+            <div class="col" style="margin:10px">
+                Amount @currencyAmount
+            </div>
+        </div>
+    </div>
+    <div style="text-align:center">
+        <img src="~/img/listcard.png" />
+    </div>
+    <div class="col-12 example example3 mt-2" id="example-3" style="background-color:#ffffff">
+        <form class="border row" action="@Url.Action("PostData", "Stripe")" method="post" id="payment-form">
+            <div class="col-6">
+                <p class="h4 mb-4 text-center"></p>
+
+                <div id="example3-card-number" class="field empty mb-4"></div>
+                @*<input type="text" id="idCard" class="form-control mb-4" placeholder="Số thẻ" required>*@
+
+                <input type="text" id="example3-nameCard" class="mb-4" style="width:100%" placeholder="Name" required>
+
+                <div class="row col-12">
+                    <div id="example3-card-expiry" class="field empty form-control" style="width:200px"></div>
+                    <div id="example3-card-cvc" class="field empty col-4 form-control" style="margin-left: auto;margin-right: -30px;"></div>
+                </div>
+                <div class="row">
+                    <div class="error col-4" role="alert">
+                        <span class="message" style="color:#db4343"></span>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="col-md-6 d-flex justify-content-center align-items-center  border-left">
+
+                <span><img src="~/img/card.png" class="mb-4" style="margin: 20px;" /></span>
+            </div>
+            @*<a class="reset" href="#">
+                    <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path fill="#000000" d="M15,7.05492878 C10.5000495,7.55237307 7,11.3674463 7,16 C7,20.9705627 11.0294373,25 16,25 C20.9705627,25 25,20.9705627 25,16 C25,15.3627484 24.4834055,14.8461538 23.8461538,14.8461538 C23.2089022,14.8461538 22.6923077,15.3627484 22.6923077,16 C22.6923077,19.6960595 19.6960595,22.6923077 16,22.6923077 C12.3039405,22.6923077 9.30769231,19.6960595 9.30769231,16 C9.30769231,12.3039405 12.3039405,9.30769231 16,9.30769231 L16,12.0841673 C16,12.1800431 16.0275652,12.2738974 16.0794108,12.354546 C16.2287368,12.5868311 16.5380938,12.6540826 16.7703788,12.5047565 L22.3457501,8.92058924 L22.3457501,8.92058924 C22.4060014,8.88185624 22.4572275,8.83063012 22.4959605,8.7703788 C22.6452866,8.53809377 22.5780351,8.22873685 22.3457501,8.07941076 L22.3457501,8.07941076 L16.7703788,4.49524351 C16.6897301,4.44339794 16.5958758,4.41583275 16.5,4.41583275 C16.2238576,4.41583275 16,4.63969037 16,4.91583275 L16,7 L15,7 L15,7.05492878 Z M16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 Z"></path>
+                    </svg>
+                </a>*@
+
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <button class="col-lg-3 btn btn-warning my-4 ladda-button" id="submitForm" type="submit" data-style="expand-right">Continute</button>
+                <input type="hidden" value="@Model.ID" name="ID" />
+                <input type="hidden" value="@Model.OrderAmount" name="OrderAmount" />
+                <input type="hidden" value="@Model.Description" name="Description" />
+                <input type="hidden" value="@Model.BackUrl" name="BackUrl" />
+                <input type="hidden" value="@Model.OrderId" name="OrderId" />
+                <input type="hidden" value="@Model.PaymentMethod" name="PaymentMethod" />
+                <input type="hidden" value="@Model.Currency" name="Currency" />
+                <input type="hidden" value="" name="PaymentCardToken" id="token-card" />
+            </div>
+        </form>
+    </div>
+
+</div>
+
+@section Scripts{
+<script type="text/javascript">
+        function AjaxData(params, callback) {
+            console.log('params', params);
+            var data = {
+                OrderAmount: @Model.OrderAmount,
+                Description: "@Model.Description",
+                BackUrl: "@Model.BackUrl",
+                OrderId: "@Model.OrderId",
+                PaymentMethod: "@Model.PaymentMethod",
+                Currency: "@Model.Currency",
+                ID: "@Model.ID"
+            };
+            data.PaymentCardToken = params.token.id;
+
+            $.ajax({
+                url: '@Url.Action("PostData", "Stripe")',
+                type:"POST",
+                cache: false,
+                async: false,
+                data: JSON.stringify(data),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+                    l.stop();
+                    if (callback) {
+                        callback(response);
+                    }
+                },
+                error: function () { console.log('A error'); }
+            })
+        }
+
+        var elements = stripe.elements({
+            fonts: [
+                {
+                    cssSrc: 'https://fonts.googleapis.com/css?family=Quicksand',
+                },
+            ],
+            // Stripe's examples are localized to specific languages, but if
+            // you wish to have Elements automatically detect your user's locale,
+            // use `locale: 'auto'` instead.
+            locale: window.__exampleLocale,
+        });
+
+        var elementStyles = {
+            base: {
+                //color: '#fff',
+                lineHeight: '1.429',
+                //fontWeight: 600,
+                //fontFamily: 'Quicksand, Open Sans, Segoe UI, sans-serif',
+                //fontSize: '16px',
+                //fontSmoothing: 'antialiased',
+
+                ':focus': {
+                    color: '#424770',
+                    //"box-shadow": "0 0 0 0.2rem rgba(0, 123, 255, 0.25)"
+                },
+
+                '::placeholder': {
+                    color: '#9BACC8',
+                },
+
+                ':focus::placeholder': {
+                    color: '#CFD7DF',
+                },
+            },
+            invalid: {
+                //color: '#fff',
+                ':focus': {
+                    color: '#FA755A',
+                },
+                '::placeholder': {
+                    color: '#FFCCA5',
+                },
+            },
+        };
+
+        var elementClasses = {
+            focus: 'focus',
+            empty: 'empty',
+            invalid: 'invalid',
+        };
+
+        var cardNumber = elements.create('cardNumber', {
+            style: elementStyles,
+            classes: elementClasses,
+            placeholder: 'Card ID',
+        });
+        cardNumber.mount('#example3-card-number');
+
+        var cardExpiry = elements.create('cardExpiry', {
+            style: elementStyles,
+            classes: elementClasses,
+            placeholder: 'Date MM/YY',
+        });
+        cardExpiry.mount('#example3-card-expiry');
+
+        var cardCvc = elements.create('cardCvc', {
+            style: elementStyles,
+            classes: elementClasses,
+        });
+        cardCvc.mount('#example3-card-cvc');
+
+
+        registerElements([cardNumber, cardExpiry, cardCvc], 'example3', (result) => {
+            //debugger;
+            //$('#token-card').val(result.id);
+            //$('#payment-form').trigger('submit');
+            console.log('result', result);
+
+            AjaxData(result, (dt) => {
+
+                    var source = JSON.parse(dt.content);
+                if (source.statusCode == 1) {
+                    debugger;
+
+                    @*ajaxPostData('@Url.Action("Success", "Stripe")', source, (data) => {
+                        debugger;
+                    });*@
+                        //status = source.result.data.paymentStatus;
+                        //window.history.back("@Model.BackUrl");
+                        //window.history.go(-1)
+                        //window.history.pushState('string', '', "@Model.BackUrl?status=" + source.result.data.paymentStatus);
+                        window.location.href="@Url.Action("Success", "Stripe")?status=" + source.result.data.paymentStatus;
+                    } else {
+                        alert(source.message);
+                    }
+
+            });
+
+        });
+</script>
+}
+@*@section Scripts{
+        <script type="text/javascript">
+
+            // Create a Stripe client.
+            var stripe = Stripe('pk_test_GtdVUuADjjQQnRDmAiFE5JIJ00cAaVeZrd');
+            // Create an instance of Elements.
+            var elements = stripe.elements({
+                fonts: [
+                    {
+                        cssSrc: 'https://fonts.googleapis.com/css?family=Source+Code+Pro',
+                    },
+                ],
+                // Stripe's examples are localized to specific languages, but if
+                // you wish to have Elements automatically detect your user's locale,
+                // use `locale: 'auto'` instead.
+                locale: window.__exampleLocale
+           });
+
+            // Floating labels
+            var inputs = document.querySelectorAll('.cell.example.example2 .input');
+            Array.prototype.forEach.call(inputs, function (input) {
+                input.addEventListener('focus', function () {
+                    input.classList.add('focused');
+                });
+                input.addEventListener('blur', function () {
+                    input.classList.remove('focused');
+                });
+                input.addEventListener('keyup', function () {
+                    if (input.value.length === 0) {
+                        input.classList.add('empty');
+                    } else {
+                        input.classList.remove('empty');
+                    }
+                });
+            });
+
+
+            var elementStyles = {
+                base: {
+                    color: '#32325D',
+                    fontWeight: 500,
+                    fontFamily: 'Source Code Pro, Consolas, Menlo, monospace',
+                    fontSize: '16px',
+                    fontSmoothing: 'antialiased',
+
+                    '::placeholder': {
+                        color: '#CFD7DF',
+                    },
+                    ':-webkit-autofill': {
+                        color: '#e39f48',
+                    },
+                },
+                invalid: {
+                    color: '#E25950',
+
+                    '::placeholder': {
+                        color: '#FFCCA5',
+                    },
+                },
+            };
+
+            var elementClasses = {
+                focus: 'focused',
+                empty: 'empty',
+                invalid: 'invalid',
+            };
+
+            // Custom styling can be passed to options when creating an Element.
+            // (Note that this demo uses a wider set of styles than the guide below.)
+            var style = {
+                base: {
+                    color: '#32325d',
+                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+                    fontSmoothing: 'antialiased',
+                    fontSize: '16px',
+                    '::placeholder': {
+                        color: '#aab7c4'
+                    },
+                    ':-webkit-autofill': {
+                        color: '#32325d',
+                    },
+                },
+                invalid: {
+                    color: '#fa755a',
+                    iconColor: '#fa755a',
+                    ':-webkit-autofill': {
+                        color: '#fa755a',
+                    },
+                }
+            };
+
+
+            var cardNumber = elements.create('cardNumber', {
+                style: elementStyles,
+                classes: elementClasses,
+            });
+            cardNumber.mount('#example2-card-number');
+
+            var cardExpiry = elements.create('cardExpiry', {
+                style: elementStyles,
+                classes: elementClasses,
+            });
+            cardExpiry.mount('#example2-card-expiry');
+
+            var cardCvc = elements.create('cardCvc', {
+                style: elementStyles,
+                classes: elementClasses,
+            });
+            cardCvc.mount('#example2-card-cvc');
+
+            registerElements([cardNumber, cardExpiry, cardCvc], 'example2');
+            // Create an instance of the card Element.
+            var card = elements.create('card', { style: style });
+
+            // Add an instance of the card Element into the `card-element` <div>.
+            card.mount('#card-element');
+
+            // Handle real-time validation errors from the card Element.
+            card.addEventListener('change', function (event) {
+                debugger;
+                var displayError = document.getElementById('card-errors');
+                if (event.error) {
+                    displayError.textContent = event.error.message;
+                } else {
+                    displayError.textContent = '';
+                }
+            });
+
+            // Submit the form with the token ID.
+            function stripeTokenHandler(token) {
+                debugger;
+                // Insert the token ID into the form so it gets submitted to the server
+                var form = document.getElementById('payment-form');
+                var hiddenInput = document.createElement('input');
+                hiddenInput.setAttribute('type', 'hidden');
+                hiddenInput.setAttribute('name', 'stripeToken');
+                hiddenInput.setAttribute('value', token.id);
+                form.appendChild(hiddenInput);
+
+                // Submit the form
+                form.submit();
+            }
+
+            var errorMessage = document.getElementById('error-message');
+
+            // Handle form submission.
+            var form = document.getElementById('payment-form');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                stripe.createToken(card).then(function (result) {
+                    debugger;
+                    if (result.error) {
+                        // Inform the user if there was an error.
+                        var errorElement = document.getElementById('card-errors');
+                        errorElement.textContent = result.error.message;
+                        alert(result.error.message);
+                    } else {
+                        AjaxData();
+                        // Send the token to your server.
+                        stripeTokenHandler(result.token);
+                        alert("succes");
+                        window.history.go(-1);
+                    }
+                });
+            });
+        </script>
+    }*@
+

@@ -1,0 +1,37 @@
+﻿.required:after {
+    content: " *";
+    color: red;
+}
+
+.toasts-top-right {
+    right: 6px;
+}
+
+.pace .pace-progress {
+    background-color: #17a2b8
+}
+
+label.error {
+    font-weight: normal !important;
+    color: red;
+}
+
+input.error {
+    border-color: #ff7e7e
+}
+
+.login-page, .register-page {
+    height: 65vh !important;
+}
+
+.btn-inline-group {
+    margin-top: 31px
+}
+
+.toggle.ios, .toggle-on.ios, .toggle-off.ios {
+    border-radius: 20px;
+}
+
+    .toggle.ios .toggle-handle {
+        border-radius: 20px;
+    }
