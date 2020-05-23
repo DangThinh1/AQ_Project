@@ -128,10 +128,11 @@ namespace AccommodationMerchant.Api.Controllers
         }
 
         /// <summary>
-        /// Update attribute of Hotel with range
+        /// Update attribute values
         /// </summary>
-        /// <param name="model"></param>
-        /// <returns></returns>
+        /// <param name="model">Update model</param>
+        /// <param name="hotelId">Hotel id</param>
+        /// <returns>Success or not</returns>
         [HttpPut]
         [Route("HotelAttributeValues/{hotelId}")]
         public IActionResult UpdateAttributeValuesRangeAsync([FromBody]HotelAttributeValueUpdateRangeModel model, string hotelId)
