@@ -10,3 +10,15 @@ C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Configuration
 C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\obj\Debug\netcoreapp2.2\AQConfigurations.Infrastructure.csproj.CopyComplete
 C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\obj\Debug\netcoreapp2.2\AQConfigurations.Infrastructure.dll
 C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\obj\Debug\netcoreapp2.2\AQConfigurations.Infrastructure.pdb
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\bin\Debug\netcoreapp2.2\AQConfigurations.Infrastructure.deps.json
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\bin\Debug\netcoreapp2.2\AQConfigurations.Infrastructure.dll
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\bin\Debug\netcoreapp2.2\AQConfigurations.Infrastructure.pdb
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\bin\Debug\netcoreapp2.2\AQConfigurations.Core.dll
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\bin\Debug\netcoreapp2.2\AQConfigurations.Core.pdb
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\obj\Debug\netcoreapp2.2\AQConfigurations.Infrastructure.csprojAssemblyReference.cache
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\obj\Debug\netcoreapp2.2\AQConfigurations.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\obj\Debug\netcoreapp2.2\AQConfigurations.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\obj\Debug\netcoreapp2.2\AQConfigurations.Infrastructure.AssemblyInfo.cs
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\obj\Debug\netcoreapp2.2\AQConfigurations.Infrastructure.csproj.CopyComplete
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\obj\Debug\netcoreapp2.2\AQConfigurations.Infrastructure.dll
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Configuration-API\AQCommon.Infrastructure\obj\Debug\netcoreapp2.2\AQConfigurations.Infrastructure.pdb
