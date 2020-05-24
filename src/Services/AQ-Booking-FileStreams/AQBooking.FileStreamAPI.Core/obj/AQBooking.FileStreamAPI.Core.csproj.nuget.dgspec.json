@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStreamAPI.Core\\AQBooking.FileStreamAPI.Core.csproj": {}
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStreamAPI.Core\\AQBooking.FileStreamAPI.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStreamAPI.Core\\AQBooking.FileStreamAPI.Core.csproj": {
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStreamAPI.Core\\AQBooking.FileStreamAPI.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStreamAPI.Core\\AQBooking.FileStreamAPI.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStreamAPI.Core\\AQBooking.FileStreamAPI.Core.csproj",
         "projectName": "AQBooking.FileStreamAPI.Core",
-        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStreamAPI.Core\\AQBooking.FileStreamAPI.Core.csproj",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStreamAPI.Core\\AQBooking.FileStreamAPI.Core.csproj",
         "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStreamAPI.Core\\obj\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStreamAPI.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
           "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

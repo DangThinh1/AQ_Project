@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7ClQSVUQu2T1UlQSBXZADFHODVftknesOwQJZkqxGUzWwx/2OnuwUtpgmOBl2Lttt2/7mXiQ5ZPT3NAecXnFpQ==",
+  "dgSpecHash": "ImnXmax2tiwq+sCS1msXGUICe61SsFFt7Z4NlxXX+HX3vvPE4Jqvd7iotvtJoq8D6hSYfZ2x4xsvanoDPrW/MQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Web\\AQS.BookingAdmin\\AQS.BookingAdmin.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Web\\AQS.BookingAdmin\\AQS.BookingAdmin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\apihelpers\\1.1.5\\apihelpers.1.1.5.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\aqbooking.core\\1.0.29\\aqbooking.core.1.0.29.nupkg.sha512",

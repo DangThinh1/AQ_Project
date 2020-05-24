@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GZ5N1avRtuZl2u2ilbFoJDVWMIjvIGvlP5hPxHjWCe4dRWHnFPN2xhwXpiwSQAq1DNIbvZpYbefCoYaq7jJG5A==",
+  "dgSpecHash": "VxolTq9BnjBvbfppANvTS84V7RSSnL2Pm78x/4xBSMy6n02jrEBxWxmQS0llDJuaas3Yf+yBD7s3embAi2JL8w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon.RequestService\\AQCommon.RequestService.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Configuration-API\\AQCommon.RequestService\\AQCommon.RequestService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",

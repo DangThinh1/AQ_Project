@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FN/ConsXyleIEG1myt1s0mnxQDS92OfqAsJfna8atFO6zFCB1qBfYH6ZFq138Z5P1s8GMKtTpc5+sxgucsBuGg==",
+  "dgSpecHash": "oq3pyS2LRk4WKw3iBZThEQWbgCrWM2VsrFaq0ogybHQYdP8D8aSr8Zv+FIy3Xna4SeMfLGB2lbMNl3QIJHi9Ew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\Identity.Core\\Identity.Core.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\Identity.Core\\Identity.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\apihelpers\\1.1.4\\apihelpers.1.1.4.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",

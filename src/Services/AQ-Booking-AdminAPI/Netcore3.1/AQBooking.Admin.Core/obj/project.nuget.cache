@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zMUUtRv/b4CIOhvg4ZyEHJJ7PQ9kD/7ue2yHNPJoj1Hw8thZ79JjvOvVU5bfvtRGKk5B4Zyf413wbvAHkUft5w==",
+  "dgSpecHash": "nBVxKhBoatj+dt03xNpYcP2+JB2F5ToIKToHYXQYh+aZN9b5cyKkf4QDhq7QhbPtMmkEETDFR8KOqBxj1dPf+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AdminAPI\\Netcore3.1\\AQBooking.Admin.Core\\AQBooking.Admin.Core.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AdminAPI\\Netcore3.1\\AQBooking.Admin.Core\\AQBooking.Admin.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

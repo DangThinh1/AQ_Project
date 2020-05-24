@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\AQBooking.Identity\\Identity.Api.csproj": {}
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\AQBooking.Identity\\Identity.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\AQBooking.Identity\\Identity.Api.csproj": {
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\AQBooking.Identity\\Identity.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\AQBooking.Identity\\Identity.Api.csproj",
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\AQBooking.Identity\\Identity.Api.csproj",
         "projectName": "Identity.Api",
-        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\AQBooking.Identity\\Identity.Api.csproj",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\AQBooking.Identity\\Identity.Api.csproj",
         "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\AQBooking.Identity\\obj\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\AQBooking.Identity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
           "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -36,8 +36,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj"
+              "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj"
               }
             }
           }
@@ -101,20 +101,20 @@
         }
       }
     },
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\Identity.Core\\Identity.Core.csproj": {
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\Identity.Core\\Identity.Core.csproj": {
       "version": "1.1.6.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\Identity.Core\\Identity.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\Identity.Core\\Identity.Core.csproj",
         "projectName": "AQIdentity.Core",
-        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\Identity.Core\\Identity.Core.csproj",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\Identity.Core\\Identity.Core.csproj",
         "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\Identity.Core\\obj\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\Identity.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
           "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -201,20 +201,20 @@
         }
       }
     },
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj": {
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj",
         "projectName": "Identity.Infrastructure",
-        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\Identity.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\Identity.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
           "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -233,8 +233,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\Identity.Core\\Identity.Core.csproj": {
-                "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\Identity.Core\\Identity.Core.csproj"
+              "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\Identity.Core\\Identity.Core.csproj": {
+                "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\Identity.Core\\Identity.Core.csproj"
               }
             }
           }

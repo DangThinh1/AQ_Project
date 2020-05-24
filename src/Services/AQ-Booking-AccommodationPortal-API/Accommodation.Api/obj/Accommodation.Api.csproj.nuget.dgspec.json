@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Api\\Accommodation.Api.csproj": {}
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Api\\Accommodation.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Api\\Accommodation.Api.csproj": {
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Api\\Accommodation.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Api\\Accommodation.Api.csproj",
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Api\\Accommodation.Api.csproj",
         "projectName": "Accommodation.Api",
-        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Api\\Accommodation.Api.csproj",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Api\\Accommodation.Api.csproj",
         "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Api\\obj\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
           "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -36,8 +36,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Infrastructure\\Accommodation.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Infrastructure\\Accommodation.Infrastructure.csproj"
+              "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Infrastructure\\Accommodation.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Infrastructure\\Accommodation.Infrastructure.csproj"
               }
             }
           }
@@ -95,20 +95,20 @@
         }
       }
     },
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Core\\Accommodation.Core.csproj": {
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Core\\Accommodation.Core.csproj": {
       "version": "1.0.5",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Core\\Accommodation.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Core\\Accommodation.Core.csproj",
         "projectName": "AQAccommodation.Core",
-        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Core\\Accommodation.Core.csproj",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Core\\Accommodation.Core.csproj",
         "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Core\\obj\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
           "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -171,20 +171,20 @@
         }
       }
     },
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Infrastructure\\Accommodation.Infrastructure.csproj": {
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Infrastructure\\Accommodation.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Infrastructure\\Accommodation.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Infrastructure\\Accommodation.Infrastructure.csproj",
         "projectName": "Accommodation.Infrastructure",
-        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Infrastructure\\Accommodation.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Infrastructure\\Accommodation.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
           "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -203,8 +203,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Core\\Accommodation.Core.csproj": {
-                "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Core\\Accommodation.Core.csproj"
+              "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Core\\Accommodation.Core.csproj": {
+                "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationPortal-API\\Accommodation.Core\\Accommodation.Core.csproj"
               }
             }
           }

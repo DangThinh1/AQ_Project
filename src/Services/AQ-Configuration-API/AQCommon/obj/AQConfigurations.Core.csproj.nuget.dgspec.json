@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon\\AQConfigurations.Core.csproj": {}
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Configuration-API\\AQCommon\\AQConfigurations.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon\\AQConfigurations.Core.csproj": {
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Configuration-API\\AQCommon\\AQConfigurations.Core.csproj": {
       "version": "1.1.47",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon\\AQConfigurations.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Configuration-API\\AQCommon\\AQConfigurations.Core.csproj",
         "projectName": "AQConfigurations.Core",
-        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon\\AQConfigurations.Core.csproj",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Configuration-API\\AQCommon\\AQConfigurations.Core.csproj",
         "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Configuration-API\\AQCommon\\obj\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Configuration-API\\AQCommon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
           "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -13592,17 +13592,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\Payment-Gateway\\AQ_PGW.API\\AQ_PGW.API.csproj",
+      "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\Payment-Gateway\\AQ_PGW.API\\AQ_PGW.API.csproj",
       "projectName": "AQ_PGW.API",
-      "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\Payment-Gateway\\AQ_PGW.API\\AQ_PGW.API.csproj",
+      "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\Payment-Gateway\\AQ_PGW.API\\AQ_PGW.API.csproj",
       "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\Payment-Gateway\\AQ_PGW.API\\obj\\",
+      "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\Payment-Gateway\\AQ_PGW.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+        "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
         "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -13621,20 +13621,20 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\Payment-Gateway\\AQ_PGW.Common\\AQ_PGW.Common.csproj": {
-              "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\Payment-Gateway\\AQ_PGW.Common\\AQ_PGW.Common.csproj"
+            "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\Payment-Gateway\\AQ_PGW.Common\\AQ_PGW.Common.csproj": {
+              "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\Payment-Gateway\\AQ_PGW.Common\\AQ_PGW.Common.csproj"
             },
-            "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\Payment-Gateway\\AQ_PGW.Core\\AQ_PGW.Core.csproj": {
-              "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\Payment-Gateway\\AQ_PGW.Core\\AQ_PGW.Core.csproj"
+            "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\Payment-Gateway\\AQ_PGW.Core\\AQ_PGW.Core.csproj": {
+              "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\Payment-Gateway\\AQ_PGW.Core\\AQ_PGW.Core.csproj"
             },
-            "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\Payment-Gateway\\AQ_PGW.Infrastructure\\AQ_PGW.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\Payment-Gateway\\AQ_PGW.Infrastructure\\AQ_PGW.Infrastructure.csproj"
+            "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\Payment-Gateway\\AQ_PGW.Infrastructure\\AQ_PGW.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\Payment-Gateway\\AQ_PGW.Infrastructure\\AQ_PGW.Infrastructure.csproj"
             },
-            "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\Payment-Gateway\\AQ_PGW.Paypal\\PayPalCore\\PayPalCore.csproj": {
-              "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\Payment-Gateway\\AQ_PGW.Paypal\\PayPalCore\\PayPalCore.csproj"
+            "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\Payment-Gateway\\AQ_PGW.Paypal\\PayPalCore\\PayPalCore.csproj": {
+              "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\Payment-Gateway\\AQ_PGW.Paypal\\PayPalCore\\PayPalCore.csproj"
             },
-            "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\Payment-Gateway\\AQ_PGW.Paypal\\PaypalExpressCheckout.BusinessLogic\\PaypalExpressCheckout.BusinessLogic.csproj": {
-              "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\Payment-Gateway\\AQ_PGW.Paypal\\PaypalExpressCheckout.BusinessLogic\\PaypalExpressCheckout.BusinessLogic.csproj"
+            "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\Payment-Gateway\\AQ_PGW.Paypal\\PaypalExpressCheckout.BusinessLogic\\PaypalExpressCheckout.BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\Payment-Gateway\\AQ_PGW.Paypal\\PaypalExpressCheckout.BusinessLogic\\PaypalExpressCheckout.BusinessLogic.csproj"
             }
           }
         }

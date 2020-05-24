@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Api\\AccommodationMerchant.Api.csproj": {}
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Api\\AccommodationMerchant.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Api\\AccommodationMerchant.Api.csproj": {
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Api\\AccommodationMerchant.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Api\\AccommodationMerchant.Api.csproj",
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Api\\AccommodationMerchant.Api.csproj",
         "projectName": "AccommodationMerchant.Api",
-        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Api\\AccommodationMerchant.Api.csproj",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Api\\AccommodationMerchant.Api.csproj",
         "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Api\\obj\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
           "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -36,11 +36,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\AccommodationMerchant.Core.csproj": {
-                "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\AccommodationMerchant.Core.csproj"
+              "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\AccommodationMerchant.Core.csproj": {
+                "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\AccommodationMerchant.Core.csproj"
               },
-              "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Infrastructure\\AccommodationMerchant.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Infrastructure\\AccommodationMerchant.Infrastructure.csproj"
+              "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Infrastructure\\AccommodationMerchant.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Infrastructure\\AccommodationMerchant.Infrastructure.csproj"
               }
             }
           }
@@ -98,20 +98,20 @@
         }
       }
     },
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\AccommodationMerchant.Core.csproj": {
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\AccommodationMerchant.Core.csproj": {
       "version": "1.0.39",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\AccommodationMerchant.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\AccommodationMerchant.Core.csproj",
         "projectName": "AQAccommodationMerchant.Core",
-        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\AccommodationMerchant.Core.csproj",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\AccommodationMerchant.Core.csproj",
         "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\obj\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
           "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -178,20 +178,20 @@
         }
       }
     },
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Infrastructure\\AccommodationMerchant.Infrastructure.csproj": {
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Infrastructure\\AccommodationMerchant.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Infrastructure\\AccommodationMerchant.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Infrastructure\\AccommodationMerchant.Infrastructure.csproj",
         "projectName": "AccommodationMerchant.Infrastructure",
-        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Infrastructure\\AccommodationMerchant.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Infrastructure\\AccommodationMerchant.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
           "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -210,8 +210,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\AccommodationMerchant.Core.csproj": {
-                "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\AccommodationMerchant.Core.csproj"
+              "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\AccommodationMerchant.Core.csproj": {
+                "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Core\\AccommodationMerchant.Core.csproj"
               }
             }
           }

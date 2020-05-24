@@ -9544,19 +9544,19 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.5.3.8",
+    "version": "1.5.3.9",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.Core\\AQBooking.YachtPortal.Core.csproj",
+      "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.Core\\AQBooking.YachtPortal.Core.csproj",
       "projectName": "AQYachtPortal.Core",
-      "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.Core\\AQBooking.YachtPortal.Core.csproj",
+      "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.Core\\AQBooking.YachtPortal.Core.csproj",
       "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.Core\\obj\\",
+      "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+        "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
         "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yKqIHl6l2dxm/EJ1Ks0uct1ZXr/Mc/MZdSbVYpKqSye0wBSPVGvlt+r2sPzz+B9MDKi/hjNLkyTEej0b2A1yIw==",
+  "dgSpecHash": "MixZyF1yOQaUhaOC41ztH4r+2HizYLyZks51OOAM1lE0WJiI+rt/dc/IW+Irmi/1u8g5IGJwSgkD1zS5vVHNVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Web\\AQ_PGW.WebUI\\AQ_PGW.WebUI.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Web\\AQ_PGW.WebUI\\AQ_PGW.WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\aes_encryption\\1.0.0\\aes_encryption.1.0.0.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\buildbundlerminifier\\2.9.406\\buildbundlerminifier.2.9.406.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0kWYKhx5HA87Wsr5c928trM32hf8xtiXZ3ZsqyWB+sDaFTbkgAM1t+/wNsQpBtA3KaHAnV1C6u5wjppVW2FnhA==",
+  "dgSpecHash": "ZuhWq8LfIRX0ghPeLRaeYaT3PhctCA1hr1woZXFOfFX4eA5cKJbcYN5CKXSdoxBdbfek/0kb08urt309Ds16XA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-DiningPortal-API\\DiningPortal.Api\\AQDiningPortal.Api.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-DiningPortal-API\\DiningPortal.Api\\AQDiningPortal.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\apihelpers\\1.1.4\\apihelpers.1.1.4.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\aqbooking.core\\1.0.28\\aqbooking.core.1.0.28.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jSneAkvMSiS3vszexTAaxvw9Gplral2VvPluRoh/LLfNO8HiuXsxGYMvSNRen5P64cziWrM/j0quvL2v6MnXsA==",
+  "dgSpecHash": "p7EooiiNkjcCYv6wL2tpyKmOgycrBGdTiYacJRTPdMt90Tt/6ZBaqS0AFrgWP2WvUZFONrvfDV4rghSFcIXeMQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AdminAPI\\Netcore2.2\\AQBooking.Admin.Core\\AQBooking.Admin.Core.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AdminAPI\\Netcore2.2\\AQBooking.Admin.Core\\AQBooking.Admin.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",

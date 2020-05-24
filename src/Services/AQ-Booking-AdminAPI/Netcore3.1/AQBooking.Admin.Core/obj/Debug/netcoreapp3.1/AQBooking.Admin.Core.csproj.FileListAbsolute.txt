@@ -7,3 +7,12 @@ C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-Admin
 C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-AdminAPI\Netcore3.1\AQBooking.Admin.Core\obj\Debug\netcoreapp3.1\AQBooking.Admin.Core.AssemblyInfo.cs
 C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-AdminAPI\Netcore3.1\AQBooking.Admin.Core\obj\Debug\netcoreapp3.1\AQBooking.Admin.Core.dll
 C:\Users\ThinkPro\Source\Repos\AQBooking_Solutions\src\Services\AQ-Booking-AdminAPI\Netcore3.1\AQBooking.Admin.Core\obj\Debug\netcoreapp3.1\AQBooking.Admin.Core.pdb
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Booking-AdminAPI\Netcore3.1\AQBooking.Admin.Core\bin\Debug\netcoreapp3.1\AQBooking.Admin.Core.deps.json
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Booking-AdminAPI\Netcore3.1\AQBooking.Admin.Core\bin\Debug\netcoreapp3.1\AQBooking.Admin.Core.dll
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Booking-AdminAPI\Netcore3.1\AQBooking.Admin.Core\bin\Debug\netcoreapp3.1\AQBooking.Admin.Core.pdb
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Booking-AdminAPI\Netcore3.1\AQBooking.Admin.Core\obj\Debug\netcoreapp3.1\AQBooking.Admin.Core.csprojAssemblyReference.cache
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Booking-AdminAPI\Netcore3.1\AQBooking.Admin.Core\obj\Debug\netcoreapp3.1\AQBooking.Admin.Core.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Booking-AdminAPI\Netcore3.1\AQBooking.Admin.Core\obj\Debug\netcoreapp3.1\AQBooking.Admin.Core.AssemblyInfoInputs.cache
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Booking-AdminAPI\Netcore3.1\AQBooking.Admin.Core\obj\Debug\netcoreapp3.1\AQBooking.Admin.Core.AssemblyInfo.cs
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Booking-AdminAPI\Netcore3.1\AQBooking.Admin.Core\obj\Debug\netcoreapp3.1\AQBooking.Admin.Core.dll
+C:\Users\ThinkPro\source\repos\LearningProject\src\Services\AQ-Booking-AdminAPI\Netcore3.1\AQBooking.Admin.Core\obj\Debug\netcoreapp3.1\AQBooking.Admin.Core.pdb

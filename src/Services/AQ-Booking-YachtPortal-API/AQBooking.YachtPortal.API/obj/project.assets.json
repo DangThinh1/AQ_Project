@@ -5051,7 +5051,7 @@
         "dependencies": {
           "APIHelpers": "1.1.5",
           "AQEncrypts": "1.0.0",
-          "AQYachtPortal.Core": "1.5.3.8",
+          "AQYachtPortal.Core": "1.5.3.9",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "ExtendedUtility": "1.0.3",
           "Microsoft.AspNetCore.Authentication.Cookies": "2.2.0",
@@ -5069,7 +5069,7 @@
           "bin/placeholder/AQBooking.YachtPortal.Infrastructure.dll": {}
         }
       },
-      "AQYachtPortal.Core/1.5.3.8": {
+      "AQYachtPortal.Core/1.5.3.9": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
@@ -13749,7 +13749,7 @@
       "path": "../AQBooking.YachtPortal.Infrastructure/AQBooking.YachtPortal.Infrastructure.csproj",
       "msbuildProject": "../AQBooking.YachtPortal.Infrastructure/AQBooking.YachtPortal.Infrastructure.csproj"
     },
-    "AQYachtPortal.Core/1.5.3.8": {
+    "AQYachtPortal.Core/1.5.3.9": {
       "type": "project",
       "path": "../AQBooking.YachtPortal.Core/AQBooking.YachtPortal.Core.csproj",
       "msbuildProject": "../AQBooking.YachtPortal.Core/AQBooking.YachtPortal.Core.csproj"
@@ -13773,17 +13773,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.API\\AQBooking.YachtPortal.API.csproj",
+      "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.API\\AQBooking.YachtPortal.API.csproj",
       "projectName": "AQBooking.YachtPortal.API",
-      "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.API\\AQBooking.YachtPortal.API.csproj",
+      "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.API\\AQBooking.YachtPortal.API.csproj",
       "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.API\\obj\\",
+      "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+        "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
         "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -13802,8 +13802,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.Infrastructure\\AQBooking.YachtPortal.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.Infrastructure\\AQBooking.YachtPortal.Infrastructure.csproj"
+            "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.Infrastructure\\AQBooking.YachtPortal.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.Infrastructure\\AQBooking.YachtPortal.Infrastructure.csproj"
             }
           }
         }

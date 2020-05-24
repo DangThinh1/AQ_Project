@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m9CA1g0yR2eY3tOIjBfKYH0rbuiG8TtYCRS+fu+PF6+3dCR43i0WgjDqQCprPk65pp97VIclNtpcUPRJ9WfGBQ==",
+  "dgSpecHash": "QQuTbtbZlQbMLJ+HQdlL0T9CK/4SV/hOU16ouGdHtx8sq2dIvlk/Im9947UGWhtZiBF/O2Z8djBRzRzVsgqYWg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\ApiGateways\\ApiGw-Base\\OcelotApiGw\\OcelotApiGw.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\ApiGateways\\ApiGw-Base\\OcelotApiGw\\OcelotApiGw.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\cachemanager.core\\2.0.0-beta-1629\\cachemanager.core.2.0.0-beta-1629.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\cachemanager.microsoft.extensions.configuration\\2.0.0-beta-1629\\cachemanager.microsoft.extensions.configuration.2.0.0-beta-1629.nupkg.sha512",

@@ -12966,17 +12966,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Api\\YachtMerchant.Api.csproj",
+      "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Api\\YachtMerchant.Api.csproj",
       "projectName": "YachtMerchant.Api",
-      "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Api\\YachtMerchant.Api.csproj",
+      "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Api\\YachtMerchant.Api.csproj",
       "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Api\\obj\\",
+      "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+        "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
         "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -12995,8 +12995,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Infrastructure\\YachtMerchant.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Infrastructure\\YachtMerchant.Infrastructure.csproj"
+            "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Infrastructure\\YachtMerchant.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Infrastructure\\YachtMerchant.Infrastructure.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C1f+eT3KguAHWPjFMWJr9JM+SFbBgA93FyaFuXoV4db3ZVE/j7Iwjd8C2O0Iy8gI/rHYvXoH4Dp/tQsoZC/bpA==",
+  "dgSpecHash": "/uAxGnAmQkzBr74kktKbdM7mx7vii8sUDjpLFYD/QuTMLWual7DU4m1EAvIV+79Ex7VdqLxmXfC2x4o5CrZ4cA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Web\\AQS.BookingMerchant\\AQS.BookingMerchant.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Web\\AQS.BookingMerchant\\AQS.BookingMerchant.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.3\\microsoft.aspnetcore.cryptography.internal.3.1.3.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.3\\microsoft.aspnetcore.cryptography.keyderivation.3.1.3.nupkg.sha512",

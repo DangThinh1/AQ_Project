@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8Y7OL2bmUAx/fYBmKdskJeuEEqOaGEHYOYWb5S9t1fcGKmcxrEH6X2245GA0T8gPKIgH3LlEq9iVdM00T4XHRA==",
+  "dgSpecHash": "VH0R7WGeI7xvwGuI3pn+mMghFneettdNbUKnJ/zKNzMx3FsGarsaxJE5czySymkJnZeeYSFUA/bdNA9yYr610Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Portal-Identity\\AQBooking.Identity\\Identity.Api.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Portal-Identity\\AQBooking.Identity\\Identity.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\apihelpers\\1.1.4\\apihelpers.1.1.4.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\aqencrypts\\1.0.0\\aqencrypts.1.0.0.nupkg.sha512",

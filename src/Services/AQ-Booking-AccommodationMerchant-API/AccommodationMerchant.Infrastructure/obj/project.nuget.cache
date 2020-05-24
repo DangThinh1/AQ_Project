@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HAblTyOCMmtQ7zOxlFvA2kPQfwszjOw9g4djQCFDe7e1BO3uUPJCM8P3qmdrRMiytZ9GBQgMa4T2etV6lF+xlw==",
+  "dgSpecHash": "WwRjTHRn0wY7j7T6f2IcvTUfts849WV5RdUUiOq37s/hNukDfFu2cPxI4MH3ZUkScNUDB/p7fEPh22JP0YDtZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Infrastructure\\AccommodationMerchant.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AccommodationMerchant-API\\AccommodationMerchant.Infrastructure\\AccommodationMerchant.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\apihelpers\\1.1.4\\apihelpers.1.1.4.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\aqbooking.core\\1.0.27\\aqbooking.core.1.0.27.nupkg.sha512",

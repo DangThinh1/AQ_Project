@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b1KL3i6ZkT9JZ8BdvXqXjy8os1T/pNisaeSk6L4xjBH8vvLOqBhwWAO2GYiKHjAFJN3OcBH/1yQzLwe3X4zybg==",
+  "dgSpecHash": "XcqNW+NDq7icrz6/m6NquOIfLBmEvM2bGdGQaCHmCo/X1XH98SK5y7s9R/kSsS+9UYBVqPpFcEQlkouuF7d9oQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Core\\YachtMerchant.Core.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtMerchant-API\\YachtMerchant.Core\\YachtMerchant.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\apihelpers\\1.1.4\\apihelpers.1.1.4.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\aqbooking.core\\1.0.27\\aqbooking.core.1.0.27.nupkg.sha512",

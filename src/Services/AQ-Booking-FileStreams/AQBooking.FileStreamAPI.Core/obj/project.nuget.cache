@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QjFtVCYvUfrm9pCMfR82TA3YWwVPTVAVeu+DyTALwNDSQaLByoJqw5s9pw0mcWYwljtuoKhT9sFl8ZnqZGEUxA==",
+  "dgSpecHash": "/d+E28jvSaBetvni3CcfODfX9sJKlTPE2baLdXED+YgVnGJYfN8ACFtom/Zv3sElPa2DCrMrJzp6xBEYy4ECig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStreamAPI.Core\\AQBooking.FileStreamAPI.Core.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-FileStreams\\AQBooking.FileStreamAPI.Core\\AQBooking.FileStreamAPI.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\apihelpers\\1.1.4\\apihelpers.1.1.4.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\autofac\\4.9.1\\autofac.4.9.1.nupkg.sha512",

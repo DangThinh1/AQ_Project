@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WxgXamJvPR0y0BJP4qD7SlG3g6BTMDvLBZ3pRpvakSJAv1CH1wVft8jF/ysnKDygHPYPnpBwBswdvrTjjWVgVA==",
+  "dgSpecHash": "4JgpHQqYo4VxOM4OxOd2NgWu7B24O3m7ABF9ZStac3rtvA7NgQXWl7o8z4/szX9OH4xSI2MH0a/FlPIPG3WjJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.API\\AQBooking.YachtPortal.API.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-YachtPortal-API\\AQBooking.YachtPortal.API\\AQBooking.YachtPortal.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\apihelpers\\1.1.5\\apihelpers.1.1.5.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\aqbooking.core\\1.0.29\\aqbooking.core.1.0.29.nupkg.sha512",
@@ -328,7 +328,7 @@
     "C:\\Users\\ThinkPro\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\valueinjecter\\3.2.0\\valueinjecter.3.2.0.nupkg.sha512",
-    "C:\\Users\\ThinkPro\\.nuget\\packages\\aqyachtportal.core\\1.5.3.8\\aqyachtportal.core.1.5.3.8.nupkg.sha512"
+    "C:\\Users\\ThinkPro\\.nuget\\packages\\aqyachtportal.core\\1.5.3.9\\aqyachtportal.core.1.5.3.9.nupkg.sha512"
   ],
   "logs": []
 }

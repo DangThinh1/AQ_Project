@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "teJTqc/h6W3AKa3O+7f2VQYoxyOiBvS5dgGYTva5CmKaZBpqr3Qy67XiwpY8L4k9oxkiIzG9NCE/+oY4su+jog==",
+  "dgSpecHash": "pqeNai8IOf2D3KZabd4dZ0r77tIfste9l7cOaKRYrpHZJcm6YiadT6VY+O01Bu7fqPoZcUWYIeJypnZICN6tNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AdminAPI\\Netcore2.2\\AQBooking.Admin.API\\AQBooking.Admin.API.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AdminAPI\\Netcore2.2\\AQBooking.Admin.API\\AQBooking.Admin.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

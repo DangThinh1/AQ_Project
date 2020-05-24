@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Web\\AQS.BookingAdmin\\AQS.BookingAdmin.csproj": {}
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Web\\AQS.BookingAdmin\\AQS.BookingAdmin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AdminAPI\\Netcore3.1\\AQBooking.Admin.Core\\AQBooking.Admin.Core.csproj": {
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AdminAPI\\Netcore3.1\\AQBooking.Admin.Core\\AQBooking.Admin.Core.csproj": {
       "version": "2.2.9.6",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AdminAPI\\Netcore3.1\\AQBooking.Admin.Core\\AQBooking.Admin.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AdminAPI\\Netcore3.1\\AQBooking.Admin.Core\\AQBooking.Admin.Core.csproj",
         "projectName": "AQBooking.Admin.Core",
-        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AdminAPI\\Netcore3.1\\AQBooking.Admin.Core\\AQBooking.Admin.Core.csproj",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AdminAPI\\Netcore3.1\\AQBooking.Admin.Core\\AQBooking.Admin.Core.csproj",
         "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AdminAPI\\Netcore3.1\\AQBooking.Admin.Core\\obj\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AdminAPI\\Netcore3.1\\AQBooking.Admin.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
           "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -83,20 +83,20 @@
         }
       }
     },
-    "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Web\\AQS.BookingAdmin\\AQS.BookingAdmin.csproj": {
+    "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Web\\AQS.BookingAdmin\\AQS.BookingAdmin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Web\\AQS.BookingAdmin\\AQS.BookingAdmin.csproj",
+        "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Web\\AQS.BookingAdmin\\AQS.BookingAdmin.csproj",
         "projectName": "AQS.BookingAdmin",
-        "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Web\\AQS.BookingAdmin\\AQS.BookingAdmin.csproj",
+        "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Web\\AQS.BookingAdmin\\AQS.BookingAdmin.csproj",
         "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Web\\AQS.BookingAdmin\\obj\\",
+        "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Web\\AQS.BookingAdmin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\NuGet.Config",
+          "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
           "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -115,8 +115,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AdminAPI\\Netcore3.1\\AQBooking.Admin.Core\\AQBooking.Admin.Core.csproj": {
-                "projectPath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-AdminAPI\\Netcore3.1\\AQBooking.Admin.Core\\AQBooking.Admin.Core.csproj"
+              "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AdminAPI\\Netcore3.1\\AQBooking.Admin.Core\\AQBooking.Admin.Core.csproj": {
+                "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-AdminAPI\\Netcore3.1\\AQBooking.Admin.Core\\AQBooking.Admin.Core.csproj"
               }
             }
           }

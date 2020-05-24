@@ -10,8 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace AQS.BookingMVC.Controllers
-{
-    
+{    
     public class HomeController : BaseController
     {
         private readonly ILogger<HomeController> _logger;

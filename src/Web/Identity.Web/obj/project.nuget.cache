@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n0hB7NpI48Ce+F7Aqo1u3IOYDu/sj2nLyMGrvCuaSwc5IRj0iIxuTIB3spqKoFPtjEx1svJ2t9VSdeyD3DMhgA==",
+  "dgSpecHash": "yr78VSDjqIek0/11jXzNKqjuvINUxbOqRSkrqaIjMYLkAnygJ/k0q1jFsSqjco7YXyX+hafXYfCJIecuRZkrRQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Web\\Identity.Web\\Identity.Web.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Web\\Identity.Web\\Identity.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\apihelpers\\1.1.4\\apihelpers.1.1.4.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\aqidentity.core\\1.1.5\\aqidentity.core.1.1.5.nupkg.sha512",

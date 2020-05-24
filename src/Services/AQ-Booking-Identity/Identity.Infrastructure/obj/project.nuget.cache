@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VNW3aj6Eb0mfA9sJuELB8Ss4zpKCGmzS0Iv+khRR0Wc7pwbiIJZu2yGlJfsdnt3iFdaGz/DTsRM/wYiLDEb+mQ==",
+  "dgSpecHash": "plvcqzuKYBc2wZWew32uLBAaW+dEuIhgQL+lBMmE6LWDVkXSVFwIWlx3qZdJSnK/UViAbeVahNl7eT1jI4rujA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPro\\Source\\Repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Identity\\Identity.Infrastructure\\Identity.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPro\\.nuget\\packages\\apihelpers\\1.1.4\\apihelpers.1.1.4.nupkg.sha512",
     "C:\\Users\\ThinkPro\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",

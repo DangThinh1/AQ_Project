@@ -1,0 +1,333 @@
+{
+    "ReRoutes": [
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 74
+                },
+                {
+                    "Host": "103.97.125.19",
+                    "Port": 74
+                }
+            ],
+            "UpstreamPathTemplate": "/api/{version}/AccomodationMerchantAPI/{everything}",
+            "UpstreamHttpMethod": [],
+            "SwaggerKey": "AccomodationMerchantAPI"
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 86
+                },
+                {
+                    "Host": "103.97.125.19",
+                    "Port": 86
+                }
+            ],
+            "UpstreamPathTemplate": "/api/{version}/AccomodationPortalAPI/{everything}",
+            "UpstreamHttpMethod": [],
+            "SwaggerKey": "AccomodationPortalAPI"
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 73
+                },
+                {
+                    "Host": "103.97.125.19",
+                    "Port": 73
+                }
+
+            ],
+            "UpstreamPathTemplate": "/api/{version}/AdministratorAPI/{everything}",
+            "UpstreamHttpMethod": [],
+            "SwaggerKey": "AdministratorAPI",
+            "LoadBalancerOptions": {
+                "Type": "RoundRobin"
+            },
+            "FileCacheOptions": { "TtlSeconds": 15 },
+            "QoSOptions": {
+                "ExceptionsAllowedBeforeBreaking": 3,
+                "DurationOfBreak": 5000,
+                "TimeoutValue": 30000
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 96
+                },
+                {
+                    "Host": "103.97.125.19",
+                    "Port": 96
+                }
+            ],
+            "UpstreamPathTemplate": "/api/{version}/DiningPortalAPI/{everything}",
+            "UpstreamHttpMethod": [],
+            "SwaggerKey": "DiningPortalAPI"
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "103.97.125.19",
+                    "Port": 72
+                },
+                {
+                    "Host": "103.97.125.19",
+                    "Port": 72
+                }
+            ],
+            "UpstreamPathTemplate": "/api/{version}/FileStreamAPI/{everything}",
+            "UpstreamHttpMethod": [],
+            "SwaggerKey": "FileStreamAPI"
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 70
+                },
+                {
+                    "Host": "103.97.125.19",
+                    "Port": 70
+                }
+            ],
+            "UpstreamPathTemplate": "/api/{version}/IdentityAdminAPI/{everything}",
+            "UpstreamHttpMethod": [],
+            "SwaggerKey": "IdentityAdminAPI"
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 71
+                },
+                {
+                    "Host": "103.97.125.19",
+                    "Port": 71
+                }
+            ],
+            "UpstreamPathTemplate": "/api/{version}/IdentityUserAPI/{everything}",
+            "UpstreamHttpMethod": [],
+            "SwaggerKey": "IdentityUserAPI"
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 98
+                },
+                {
+                    "Host": "103.97.125.19",
+                    "Port": 98
+                }
+            ],
+            "UpstreamPathTemplate": "/api/{version}/YachtMerchantAPI/{everything}",
+            "UpstreamHttpMethod": [],
+            "SwaggerKey": "YachtMerchantAPI"
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 220
+                },
+                {
+                    "Host": "103.97.125.19",
+                    "Port": 220
+                }
+            ],
+            "UpstreamPathTemplate": "/api/{version}/YachtPortalAPI/{everything}",
+            "UpstreamHttpMethod": [],
+            "SwaggerKey": "YachtPortalAPI"
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 69
+                },
+                {
+                    "Host": "103.97.125.19",
+                    "Port": 69
+                }
+            ],
+            "UpstreamPathTemplate": "/api/{version}/ConfigurationAPI/{everything}",
+            "UpstreamHttpMethod": [],
+            "SwaggerKey": "ConfigurationAPI"
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 302
+                },
+                {
+                    "Host": "103.97.125.19",
+                    "Port": 302
+                }
+            ],
+            "UpstreamPathTemplate": "/api/{version}/PaymentAPI/{everything}",
+            "UpstreamHttpMethod": [],
+            "SwaggerKey": "PaymentAPI",
+
+        }
+    ],
+    "SwaggerEndPoints": [
+
+        {
+            "Key": "AccomodationMerchantAPI",
+            "Config": [
+                {
+                    "Name": "Accomodation Merchant API",
+                    "Version": "v1.0",
+                    "Url": "http://localhost:74/swagger/v1/swagger.json"
+                }
+
+            ]
+        },
+        {
+            "Key": "AccomodationPortalAPI",
+            "Config": [
+                {
+                    "Name": "Accomodation Portal API",
+                    "Version": "v1.0",
+                    "Url": "http://localhost:86/swagger/v1/swagger.json"
+                }
+
+            ]
+        },
+        {
+            "Key": "AdministratorAPI",
+            "Config": [
+                {
+                    "Name": "Administrator API",
+                    "Version": "v1.0",
+                    "Url": "http://localhost:73/swagger/v1/swagger.json"
+                }
+
+            ]
+        },
+        {
+            "Key": "DiningPortalAPI",
+            "Config": [
+                {
+                    "Name": "DiningPortal API",
+                    "Version": "v1.0",
+                    "Url": "http://localhost:96/swagger/v1/swagger.json"
+                }
+
+            ]
+        },
+        {
+            "Key": "FileStreamAPI",
+            "Config": [
+                {
+                    "Name": "FileStream API",
+                    "Version": "v1.0",
+                    "Url": "http://localhost:72/swagger/v1/swagger.json"
+                }
+
+            ]
+        },
+        {
+            "Key": "IdentityAdminAPI",
+            "Config": [
+                {
+                    "Name": "Identity Admin API",
+                    "Version": "v1.0",
+                    "Url": "http://localhost:70/swagger/v1/swagger.json"
+                }
+
+            ]
+        },
+        {
+            "Key": "IdentityUserAPI",
+            "Config": [
+                {
+                    "Name": "Identity User API",
+                    "Version": "v1.0",
+                    "Url": "http://localhost:71/swagger/v1/swagger.json"
+                }
+
+            ]
+        },
+        {
+            "Key": "YachtMerchantAPI",
+            "Config": [
+                {
+                    "Name": "Yacht Merchant API",
+                    "Version": "v1.0",
+                    "Url": "http://localhost:98/swagger/v1/swagger.json"
+                }
+
+            ]
+        },
+        {
+            "Key": "YachtPortalAPI",
+            "Config": [
+                {
+                    "Name": "Yacht Portal API",
+                    "Version": "v1.0",
+                    "Url": "http://localhost:220/swagger/v1/swagger.json"
+                }
+
+            ]
+        },
+        {
+            "Key": "ConfigurationAPI",
+            "Config": [
+                {
+                    "Name": "Configuration API",
+                    "Version": "v1.0",
+                    "Url": "http://localhost:69/swagger/v1/swagger.json"
+                }
+
+            ]
+        },
+        {
+            "Key": "PaymentAPI",
+            "Config": [
+                {
+                    "Name": "Payment API",
+                    "Version": "v1.0",
+                    "Url": "http://localhost:302/swagger/v1/swagger.json"
+                }
+
+            ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost",
+        "ServiceDiscoveryProvider": {
+            "Type": "AppConfiguration",
+            "PollingIntervalSeconds": 10000
+        }
+    }
+}

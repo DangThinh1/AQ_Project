@@ -9069,17 +9069,17 @@
   "project": {
     "version": "1.0.30",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Portal-Identity\\Identity.Core.Portal\\Identity.Core.Portal.csproj",
+      "projectUniqueName": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Portal-Identity\\Identity.Core.Portal\\Identity.Core.Portal.csproj",
       "projectName": "Identity.Core.Portal",
-      "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Portal-Identity\\Identity.Core.Portal\\Identity.Core.Portal.csproj",
+      "projectPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Portal-Identity\\Identity.Core.Portal\\Identity.Core.Portal.csproj",
       "packagesPath": "C:\\Users\\ThinkPro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\Services\\AQ-Booking-Portal-Identity\\Identity.Core.Portal\\obj\\",
+      "outputPath": "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\Services\\AQ-Booking-Portal-Identity\\Identity.Core.Portal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ThinkPro\\source\\repos\\AQBooking_Solutions\\src\\NuGet.Config",
+        "C:\\Users\\ThinkPro\\source\\repos\\LearningProject\\src\\NuGet.Config",
         "C:\\Users\\ThinkPro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
