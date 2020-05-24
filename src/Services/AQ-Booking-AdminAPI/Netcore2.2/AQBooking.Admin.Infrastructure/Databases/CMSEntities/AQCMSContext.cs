@@ -22,11 +22,6 @@ namespace AQBooking.Admin.Infrastructure.Databases.CMSEntities
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=103.97.125.19;Database=AQ_CMS;User ID=aqbooking_user;Password=AQUser@123#;Integrated Security=False;");
-            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
